@@ -2,7 +2,7 @@ import styled from 'styled-components';
 const Footer = styled.footer`
 border: 1px solid yellow;
 `;
-function whyLuluRala() {
+function WhyLuluRala() {
     return (
         <>
             {/* 좌측 선택 네비게이션 */}
@@ -14,4 +14,4 @@ function whyLuluRala() {
     );
 }
 
-export default whyLuluRala;
+export default WhyLuluRala;

@@ -1,0 +1,65 @@
+{
+    "nav": [
+        {
+            "menuName": "Main",
+            "menuKey": "main",
+            "subMenus": false
+        },
+        {
+            "menuName": "Courses",
+            "subMenus": [
+                {
+                    "menuName": "Lulu Rala  English",
+                    "menuKey": "luluRalaPlayingEnglish"
+                },
+                {
+                    "menuName": "교육 과정",
+                    "menuKey": "educationalCourse"
+                },
+                {
+                    "menuName": "프로그램 가이드",
+                    "menuKey": "luluRalaProgramGuide"
+                }
+            ]
+        },
+        {
+            "menuName": "Why Lulu Rala",
+            "subMenus": [
+                {
+                    "menuName": "브랜드 스토리",
+                    "menuKey": "brandStory"
+                },
+                {
+                    "menuName": "교육 철학",
+                    "menuKey": "philosophyOfEducation"
+                },
+                {
+                    "menuName": "Why Lulu Rala",
+                    "menuKey": "whyLuluRala"
+                }
+            ]
+        },
+        {
+            "menuName": "Content",
+            "subMenus": [
+                {
+                    "menuName": "자주하는 질문",
+                    "menuKey": "FAQ"
+                },
+                {
+                    "menuName": "수강료 안내",
+                    "menuKey": "tuitionInformation"
+                },
+                {
+                    "menuName": "상담 신청(개인/기관)",
+                    "menuKey": "requestForConsultation"
+                }
+            ]
+        },
+        {
+            "menuName": "Community",
+            "menuKey": "main",
+            "subMenus": false
+        }
+    ]
+}

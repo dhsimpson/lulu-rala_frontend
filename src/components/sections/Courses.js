@@ -2,7 +2,7 @@ import styled from 'styled-components';
 const Footer = styled.footer`
 border: 1px solid yellow;
 `;
-function courses() {
+function Courses() {
     return (
         <>
             <>Why Lulu Rala</>
@@ -16,4 +16,4 @@ function courses() {
     );
 }
 
-export default courses;
+export default Courses;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 const Footer = styled.footer`
 border: 1px solid yellow;
 `;
-function main() {
+function Main() {
   return (
     <>
       {/* 메인은 마우스 스크롤 하면 section이 바뀌도록 */}
@@ -16,4 +16,4 @@ function main() {
   );
 }
 
-export default main;
+export default Main;

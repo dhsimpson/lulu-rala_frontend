@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function faq() {
+function FAQ() {
   return (
     <>
       <>FAQ</>
@@ -12,4 +12,4 @@ function faq() {
   );
 }
 
-export default faq;
+export default FAQ;

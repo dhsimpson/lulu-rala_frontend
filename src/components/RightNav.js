@@ -1,18 +1,18 @@
 import styled from 'styled-components';
-const RightNav = styled.nav`
+const RiightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function rightNav() {
+function RightNav() {
     return (
-      <RightNav>
+      <RiightNav>
       우측 네비게이션
         <a href="#">1:1상담</a>
         <a href="#">온라인 체험</a>
         <a href="#">가맹 안내</a>
         <a href="#">A/S신청</a>
-      </RightNav>
+      </RiightNav>
       );
 }
 
-export default rightNav;
+export default RightNav;

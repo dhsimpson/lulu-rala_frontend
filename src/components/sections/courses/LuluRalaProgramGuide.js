@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function luluRalaProgramGuide() {
+function LuluRalaProgramGuide() {
   return (
     <>
       <>Lulu Rala Program guide</>
@@ -26,4 +26,4 @@ function luluRalaProgramGuide() {
   );
 }
 
-export default luluRalaProgramGuide;
+export default LuluRalaProgramGuide;

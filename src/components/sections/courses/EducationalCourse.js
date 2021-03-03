@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function educationalCourse() {
+function EducationalCourse() {
   return (
     <>
       <>교육 과정</>
@@ -31,4 +31,4 @@ function educationalCourse() {
   );
 }
 
-export default educationalCourseaq;
+export default EducationalCourse;

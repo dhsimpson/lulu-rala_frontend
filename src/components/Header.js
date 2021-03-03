@@ -2,13 +2,13 @@ import styled from 'styled-components';
 const Header = styled.header`
 border: 1px solid black;
 `;
-function header() {
+function Heeader() {
     return (
-        <Header>
+        <Heeader>
             아이들이엔씨
-        </Header>
+        </Heeader>
     );
 }
 
-export default header;
+export default Header;
 

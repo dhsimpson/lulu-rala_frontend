@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function whyLuluRala() {
+function WhyLuluRala() {
   return (
     <>
       <>whyLuluRala</>
@@ -22,4 +22,4 @@ function whyLuluRala() {
   );
 }
 
-export default whyLuluRala;
+export default WhyLuluRala;

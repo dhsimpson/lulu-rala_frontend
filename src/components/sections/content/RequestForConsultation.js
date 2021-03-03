@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function requestForConsultation() {
+function RequestForConsultation() {
   return (
     <>
       <>상담 신청</>
@@ -12,4 +12,4 @@ function requestForConsultation() {
   );
 }
 
-export default requestForConsultation;
+export default RequestForConsultation;

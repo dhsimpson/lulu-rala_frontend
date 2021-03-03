@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function content() {
+function Content() {
   return (
     <>
       {/* 좌측 선택 네비게이션 */}
@@ -16,4 +16,4 @@ function content() {
   );
 }
 
-export default content;
+export default Content;

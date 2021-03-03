@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function philosophyOfEducation() {
+function PhilosophyOfEducation() {
   return (
     <>
       <>philosophyOfEducation</>
@@ -12,4 +12,4 @@ function philosophyOfEducation() {
   );
 }
 
-export default philosophyOfEducation;
+export default PhilosophyOfEducation;

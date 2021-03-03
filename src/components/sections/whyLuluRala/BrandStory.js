@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function brandStory() {
+function BrandStory() {
   return (
     <>
       <>brandStory</>
@@ -30,4 +30,4 @@ function brandStory() {
   );
 }
 
-export default brandStory;
+export default BrandStory;

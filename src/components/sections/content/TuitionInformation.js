@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function tuitionInformation() {
+function TuitionInformation() {
   return (
     <>
       <>수강료 안내</>
@@ -12,4 +12,4 @@ function tuitionInformation() {
   );
 }
 
-export default tuitionInformation;
+export default TuitionInformation;

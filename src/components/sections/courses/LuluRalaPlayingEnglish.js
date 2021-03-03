@@ -3,7 +3,7 @@ const RightNav = styled.nav`
 border: 1px solid red;
 `;
 
-function luluRalaPlayingEnglish() {
+function LuluRalaPlayingEnglish() {
   return (
     <>
       <>luluRalaPlayingEnglish</>
@@ -12,4 +12,4 @@ function luluRalaPlayingEnglish() {
   );
 }
 
-export default luluRalaPlayingEnglish;
+export default LuluRalaPlayingEnglish;
