@@ -4,6 +4,7 @@ border: 1px solid red;
 `;
 
 function Content() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       {/* 좌측 선택 네비게이션 */}

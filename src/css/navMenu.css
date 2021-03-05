@@ -1,7 +1,27 @@
 .navMenu {
     position: relative;
 }
+.navMenu > div {
+    width: 9vw;
+    text-align: center;
+}
+.navMenu > div > button {
+    width: 9vw;
+    background-color: transparent;
+    border: none;
+}
 .subMenu {
     display: none;
     position: absolute;
+}
+.subMenu > a {
+    display: block;
+    width: 9vw;
+    padding: 2.5vh 0;
+    /* border: 1px solid red; */
+    font-size: 2vh;
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }

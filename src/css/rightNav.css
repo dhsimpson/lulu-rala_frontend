@@ -1,0 +1,8 @@
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1vw;
+    top: 45vh;
+    z-index: 1;
+}

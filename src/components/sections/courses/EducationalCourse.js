@@ -4,9 +4,11 @@ border: 1px solid red;
 `;
 
 function EducationalCourse() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       <>교육 과정</>
+      <img src="./section/educationalCourse.jpg"/>
       <pre>
         영아 / 유아교육 과정
         그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로

@@ -3,6 +3,7 @@ const Footer = styled.footer`
 border: 1px solid yellow;
 `;
 function Courses() {
+    document.body.style.backgroundImage = "url('./background.jpg')";
     return (
         <>
             <>Why Lulu Rala</>

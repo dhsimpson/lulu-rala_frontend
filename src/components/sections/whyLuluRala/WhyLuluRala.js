@@ -4,9 +4,11 @@ border: 1px solid red;
 `;
 
 function WhyLuluRala() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       <>whyLuluRala</>
+      <img src="./section/whyLuluRala.jpg"/>
       <pre>
         유아 영어 교육 전문가인 룰루랄라 선생님은  유아/영어교육 전공, Tesol 수료, 교사교육 등의 전문가 양성과정을 수료합니다.
 

@@ -1,0 +1,24 @@
+body {
+    /* background-image: url("../../background-main.jpg"); */
+}
+.section-main {
+    position: relative;
+    height: 100vh;
+}
+.section-main > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+}
+.section-main > div {
+    position: absolute;
+    left: 5vw;
+    bottom: 15vh;
+}
+.section-main > div > :nth-child(1) {font-size: 3vw;}
+.section-main > div > :nth-child(2) {font-size: 6.5vw;}
+.section-main > div > :nth-child(4) {font-size: 2vw;}
+.section-main > div > :nth-child(5) {font-size: 2vw;}
+
+.section-main > div > div {height: 5vw;}

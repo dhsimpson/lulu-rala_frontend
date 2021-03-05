@@ -1,12 +1,9 @@
-import styled from 'styled-components';
-const Header = styled.header`
-border: 1px solid black;
-`;
-function Heeader() {
+import '../css/header.css';
+function Header() {
     return (
-        <Heeader>
+        <header>
             아이들이엔씨
-        </Heeader>
+        </header>
     );
 }
 

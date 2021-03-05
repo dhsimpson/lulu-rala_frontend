@@ -4,9 +4,11 @@ border: 1px solid red;
 `;
 
 function LuluRalaProgramGuide() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       <>Lulu Rala Program guide</>
+      <img src="./section/luluRalaProgramGuide.jpg"/>
       <pre>
         대상
         영유아(24개월 이상) ~ 초등학생  (기관은 별도 상담)

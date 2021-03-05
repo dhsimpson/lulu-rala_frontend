@@ -11,8 +11,7 @@ function NavMenu(props) {
             </div>)
             : (<div>
                 <button>{props.menuData.menuName}</button>
-                <div
-                className= "subMenu">
+                <div className = "subMenu">
                 {
                     props.menuData.subMenus.map((spreadMenu, i) => {
                         return (

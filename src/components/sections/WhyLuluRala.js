@@ -3,6 +3,7 @@ const Footer = styled.footer`
 border: 1px solid yellow;
 `;
 function WhyLuluRala() {
+    document.body.style.backgroundImage = "url('./background.jpg')";
     return (
         <>
             {/* 좌측 선택 네비게이션 */}

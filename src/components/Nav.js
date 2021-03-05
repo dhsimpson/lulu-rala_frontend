@@ -1,8 +1,5 @@
-import { withRouter } from 'react-router-dom';
-
 import NavMenu from './NavMenu';
 
-import styled from 'styled-components';
 import '../css/nav.css';
 import navConfig from '../config/navConfig.json';
 

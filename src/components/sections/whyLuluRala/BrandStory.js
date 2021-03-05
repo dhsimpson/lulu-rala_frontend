@@ -4,9 +4,11 @@ border: 1px solid red;
 `;
 
 function BrandStory() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       <>brandStory</>
+      <img src="./section/brandStory.jpg"/>
       <pre>
         “어린이 영어교육 전문가”
 

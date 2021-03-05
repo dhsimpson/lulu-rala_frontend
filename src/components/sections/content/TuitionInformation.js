@@ -4,6 +4,7 @@ border: 1px solid red;
 `;
 
 function TuitionInformation() {
+  document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
       <>수강료 안내</>
