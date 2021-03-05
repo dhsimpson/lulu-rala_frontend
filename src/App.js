@@ -8,30 +8,31 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 
 import './App.css';
-import getSectionList from './config/getSectionList';
 
-import {AppProvider} from './components/Appcontext';
+// import {AppProvider} from './components/Appcontext';
+
+import {componentList} from './components/sections/SectionRoutes';
+
+import Main from './components/sections/Main';
 
 function App() {
-  const sectionComponents = getSectionList();
-  console.log(sectionComponents.get('main'))
-  const [section, setSection] = useState(0);
-  useEffect(()=>{
-    console.log("섹션: "+section);
-    
-  })
+
   return (
-    <AppProvider value={setSection}>
+    // <AppProvider value={setSection}>
+    <>
       <Header />
       <Nav />
       <RightNav />
       <Switch>
-        <Route exact path='/'>{sectionComponents.get('main')}</Route>
-        <Route path='/:menu_id'>{sectionComponents.get(section)}</Route>
+        <Route exact path='/' component={Main}></Route>
+        {componentList.map(data=>{
+          return <Route path={`/${data.uri}`} component={data.component}/>
+        })}
       </Switch>
       <Section />
       <Footer />
-    </AppProvider>
+      </>
+    // </AppProvider>
   );
 }
 

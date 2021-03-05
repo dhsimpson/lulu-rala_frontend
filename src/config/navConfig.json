@@ -2,7 +2,7 @@
     "nav": [
         {
             "menuName": "Main",
-            "menuKey": "main",
+            "menuKey": "",
             "subMenus": false
         },
         {
