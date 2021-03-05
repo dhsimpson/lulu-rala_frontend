@@ -8,7 +8,7 @@ body {
   background-image: url("./background.jpg");
 }
 img {
-  width: 100px;
+  /* width: 100px; */
 }
 
 code {

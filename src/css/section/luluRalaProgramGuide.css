@@ -1,0 +1,38 @@
+.section-luluRalaProgramGuide {
+    height: 100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-luluRalaProgramGuide > h1 {
+    position: absolute;
+    top: 10vh;
+    font-size: 3vw;
+}
+.section-luluRalaProgramGuide > img {
+    position: absolute;
+    top: 20vh;
+    width: 75vw;
+    height: 50vh;
+}
+
+.section-luluRalaProgramGuide > div {
+    position: absolute;
+    top: 75vh;
+}
+.section-left {
+    left: 12vw;
+}
+.section-right {
+    left: 52vw;
+}
+
+.section-luluRalaProgramGuide > div > h2 {
+    font-size: 1.5vw;;
+    line-height: 2vw;
+}
+.section-luluRalaProgramGuide > div > p {
+    font-size: 1vw;;
+    line-height: 2vw;
+}

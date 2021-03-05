@@ -1,0 +1,34 @@
+.section-brandStory {
+    height: 100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-brandStory > h1 {
+    position: absolute;
+    top: 10vh;
+    font-size: 3vw;
+}
+.section-brandStory > img {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    width: 42vw;
+}
+.section-brandStory > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20vh;
+    left: 53vw;
+}
+.section-brandStory > div > h2 {
+    font-size: 1.5vw;;
+    line-height: 2vw;
+}
+.section-brandStory > div > p {
+    font-size: 1vw;;
+    line-height: 2vw;
+}
