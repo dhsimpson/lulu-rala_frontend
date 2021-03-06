@@ -1,0 +1,40 @@
+.section-tuitionInformation {
+    height: 100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-tuitionInformation > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20vh;
+    left: 53vw;
+}
+.section-tuitionInformation > h1 {
+    position: absolute;
+    top: 12vh;
+    font-size: 3vw;
+}
+.section-tuitionInformation > table {
+    position: absolute;
+    background-color: rgba(65, 105, 225, 0.3);
+    top: 20vh;
+    width: 80vw;
+    border: 0.5vh solid white;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 6vh;
+}
+th, tr, td {
+    border: 0.3vh solid white;
+}
+.section-tuitionInformation > h2 {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    bottom: 1vh;
+    right: 10vw;
+    position: absolute;
+}

@@ -6,11 +6,6 @@
     align-items: center;
     overflow: auto;
 }
-/* .section-faq > h1 {
-    position: absolute;
-    top: 10vh;
-    font-size: 3vw;
-} */
 .section-faq > div {
     position: absolute;
     top: 20vh;
