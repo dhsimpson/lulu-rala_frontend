@@ -28,10 +28,9 @@
 .section-philosophyOfEducation > img {
     position: absolute;
     top: 45vh;
-    left: 23vw;
+    left: 21vw;
     width: 75vw;
 }
-
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal {
     position: absolute;
     display: flex;
@@ -40,15 +39,12 @@
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div {
     margin: 2vh 3vw;
-    text-align: center;
 }
-
-
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div > h2 {
-    font-size: 1.5vw;
-    line-height: 2vw;
+    font-size: 1.3vw;
+    line-height: 1vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div > p {
     font-size: 1vw;
-    line-height: 5vw;
+    line-height: 6vw;
 }
