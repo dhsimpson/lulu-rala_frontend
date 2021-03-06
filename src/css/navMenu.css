@@ -7,6 +7,7 @@
 }
 .navMenu > div > button {
     width: 9vw;
+    padding-bottom: 1.5vh;
     background-color: transparent;
     border: none;
     outline: none;
@@ -18,6 +19,7 @@
 }
 .subMenu > a {
     display: block;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 9vw;
     padding: 2.5vh 0;
     font-size: 0.8vw;
