@@ -1,7 +1,11 @@
 import '../../../css/section/philosophyOfEducation.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 function PhilosophyOfEducation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-philosophyOfEducation">
       <h1>PHILOSHPHY OF EDUCATION</h1>
       <h2>룰루랄라 노는영어는 다릅니다.</h2>
@@ -33,6 +37,7 @@ function PhilosophyOfEducation() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

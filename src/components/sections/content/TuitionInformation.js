@@ -1,8 +1,12 @@
 import '../../../css/section/tuitionInformation.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 
 function TuitionInformation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[3]}></LeftNav>
     <section className="section-tuitionInformation">
       <h1>수강료</h1>
       <table>
@@ -25,6 +29,7 @@ function TuitionInformation() {
       </table>
       <h2>수강료 결제는 매월 1일, 교재비/부가세는 별도 </h2>
     </section>
+    </>
   );
 }
 

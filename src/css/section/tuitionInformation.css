@@ -22,7 +22,7 @@
     position: absolute;
     background-color: rgba(65, 105, 225, 0.3);
     top: 20vh;
-    width: 80vw;
+    width: 63vw;
     border: 0.5vh solid white;
     text-align: center;
     font-size: 1vw;
@@ -35,6 +35,6 @@ th, tr, td {
     font-size: 1.5vw;
     line-height: 2vw;
     bottom: 1vh;
-    right: 10vw;
+    right: 18vw;
     position: absolute;
 }

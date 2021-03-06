@@ -1,40 +1,42 @@
 .section-philosophyOfEducation {
     height: 100vh;
     position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 }
 .section-philosophyOfEducation > h1 {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
+    left: 40vw;
     font-size: 3vw;
 }
 .section-philosophyOfEducation > h2 {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
+    left: 46vw;
     font-size: 2vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-vertical {
     position: absolute;
-    top: 25vh;
+    top: 30vh;
+    left: 41.5vw;
     font-size: 3vw;
     text-align: center;
 }
 .section-philosophyOfEducation > div > p {
-    font-size: 1vw;;
+    font-size: 1vw;
     line-height: 2vw;
 }
 .section-philosophyOfEducation > img {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
+    left: 23vw;
     width: 75vw;
 }
 
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal {
     position: absolute;
     display: flex;
-    top: 80vh;
+    top: 85vh;
+    left: 22vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div {
     margin: 2vh 3vw;

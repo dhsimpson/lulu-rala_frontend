@@ -1,0 +1,21 @@
+.div-left-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2.5vw;
+    top: 20vh;
+    width: 15vw;
+    z-index: 1;
+}
+.div-left-nav > h2 {
+    border-bottom: 0.3vh solid rgba(65, 105, 225, 0.7);
+    font-size: 2vw;
+    padding-bottom: 2vh;
+    margin-bottom: 5vh;
+}
+.div-left-nav > a {
+    border-bottom: 0.2vh solid rgba(65, 105, 225, 0.5);
+    font-size: 1vw;
+    padding-bottom: 1vh;
+    margin-bottom: 2vh;
+}

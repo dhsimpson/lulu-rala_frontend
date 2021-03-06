@@ -1,8 +1,12 @@
 import '../../../css/section/whyLuluRala.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 
 function WhyLuluRala() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-whyLuluRala">
       <h1>whyLuluRala</h1>
       <img src="./section/whyLuluRala.jpg" />
@@ -27,6 +31,7 @@ function WhyLuluRala() {
         <p>극대화합니다.</p>
       </div>
     </section>
+    </>
   );
 }
 

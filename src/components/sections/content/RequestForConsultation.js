@@ -1,8 +1,12 @@
 import '../../../css/section/requestForConsultation.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 
 function RequestForConsultation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[3]}></LeftNav>
     <section className="section-requestForConsultation">
       <h1>상담 신청</h1>
       <form>
@@ -34,6 +38,7 @@ function RequestForConsultation() {
         </p>
       </div>
     </section>
+    </>
   );
 }
 

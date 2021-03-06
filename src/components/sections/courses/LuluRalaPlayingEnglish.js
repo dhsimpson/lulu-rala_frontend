@@ -1,7 +1,12 @@
 import '../../../css/section/luluRalaPlayingEnglish.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
+
 function LuluRalaPlayingEnglish() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[1]}></LeftNav>
     <section className="section-luluRalaPlayingEnglish">
         <h1>Lulu Rala English</h1>
         <img src="./section/luluRalaPlayingEnglish.jpg" />
@@ -23,6 +28,7 @@ function LuluRalaPlayingEnglish() {
             <p>있도록 합니다.</p>
         </div>
     </section>
+    </>
   );
 }
 

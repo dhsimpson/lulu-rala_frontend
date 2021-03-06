@@ -1,8 +1,12 @@
 import '../../../css/section/luluRalaProgramGuide.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 
 function LuluRalaProgramGuide() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[1]}></LeftNav>
     <section className="section-luluRalaProgramGuide">
       <h1>Lulu Rala Program guide</h1>
       <img src="./section/luluRalaProgramGuide.jpg" />
@@ -22,6 +26,7 @@ function LuluRalaProgramGuide() {
         <p>화상+방문 혼합 : 화상영어 20분  수업 +  방문영어 40분 수업</p>
       </div>
     </section>
+    </>
   );
 }
 

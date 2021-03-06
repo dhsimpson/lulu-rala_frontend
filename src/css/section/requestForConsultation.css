@@ -1,13 +1,11 @@
 .section-requestForConsultation {
     height: 100vh;
     position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 }
 .section-requestForConsultation > h1 {
     position: absolute;
-    top: 10vh;
+    top: 20vh;
+    left: 56vw;
     font-size: 3vw;
 }
 .section-requestForConsultation > form {
@@ -15,8 +13,8 @@
     background-color: white;
     padding: 0.3vh 2vw 4vh 2vw;
     box-sizing: border-box;
-    top: 30vh;
-    left: 5vw;
+    top: 35vh;
+    left: 20vw;
     width: 42vw;
 }
 .section-requestForConsultation > form > h2 {
@@ -33,7 +31,7 @@
 }
 textarea {
     width: 98.5%;
-    height: 10vh;
+    height: 20vh;
 }
 .section-requestForConsultation > form > input[type="submit"] {
     position: absolute;
@@ -48,8 +46,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 30vh;
-    left: 53vw;
+    top: 35vh;
+    left: 68vw;
 }
 .section-requestForConsultation > div > p {
     font-size: 1vw;

@@ -1,8 +1,12 @@
 import '../../../css/section/brandStory.css';
+import LeftNav from '../../LeftNav';
+import navConfig from '../../../config/navConfig.json';
 
 function BrandStory() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
+    <>
+    <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-brandStory">
       <h1>Brand Story</h1>
       <img src="./section/brandStory.jpg" />
@@ -26,6 +30,7 @@ function BrandStory() {
         <p>꿈을 이루도록 함께 하겠습니다.</p>
       </div>
     </section>
+    </>
   );
 }
 

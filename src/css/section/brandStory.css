@@ -1,28 +1,27 @@
 .section-brandStory {
     height: 100vh;
     position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 }
 .section-brandStory > h1 {
     position: absolute;
-    top: 10vh;
+    top: 20vh;
+    left: 50vw;
     font-size: 3vw;
 }
 .section-brandStory > img {
     position: absolute;
-    top: 20vh;
-    left: 5vw;
-    width: 42vw;
+    top: 30vh;
+    left: 20vw;
+    width: 35vw;
+    height: 60vh;
 }
 .section-brandStory > div {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 20vh;
-    left: 53vw;
+    top: 30vh;
+    left: 60vw;
 }
 .section-brandStory > div > h2 {
     font-size: 1.5vw;
