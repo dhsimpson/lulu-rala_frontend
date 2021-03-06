@@ -9,6 +9,7 @@
     width: 9vw;
     background-color: transparent;
     border: none;
+    outline: none;
 }
 .subMenu {
     display: none;
@@ -18,9 +19,7 @@
     display: block;
     width: 9vw;
     padding: 2.5vh 0;
-    /* border: 1px solid red; */
     font-size: 2vh;
-    
 }
 a {
     color: inherit;

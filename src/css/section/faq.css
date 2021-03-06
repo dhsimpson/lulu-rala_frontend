@@ -1,0 +1,38 @@
+.section-faq {
+    height: 100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+/* .section-faq > h1 {
+    position: absolute;
+    top: 10vh;
+    font-size: 3vw;
+} */
+.section-faq > div {
+    position: absolute;
+    top: 20vh;
+    height: 80vh;
+    width: 70vw;
+    right: 10vw;
+    overflow: auto;
+}
+.section-faq > div::-webkit-scrollbar { 
+    display: none; 
+}
+.section-faq > div > hr {
+    border-top: 1px solid rgba(128,128,128,0.5);
+}
+.section-faq > div > h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 3vw;
+}
+.section-faq > div > p {
+    font-size: 1vw;
+    line-height: 2vw;
+    margin-left: 1vw;
+    display: none;
+}
