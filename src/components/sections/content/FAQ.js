@@ -7,10 +7,10 @@ function FAQ() {
     <section className="section-faq">
       <div>
       {
-        FAQList.map(d=>{
+        FAQList.map( (d, i)=>{
           return (
             <>
-            <hr/>
+            <hr key={i}/>
             {d.question}
             {d.answer}
             </>

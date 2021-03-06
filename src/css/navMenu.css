@@ -10,6 +10,7 @@
     background-color: transparent;
     border: none;
     outline: none;
+    font-size: 1vw;
 }
 .subMenu {
     display: none;
@@ -19,7 +20,7 @@
     display: block;
     width: 9vw;
     padding: 2.5vh 0;
-    font-size: 2vh;
+    font-size: 0.8vw;
 }
 a {
     color: inherit;
