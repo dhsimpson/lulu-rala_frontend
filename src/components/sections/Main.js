@@ -3,7 +3,7 @@ function Main() {
   document.body.style.backgroundImage = "url('./background-main.jpg')";
   return (
     <section className="section-main">
-      <img src="./section/main.jpg"/>
+      <img src="./section/main.png"/>
       {/* 메인은 마우스 스크롤 하면 section이 바뀌도록 */}
 
       {/* 섹션들 나열 */}

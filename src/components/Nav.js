@@ -5,7 +5,7 @@ import navConfig from '../config/navConfig.json';
 
 function Nav() {
     return (
-        <nav>
+        <nav className="nav-head">
             {navConfig.nav.map((subMenu, i)=>{
                 return(
                     <NavMenu
@@ -17,4 +17,4 @@ function Nav() {
     );
 }
 
-export default Nav; // withRouter(nav)
+export default Nav;

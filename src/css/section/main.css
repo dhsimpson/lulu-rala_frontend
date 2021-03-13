@@ -6,15 +6,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 55%;
+    width: 65%;
 }
 .section-main > div {
     position: absolute;
     left: 5vw;
     bottom: 15vh;
 }
-.section-main > div > :nth-child(1) {font-size: 3vw;}
-.section-main > div > :nth-child(2) {font-size: 6.5vw;}
+.section-main > div > :nth-child(1) {font-size: 3.5vw;line-height: 6vw;}
+.section-main > div > :nth-child(2) {font-size: 7vw;}
 .section-main > div > :nth-child(4) {font-size: 2vw;}
 .section-main > div > :nth-child(5) {font-size: 2vw;}
 

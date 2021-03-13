@@ -4,7 +4,22 @@ nav {
     top: 4vh;
     right: 3vw;
     z-index: 1;
+    width: unset;
 }
-nav:hover .subMenu{
-    display: block;
+nav.nav-head{
+    right: 20vw;
+}
+nav.nav-head:hover button{
+    background-color: transparent;
+}
+nav.nav-head:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+nav.nav-head:hover *{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+nav.nav-head:hover .subMenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
 }

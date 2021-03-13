@@ -1,12 +1,25 @@
 {
     "nav": [
         {
-            "menuName": "Main",
-            "menuKey": "",
-            "subMenus": false
+            "menuName": "LULURALA ENGLISH",
+            "subMenus": [
+                {
+                    "menuName": "브랜드 스토리",
+                    "menuKey": "brandStory"
+                },
+                {
+                    "menuName": "교육 철학",
+                    "menuKey": "philosophyOfEducation"
+                },
+                {
+                    "menuName": "Why Lulu Rala",
+                    "menuKey": "whyLuluRala"
+                }
+            ]
         },
+        
         {
-            "menuName": "Courses",
+            "menuName": "COURSES",
             "subMenus": [
                 {
                     "menuName": "Lulu Rala  English",
@@ -23,24 +36,7 @@
             ]
         },
         {
-            "menuName": "Why Lulu Rala",
-            "subMenus": [
-                {
-                    "menuName": "브랜드 스토리",
-                    "menuKey": "brandStory"
-                },
-                {
-                    "menuName": "교육 철학",
-                    "menuKey": "philosophyOfEducation"
-                },
-                {
-                    "menuName": "Why Lulu Rala",
-                    "menuKey": "whyLuluRala"
-                }
-            ]
-        },
-        {
-            "menuName": "Content",
+            "menuName": "CONTENT",
             "subMenus": [
                 {
                     "menuName": "자주하는 질문",
@@ -57,9 +53,21 @@
             ]
         },
         {
-            "menuName": "Community",
-            "menuKey": "main",
-            "subMenus": false
+            "menuName": "COMMUNITY",
+            "subMenus": [
+                {
+                    "menuName": "공지사항",
+                    "menuKey": ""
+                },
+                {
+                    "menuName": "게시판",
+                    "menuKey": ""
+                },
+                {
+                    "menuName": "자료실",
+                    "menuKey": ""
+                }
+            ]
         }
     ]
 }

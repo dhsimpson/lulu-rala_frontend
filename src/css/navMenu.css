@@ -1,28 +1,34 @@
 .navMenu {
     position: relative;
+    padding: auto 1.5vw;
 }
 .navMenu > div {
-    width: 9vw;
+    width: 12vw;
     text-align: center;
 }
 .navMenu > div > button {
-    width: 9vw;
     padding-bottom: 1.5vh;
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    white-space: nowrap;
 }
 .subMenu {
-    display: none;
+    visibility: hidden;
     position: absolute;
+    border: none;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-2em);
 }
-.subMenu > a {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 9vw;
+.subMenu a {
+    display: inline-block;
+    width: 12vw;
     padding: 2.5vh 0;
-    font-size: 0.8vw;
+    font-size: 1.1vw;
+    white-space: nowrap;
 }
 a {
     color: inherit;
