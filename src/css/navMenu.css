@@ -3,15 +3,19 @@
     padding: auto 1.5vw;
 }
 .navMenu > div {
-    width: 12vw;
+    width: 15.5vw;
     text-align: center;
+    transition: 1s;
+}
+.navMenu > div:hover{
+    border-bottom: 1px solid red;
 }
 .navMenu > div > button {
-    padding-bottom: 1.5vh;
+    padding: 2.5vh 0;
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -25,9 +29,9 @@
 }
 .subMenu a {
     display: inline-block;
-    width: 12vw;
+    width: 15.5vw;
     padding: 2.5vh 0;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     white-space: nowrap;
 }
 a {

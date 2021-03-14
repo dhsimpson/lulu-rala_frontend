@@ -2,12 +2,11 @@ nav {
     display: flex;
     position: absolute;
     top: 4vh;
-    right: 3vw;
     z-index: 1;
     width: unset;
 }
 nav.nav-head{
-    right: 20vw;
+    right: 10vw;
 }
 nav.nav-head:hover button{
     background-color: transparent;
