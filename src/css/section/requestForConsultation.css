@@ -4,52 +4,109 @@
 }
 .section-requestForConsultation > h1 {
     position: absolute;
-    top: 20vh;
-    left: 56vw;
+    top: 25vh;
+    left: 50vw;
     font-size: 3vw;
 }
+.section-requestForConsultation > img {
+    position: absolute;
+    top: 37vh;
+    left: 25vw;
+    width: 30vw;
+    height: 55vh;
+}
 .section-requestForConsultation > form {
-    position: absolute;
-    background-color: white;
-    padding: 0.3vh 2vw 4vh 2vw;
-    box-sizing: border-box;
-    top: 35vh;
-    left: 20vw;
-    width: 42vw;
-}
-.section-requestForConsultation > form > h2 {
-    font-size: 1.5vw;
-    line-height: 4vh;
-}
-.section-requestForConsultation > form > h3 {
-    font-size: 1vw;
-    line-height: 3vh;
-}
-.section-requestForConsultation > form > input[type="text"] {
-    width: 98.5%;
-    height: 3vh;
-}
-textarea {
-    width: 98.5%;
-    height: 20vh;
-}
-.section-requestForConsultation > form > input[type="submit"] {
-    position: absolute;
-    background-color: royalblue;
-    color: white;
-    right: 5%;
-    font-size: 2vh;
-    padding: 0.5vh 3vw;
-}
-.section-requestForConsultation > div {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 35vh;
-    left: 68vw;
+    position: absolute;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 0.3vh 2vw 4vh 2vw;
+    box-sizing: border-box;
+    top: 37vh;
+    left: 58vw;
+    width: 35vw;
+    height: 55vh;
 }
-.section-requestForConsultation > div > p {
+.section-requestForConsultation > form > h2 {
     font-size: 1vw;
-    line-height: 2vw;
+    font-weight: 700;
+    line-height: 6vh;
+}
+.section-requestForConsultation >form > div {
+    display: flex;
+    width: 90%;
+    margin: 0.5vh 0;
+}
+.section-requestForConsultation > form > div > div.input-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 0.5em;
+    width: 30%;
+    height: 3vh;
+    font-size: 0.83vw;
+    margin-right: 0.5vw;
+}
+.section-requestForConsultation > form input[type="text"] {
+    width: 70%;
+    border-radius: 0.5em;
+    border: 1px solid pink;
+}
+/* 연락처 */
+.section-requestForConsultation > form > div > input.input-phone-number {
+    width: 20%;
+    height: 3vh;
+    border-radius: 0.5em;
+}
+/* 주소 */
+.section-requestForConsultation > form > div > div.input-address{
+    width: 70%;
+    border-radius: 0.5em;
+}
+.section-requestForConsultation > form > div > div.input-address > div > input[type="text"] {
+    width: 25%;
+    height: 3vh;
+    display: inline-block;
+}
+.section-requestForConsultation > form > div > div.input-address > div > input[type="button"] {
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 0.6em;
+    height: 2.5vh;
+    font-size: 0.83vw;
+    margin-left: 0.5vw;
+}
+.section-requestForConsultation > form > div > div.input-address >input[type="text"] {
+    width: 97.5%;
+    height: 3vh;
+    display: inline-block;
+    margin: 0.5vh 0;
+}
+.section-requestForConsultation > form > div > div.input-dash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3%;
+    height: 100%;
+}
+.section-requestForConsultation > form > div.privacy-statement {
+    background-color: white;
+    height: 9vh;
+    position: relative;
+    margin: 1vh 0;
+}
+.section-requestForConsultation > form > div.privacy-statement > div.privacy-statemen-checkobx {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.section-requestForConsultation > form input[type="submit"] {
+    width: 30%;
+    border-radius: 0.5em;
+    background-color: pink;
+    border: 1px solid pink;
+    margin-bottom: 1vh;
 }
