@@ -1,4 +1,32 @@
 footer {
+    position: relative;
     background-image: url("../background-footer.jpg");
     padding: 5vh 2vw;
+}
+.div-footer-left {
+    position: absolute;
+    left:5vw;
+    bottom:1vh;
+}
+.div-footer-left > img {
+    width: 10vw;
+}
+.div-footer-left > div > img {
+    width: 2vw;
+    margin: 0 0.5vw;
+}
+
+.div-footer-right {
+    position: absolute;
+    left:50vw;
+    bottom:1vh;
+}
+.div-footer-right > h2 {
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+.div-footer-right > p {
+    font-size: 1vw;
+    line-height: 1.2;
 }
