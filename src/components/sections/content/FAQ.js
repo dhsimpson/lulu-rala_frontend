@@ -9,19 +9,19 @@ function FAQ() {
     <>
     <LeftNav menu={navConfig.nav[3]}></LeftNav>
     <section className="section-faq">
-      <div>
+      <ul>
       {
         FAQList.map( (d, i)=>{
           return (
-            <>
-            <hr key={i}/>
+            <li>
+            {/* <hr key={i}/> */}
             {d.question}
             {d.answer}
-            </>
+            </li>
           )
         })
       }
-      </div>
+      </ul>
     </section>
     </>
   );

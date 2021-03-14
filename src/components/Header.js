@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import '../css/header.css';
 function Header() {
     return (
         <header>
-            아이들이엔씨
+            <Link to="/">아이들이엔씨</Link>
         </header>
     );
 }

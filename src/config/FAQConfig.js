@@ -1,4 +1,7 @@
 const toggleAnswer = (e) => {
+    // visibility: hidden
+    
+    // opacity: 0;
     const constDisplay = e.target.nextSibling.style.display;
     if(constDisplay === "none" || constDisplay === ""){
         e.target.nextSibling.style.display = "inline-block";

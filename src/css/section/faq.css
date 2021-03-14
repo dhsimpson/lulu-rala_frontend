@@ -6,7 +6,7 @@
     align-items: center;
     overflow: auto;
 }
-.section-faq > div {
+.section-faq > ul {
     position: absolute;
     top: 20vh;
     height: 80vh;
@@ -14,20 +14,24 @@
     right: 10vw;
     overflow: auto;
 }
-.section-faq > div::-webkit-scrollbar { 
+.section-faq > ul > li {
+    border-top: 1px solid rgba(125, 125, 125,0.2);
+    transition: 1s;
+}
+.section-faq > ul::-webkit-scrollbar { 
     display: none; 
 }
-.section-faq > div > hr {
-    border-top: 1px solid rgba(128,128,128,0.5);
+.section-faq > ul > li > h2 {
+    font-size: 1.2vw;
+    line-height: 5vw;
+    transition: 0.3s;
 }
-.section-faq > div > h2 {
-    font-size: 1.5vw;
-    font-weight: 700;
-    line-height: 3vw;
+.section-faq > ul > li > h2:hover {
+    background-color: rgba(125, 125, 125,0.2);
 }
-.section-faq > div > p {
-    font-size: 1vw;
-    line-height: 2vw;
+.section-faq > ul > li > p {
+    font-size: 1.2vw;
+    line-height: 2.5vw;
     margin-left: 1vw;
     display: none;
 }

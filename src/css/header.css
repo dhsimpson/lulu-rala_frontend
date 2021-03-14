@@ -3,4 +3,5 @@ header {
     position: absolute;
     top: 4vh;
     left: 2vw;
+    z-index: 1;
 }
