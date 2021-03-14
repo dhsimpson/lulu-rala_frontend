@@ -15,26 +15,26 @@
 }
 .section-tuitionInformation > h1 {
     position: absolute;
-    top: 12vh;
+    top: 25vh;
     font-size: 3vw;
 }
 .section-tuitionInformation > table {
     position: absolute;
-    background-color: rgba(65, 105, 225, 0.3);
-    top: 20vh;
-    width: 63vw;
+    /* background-color: rgba(65, 105, 225, 0.3); */
+    top: 35vh;
+    width: 50vw;
     border: 0.5vh solid white;
     text-align: center;
     font-size: 1vw;
-    line-height: 6vh;
+    line-height: 4vh;
 }
 th, tr, td {
     border: 0.3vh solid white;
 }
 .section-tuitionInformation > h2 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     line-height: 2vw;
-    bottom: 1vh;
-    right: 18vw;
+    bottom: 10vh;
+    right: 24vw;
     position: absolute;
 }

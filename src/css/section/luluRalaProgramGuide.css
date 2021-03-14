@@ -4,32 +4,33 @@
 }
 .section-luluRalaProgramGuide > h1 {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     left: 40vw;
     font-size: 3vw;
 }
 .section-luluRalaProgramGuide > img {
     position: absolute;
-    top: 30vh;
-    left: 20vw;
-    width: 65vw;
-    height: 50vh;
+    top: 37vh;
+    left: 27vw;
+    width: 55vw;
+    height: 40vh;
 }
 .section-luluRalaProgramGuide > div {
     position: absolute;
-    top: 80vh;
+    top: 77vh;
 }
 .section-left {
-    left: 20vw;
+    left: 27vw;
 }
 .section-right {
-    left: 55vw;
+    left: 60vw;
 }
 .section-luluRalaProgramGuide > div > h2 {
     font-size: 1.5vw;
-    line-height: 2.4vw;
+    font-weight: 700;
+    line-height: 5vw;
 }
 .section-luluRalaProgramGuide > div > p {
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 1.7vw;
 }

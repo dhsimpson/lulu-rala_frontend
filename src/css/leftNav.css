@@ -3,7 +3,7 @@
     flex-direction: column;
     position: absolute;
     left: 2.5vw;
-    top: 20vh;
+    top: 25vh;
     width: 15vw;
     z-index: 1;
 }
@@ -15,7 +15,7 @@
 }
 .div-left-nav > a {
     border-bottom: 0.2vh solid rgba(65, 105, 225, 0.5);
-    font-size: 1vw;
+    font-size: 1.2vw;
     padding-bottom: 1vh;
     margin-bottom: 2vh;
 }

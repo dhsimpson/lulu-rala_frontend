@@ -8,7 +8,7 @@ function WhyLuluRala() {
     <>
     <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-whyLuluRala">
-      <h1>whyLuluRala</h1>
+      <h1>WhyLuluRala</h1>
       <img src="./section/whyLuluRala.jpg" />
       <div>
         <p>유아 영어 교육 전문가인 룰루랄라 선생님은  유아/영</p>

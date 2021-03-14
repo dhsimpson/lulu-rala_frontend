@@ -8,7 +8,8 @@
 }
 .section-faq > ul {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
+    left: 20vw;
     height: 80vh;
     width: 70vw;
     right: 10vw;

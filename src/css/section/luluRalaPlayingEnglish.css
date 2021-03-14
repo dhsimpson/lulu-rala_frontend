@@ -4,22 +4,22 @@
 }
 .section-luluRalaPlayingEnglish > h1 {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     left: 45vw;
     font-size: 3vw;
 }
 .section-luluRalaPlayingEnglish > img {
     position: absolute;
-    top: 30vh;
-    left: 20vw;
-    width: 35vw;
-    height: 60vh;
+    top: 37vh;
+    left: 25vw;
+    width: 30vw;
+    height: 50vh;
 }
 .section-luluRalaPlayingEnglish > div {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 30vh;
+    top: 37vh;
     left: 60vw;
 }
 .section-luluRalaPlayingEnglish > div > p {

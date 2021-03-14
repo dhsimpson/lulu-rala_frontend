@@ -4,46 +4,49 @@
 }
 .section-philosophyOfEducation > h1 {
     position: absolute;
-    top: 15vh;
+    top: 25vh;
     left: 40vw;
     font-size: 3vw;
 }
 .section-philosophyOfEducation > h2 {
     position: absolute;
-    top: 25vh;
+    top: 35vh;
     left: 46vw;
     font-size: 2vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-vertical {
     position: absolute;
-    top: 30vh;
-    left: 41.5vw;
-    font-size: 3vw;
+    top: 42vh;
+    left: 33.5vw;
 }
 .section-philosophyOfEducation > div > p {
-    font-size: 1vw;
+    font-size: 1.5vw;
     line-height: 2vw;
 }
 .section-philosophyOfEducation > img {
     position: absolute;
-    top: 45vh;
-    left: 21vw;
+    border: 1px solid red;
+    top: 55vh;
+    left: 23vw;
     width: 75vw;
+    height: 20vh;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal {
     position: absolute;
     display: flex;
-    top: 85vh;
+    top: 80vh;
     left: 22vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div {
-    margin: 2vh 3vw;
+    margin: 2vh 1.8vw;
+    white-space: nowrap;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div > h2 {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+    font-weight: 700;
     line-height: 1vw;
 }
 .section-philosophyOfEducation > .div-philosophyOfEducation-horizontal > div > p {
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 6vw;
 }

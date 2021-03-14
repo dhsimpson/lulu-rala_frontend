@@ -4,7 +4,7 @@
 }
 .section-educationalCourse > h1 {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     left: 40vw;
     font-size: 3vw;
 }
@@ -12,18 +12,19 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 30vh;
-    left: 25vw;
+    top: 37vh;
+    left: 30vw;
 }
 .section-educationalCourse > img {
     position: absolute;
-    top: 30vh;
+    top: 37vh;
     left: 55vw;
-    width: 29vw;
-    height: 60vh;
+    width: 25vw;
+    height: 50vh;
 }
 .section-educationalCourse > div > h2 {
     font-size: 1.5vw;
+    font-weight: 700;
     line-height: 2vw;
 }
 .section-educationalCourse > div > p {
