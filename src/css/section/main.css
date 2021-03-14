@@ -1,21 +1,49 @@
 .section-main {
-    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory; 
     height: 100vh;
 }
-.section-main > img {
+.section-main::-webkit-scrollbar { 
+    display: none; 
+}
+.section-main > div {
+    position: relative;
+    height: 100%;
+    scroll-snap-align: center;
+}
+/* .article-first */
+.section-main > .article-first > img {
     position: absolute;
     top: 0;
     right: 0;
     width: 65%;
 }
-.section-main > div {
+.section-main > .article-first > div {
     position: absolute;
     left: 5vw;
     bottom: 15vh;
 }
-.section-main > div > :nth-child(1) {font-size: 3.5vw;line-height: 6vw;}
-.section-main > div > :nth-child(2) {font-size: 7vw;}
-.section-main > div > :nth-child(4) {font-size: 2vw;}
-.section-main > div > :nth-child(5) {font-size: 2vw;}
+.section-main > .article-first > div > :nth-child(1) {font-size: 3.5vw;line-height: 6vw;}
+.section-main > .article-first > div > :nth-child(2) {font-size: 7vw;}
+.section-main > .article-first > div > :nth-child(4) {font-size: 2vw;}
+.section-main > .article-first > div > :nth-child(5) {font-size: 2vw;}
 
-.section-main > div > div {height: 5vw;}
+.section-main > .article-first > div > div {height: 5vw;}
+
+
+/* .article-second */
+.section-main > .article-second {
+    background-color: ivory;
+}
+/* .article-third */
+.section-main > .article-third {
+    background-color: lawngreen;
+} 
+/* .article-fourth */
+.section-main > .article-fourth {
+    background-color: lightseagreen;
+} 
+/* .article-fifth */
+.section-main > .article-fifth {
+    background-color: lime;
+} 
