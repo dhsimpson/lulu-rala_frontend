@@ -6,14 +6,14 @@ footer {
 .div-footer-left {
     position: absolute;
     left:5vw;
-    bottom:1vh;
+    bottom:2vh;
 }
 .div-footer-left > img {
-    width: 10vw;
+    width: 20vh;
 }
 .div-footer-left > div > img {
-    width: 2vw;
-    margin: 0 0.5vw;
+    width: 3vh;
+    margin: 0 1vh;
 }
 
 .div-footer-right {
@@ -22,11 +22,11 @@ footer {
     bottom:1vh;
 }
 .div-footer-right > h2 {
-    font-size: 1.2vw;
+    font-size:2vh;
     font-weight: 700;
     margin-bottom: 1vh;
 }
 .div-footer-right > p {
-    font-size: 1vw;
+    font-size: 1.5vh;
     line-height: 1.2;
 }
