@@ -105,5 +105,6 @@
     margin-bottom: 1vh;
 }
 #privacyHtml {
-    width: 100vw;
+    font-size: 1vw;
+    overflow: auto;
 }
