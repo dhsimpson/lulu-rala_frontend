@@ -97,16 +97,13 @@
     position: relative;
     margin: 1vh 0;
 }
-.section-requestForConsultation > form > div.privacy-statement > div.privacy-statemen-checkobx {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 .section-requestForConsultation > form input[type="submit"] {
     width: 30%;
     border-radius: 0.5em;
     background-color: pink;
     border: 1px solid pink;
     margin-bottom: 1vh;
+}
+#privacyHtml {
+    width: 100vw;
 }
