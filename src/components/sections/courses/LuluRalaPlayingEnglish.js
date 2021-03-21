@@ -18,7 +18,7 @@ function LuluRalaPlayingEnglish() {
           <p>영어학습 프로그램입니다.</p><br/>
           
           <p>균형적 언어접근법</p>
-          <p>(<p className="MapoPeacefull">Balanced Language Approach</p>)을 기반으로</p>
+          <p>(<span className="MapoPeacefull">Balanced Language Approach</span>)을 기반으로</p>
           <p>듣고, 말하고, 읽고, 쓰기를 분리하지 않고</p> 
           <p>이야기와 놀이 그리고 다양한 활동으로</p>
             <p>의사소통능력을 골고루 성장시키며 영어에 대한</p>

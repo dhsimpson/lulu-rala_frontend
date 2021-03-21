@@ -1,23 +1,23 @@
 .section-luluRalaProgramGuide {
-    height: 100vh;
+    height: 120vh;
     position: relative;
 }
 .section-luluRalaProgramGuide > h1 {
     position: absolute;
-    top: 25vh;
+    top: 35vh;
     left: 40vw;
     font-size: 3vw;
 }
 .section-luluRalaProgramGuide > img {
     position: absolute;
-    top: 37vh;
+    top: 47vh;
     left: 27vw;
     width: 55vw;
     height: 40vh;
 }
 .section-luluRalaProgramGuide > div {
     position: absolute;
-    top: 77vh;
+    top: 87vh;
 }
 .section-left {
     left: 27vw;

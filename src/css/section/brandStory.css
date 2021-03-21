@@ -1,16 +1,16 @@
 .section-brandStory {
-    height: 100vh;
+    height: 110vh;
     position: relative;
 }
 .section-brandStory > h1 {
     position: absolute;
-    top: 25vh;
+    top: 35vh;
     left: 50vw;
     font-size: 3vw;
 }
 .section-brandStory > img {
     position: absolute;
-    top: 37vh;
+    top: 47vh;
     left: 25vw;
     width: 30vw;
     height: 50vh;
@@ -19,7 +19,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 37vh;
+    top: 47vh;
     left: 60vw;
 }
 .section-brandStory > div > h2 {

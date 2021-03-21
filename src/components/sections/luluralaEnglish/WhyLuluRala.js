@@ -24,7 +24,7 @@ function WhyLuluRala() {
         <br />
         <p>체계적인 커리큘럼과 교수법으로 영어환경에 최대한 </p>
         <p>몰입시켜 단순히 외우기만 하는 영어를 하기보다 살아</p>
-        <p>있는(<p className="MapoPeacefull">Live</p>) 영어를 하도록 합니다.</p>
+        <p>있는(<span className="MapoPeacefull">Live</span>) 영어를 하도록 합니다.</p>
         <br />
         <p>놀이활동과 영어활동을 위한 다양하고 다채로운 교구</p>
         <p>재를 통해 영어학습에 대한 흥미유발과 동시에 효과를 </p>

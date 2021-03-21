@@ -1,13 +1,88 @@
+.div-header {
+    position: relative;
+}
 header {
     font-size: 3vw;
     position: absolute;
     top: 4vh;
     left: 2vw;
-    z-index: 1;
+    z-index: 3;
 }
 .loginIcon {
     position: absolute;
     top: 6vh;
     right: 5vw;
     width: 2vw;
+    z-index: 3;
+}
+#logIn-popUp {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 30vh;
+    left: 40vw;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+#exit-button {
+    transform: rotate(45deg);
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+}
+#logIn-popUp > p {
+    margin: 15% 0;
+    font-size: 2vw;
+}
+
+.input-wrapper{
+    display: flex;
+    left: 10%;
+    width: 100%;
+    height: 8%;
+    margin: 5% 0;
+    margin-left: 20%;
+}
+.input-wrapper img {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    padding: auto 0;
+}
+#logIn-popUp input[type="text"] {
+    width: 65%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(161, 153, 153, 1);
+    outline: none;
+}
+#logIn-popUp input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8vw;
+}
+
+
+#logIn-popUp .popUp-botton {
+    width: 80%;
+    height: 8%;
+    margin: 1% 0;
+	border-radius: 25px;
+    outline: none;
+}
+#logIn-popUp input[type="submit"].login {
+    background-color: orange;
+    color: white;
+}
+#find-account {
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 5%;
 }

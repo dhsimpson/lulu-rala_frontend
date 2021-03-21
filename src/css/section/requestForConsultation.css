@@ -1,16 +1,16 @@
 .section-requestForConsultation {
-    height: 100vh;
+    height: 110vh;
     position: relative;
 }
 .section-requestForConsultation > h1 {
     position: absolute;
-    top: 25vh;
+    top: 35vh;
     left: 50vw;
     font-size: 3vw;
 }
 .section-requestForConsultation > img {
     position: absolute;
-    top: 37vh;
+    top: 47vh;
     left: 25vw;
     width: 30vw;
     height: 55vh;
@@ -20,10 +20,10 @@
     background-color: white;
     padding: 0.3vh 2vw 4vh 2vw;
     box-sizing: border-box;
-    top: 37vh;
+    top: 47vh;
     left: 58vw;
     width: 35vw;
-    height: 62vh;
+    height: 55vh;
 }
 .section-requestForConsultation > form > h2 {
     font-size: 1vw;
@@ -42,7 +42,7 @@
 
 .section-requestForConsultation > form > textarea{
     width: 96%;
-    height: 15vh;
+    height: 10vh;
 }
 .section-requestForConsultation > form > div.privacy-statement {
     background-color: white;
@@ -61,5 +61,5 @@
     background-color: white;
     margin-bottom: 1vh;
     position: absolute;
-    right: 10%;
+    right: 8%;
 }

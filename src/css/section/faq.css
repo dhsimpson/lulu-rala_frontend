@@ -1,5 +1,5 @@
 .section-faq {
-    height: 100vh;
+    height: 120vh;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -8,11 +8,10 @@
 }
 .section-faq > ul {
     position: absolute;
-    top: 25vh;
-    left: 20vw;
+    top: 35vh;
+    left: 25vw;
     height: 80vh;
-    width: 70vw;
-    right: 10vw;
+    width: 55vw;
     overflow: auto;
 }
 .section-faq > ul > li {

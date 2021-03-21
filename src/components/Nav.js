@@ -13,6 +13,7 @@ function Nav() {
                     key = {i}/>
                 )
             })}
+            <div className="nav-background"/>
         </nav>
     );
 }

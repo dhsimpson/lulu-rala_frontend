@@ -18,4 +18,10 @@
     font-size: 1.2vw;
     padding-bottom: 1vh;
     margin-bottom: 2vh;
+    transition: 0.3s;
+}
+.div-left-nav > a:hover {
+    color: rgba(255, 165, 0,2);
+    font-weight: 600;
+    transition: 0.3s;
 }

@@ -1,5 +1,5 @@
 .section-tuitionInformation {
-    height: 100vh;
+    height: 110vh;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -10,19 +10,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 20vh;
+    top: 30vh;
     left: 53vw;
 }
 .section-tuitionInformation > h1 {
     position: absolute;
-    top: 25vh;
+    top: 35vh;
     left: 50vw;
     font-size: 3vw;
 }
 .section-tuitionInformation > table {
     position: absolute;
-    /* background-color: rgba(65, 105, 225, 0.3); */
-    top: 35vh;
+    top: 45vh;
     left: 29vw;
     width: 50vw;
     border: 0.5vh solid white;

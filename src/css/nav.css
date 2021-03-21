@@ -2,7 +2,7 @@ nav {
     display: flex;
     position: absolute;
     top: 4vh;
-    z-index: 1;
+    z-index: 2;
     width: unset;
 }
 nav.nav-head{
@@ -12,14 +12,21 @@ nav.nav-head:hover button{
     cursor:pointer;
     background-color: transparent;
 }
-nav.nav-head:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-}
-nav.nav-head:hover *{
-    background-color: rgba(255, 255, 255, 0.2);
-}
 nav.nav-head:hover .subMenu{
     visibility: visible;
     opacity: 1;
     transform: translateY(0%);
+}
+
+.nav-background {
+    transition: 1s;
+}
+nav.nav-head:hover .nav-background {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 35vh;
+    left: 0;
+    top: 0;
+    transition: 1s;
 }

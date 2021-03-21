@@ -39,13 +39,117 @@
 }
 /* .article-third */
 .section-main > .article-third {
-    /* background-color: lawngreen; */
 } 
 /* .article-fourth */
 .section-main > .article-fourth {
-    /* background-color: lightseagreen; */
 } 
 /* .article-fifth */
 .section-main > .article-fifth {
-    /* background-color: lime; */
 } 
+h1 {
+    position: absolute;
+    top: 25vh;
+    left: 37vw;
+    font-size: 3vw;
+}
+.third-left {
+    position: absolute;
+    top: 37vh;
+    left: 17vw;
+    width: 30vw;
+    height: 50vh;
+}
+.third-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 37vh;
+    left: 53vw;
+}
+.third-right > p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+.fourth-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 37vh;
+    left: 25vw;
+}
+.fourth-left > h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 2vw;
+}
+.fourth-left > p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+.fourth-right {
+    position: absolute;
+    top: 37vh;
+    left: 55vw;
+    width: 25vw;
+    height: 50vh;
+} 
+
+.fifth-h1 {
+    left: 45vw;
+}
+.fifth-left {
+    position: absolute;
+    top: 37vh;
+    left: 19vw;
+    width: 30vw;
+    height: 55vh;
+}
+.fifth-right {
+    position: absolute;
+    background-color: white;
+    padding: 0.3vh 2vw 4vh 2vw;
+    box-sizing: border-box;
+    top: 37vh;
+    left: 54vw;
+    width: 35vw;
+    height: 55vh;
+}
+.fifth-right > h2 {
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 6vh;
+}
+.fifth-right > div {
+    display: flex;
+    width: 90%;
+    margin: 0.5vh 0;
+}
+.fifth-right input[type="text"] {
+    width: 95%;
+    margin-bottom: 1vh;
+}
+
+.fifth-right > textarea{
+    width: 96%;
+    height: 10vh;
+}
+.fifth-right > div.privacy-statement {
+    background-color: white;
+    height: 9vh;
+    position: relative;
+    margin: 1vh 0;
+    width: 97%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#privacyHtml {
+    font-size: 1vw;
+    overflow: auto;
+}
+.fifth-right input[type="submit"] {
+    width: 20%;
+    background-color: white;
+    margin-bottom: 1vh;
+    position: absolute;
+    right: 8%;
+}
