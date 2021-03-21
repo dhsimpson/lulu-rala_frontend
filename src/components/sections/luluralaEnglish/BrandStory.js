@@ -6,11 +6,11 @@ function BrandStory() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
-    <LeftNav menu={navConfig.nav[2]}></LeftNav>
+    <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-brandStory">
       <h1>Brand Story</h1>
       <img src="./section/brandStory.jpg" />
-      <div>
+      <div className="mapoFlowerIsland">
         <h2>“어린이 영어교육 전문가”</h2>
         <br />
         <p>아이들이엔씨는 지난 10여 년간 아이들의 영어교육을 위해</p>

@@ -6,11 +6,11 @@ function WhyLuluRala() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
-    <LeftNav menu={navConfig.nav[2]}></LeftNav>
+    <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-whyLuluRala">
       <h1>WhyLuluRala</h1>
       <img src="./section/whyLuluRala.jpg" />
-      <div>
+      <div className="mapoFlowerIsland">
         <p>유아 영어 교육 전문가인 룰루랄라 선생님은  유아/영</p>
         <p>어교육 전공, Tesol 수료, 교사교육 등의 전문가 양</p>
         <p>성과정을 수료합니다.</p>

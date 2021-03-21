@@ -10,7 +10,7 @@ function LuluRalaPlayingEnglish() {
     <section className="section-luluRalaPlayingEnglish">
         <h1>Lulu Rala English</h1>
         <img src="./section/luluRalaPlayingEnglish.jpg" />
-        <div>
+        <div className="mapoFlowerIsland">
           <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
           <p>아이부터 초등학생을 대상으로</p>
           <p>흥미로운 주제와 다양한 활동이 주가 되어</p>

@@ -10,7 +10,7 @@ function LuluRalaProgramGuide() {
     <section className="section-luluRalaProgramGuide">
       <h1>Lulu Rala Program guide</h1>
       <img src="./section/luluRalaProgramGuide.jpg" />
-      <div className="section-left">
+      <div className="section-left mapoFlowerIsland">
         <h2>대상</h2>
         <p>영유아(24개월 이상) ~ 초등학생  (기관은 별도 상담)</p>
         <br />

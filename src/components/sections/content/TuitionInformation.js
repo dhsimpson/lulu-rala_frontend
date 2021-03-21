@@ -6,7 +6,7 @@ function TuitionInformation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
-    <LeftNav menu={navConfig.nav[3]}></LeftNav>
+    <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-tuitionInformation">
       <h1>수강료</h1>
       <table>

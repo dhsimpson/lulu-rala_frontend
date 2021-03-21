@@ -2,7 +2,7 @@ import '../../css/section/main.css';
 import {useEffect} from 'react';
 // c.f. 각 섹션들에 css를 다시 적용해야 함.
 function Main() {
-  document.body.style.backgroundImage = "url('./background-main.jpg')";
+  // document.body.style.backgroundImage = "url('./background-main.jpg')";
   useEffect(()=>{
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
@@ -44,13 +44,13 @@ function Main() {
 function ArticleFirst(){
   return(
   <>
-         <img src="./section/main.png" />
+         <img src="./section/main.png" alt="mainmain"/>
         <div>
           <p>&nbsp;&nbsp;찾아가는 영어</p>
           <p>룰루랄라</p>
           <div />
           <p>&nbsp;&nbsp;놀이부터 배움까지</p>
-          <p>&nbsp;&nbsp;유아 초등 노는 영어</p>
+          <p>&nbsp;&nbsp;유아, 초등 노는 영어</p>
         </div>
   </>);
 }

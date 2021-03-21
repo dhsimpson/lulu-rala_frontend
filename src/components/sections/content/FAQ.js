@@ -7,7 +7,7 @@ function FAQ() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
-    <LeftNav menu={navConfig.nav[3]}></LeftNav>
+    <LeftNav menu={navConfig.nav[2]}></LeftNav>
     <section className="section-faq">
       <ul>
       {

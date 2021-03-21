@@ -5,3 +5,9 @@ header {
     left: 2vw;
     z-index: 1;
 }
+.loginIcon {
+    position: absolute;
+    top: 6vh;
+    right: 5vw;
+    width: 2vw;
+}

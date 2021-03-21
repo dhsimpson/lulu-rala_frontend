@@ -5,7 +5,7 @@ function PhilosophyOfEducation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
   return (
     <>
-    <LeftNav menu={navConfig.nav[2]}></LeftNav>
+    <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-philosophyOfEducation">
       <h1>PHILOSHPHY OF EDUCATION</h1>
       <h2>룰루랄라 노는영어는 다릅니다.</h2>
@@ -15,7 +15,7 @@ function PhilosophyOfEducation() {
         <p>모든 아이들에게 영어도 즐거울 수 있다는 것을 알려주고 싶습니다.</p>
       </div>
       <img src="./section/PhilosophyOfEducation.jpg" />
-      <div className="div-philosophyOfEducation-horizontal">
+      <div className="div-philosophyOfEducation-horizontal mapoFlowerIsland">
         <div>
           <h2>검증된 최고의 선생님</h2>
           <p>유아/영어 전공, 관련자격/종사자</p>

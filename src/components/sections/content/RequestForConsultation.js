@@ -24,7 +24,7 @@ function RequestForConsultation() {
   })
   return (
     <>
-      <LeftNav menu={navConfig.nav[3]}></LeftNav>
+      <LeftNav menu={navConfig.nav[2]}></LeftNav>
       <section className="section-requestForConsultation">
         <h1>상담 신청</h1>
         <img src="./section/requestForConsultation.jpg" />
