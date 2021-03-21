@@ -8,9 +8,9 @@ function WhyLuluRala() {
     <>
     <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-whyLuluRala">
-      <h1>WhyLuluRala</h1>
+      <h1 className="MapoPeacefull">WhyLuluRala</h1>
       <img src="./section/whyLuluRala.jpg" />
-      <div className="mapoFlowerIsland">
+      <div>
         <p>유아 영어 교육 전문가인 룰루랄라 선생님은  유아/영</p>
         <p>어교육 전공, Tesol 수료, 교사교육 등의 전문가 양</p>
         <p>성과정을 수료합니다.</p>
@@ -24,7 +24,7 @@ function WhyLuluRala() {
         <br />
         <p>체계적인 커리큘럼과 교수법으로 영어환경에 최대한 </p>
         <p>몰입시켜 단순히 외우기만 하는 영어를 하기보다 살아</p>
-        <p>있는(Live) 영어를 하도록 합니다.</p>
+        <p>있는(<p className="MapoPeacefull">Live</p>) 영어를 하도록 합니다.</p>
         <br />
         <p>놀이활동과 영어활동을 위한 다양하고 다채로운 교구</p>
         <p>재를 통해 영어학습에 대한 흥미유발과 동시에 효과를 </p>

@@ -58,7 +58,7 @@ function ArticleThird(){
   return(
     <>
     <section className="section-luluRalaPlayingEnglish">
-        <h1>Lulu Rala English</h1>
+        <h1 className="MapoPeacefull">Lulu Rala English</h1>
         <img src="./section/luluRalaPlayingEnglish.jpg" />
         <div>
           <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
@@ -68,7 +68,7 @@ function ArticleThird(){
           <p>영어학습 프로그램입니다.</p><br/>
           
           <p>균형적 언어접근법</p>
-          <p>(Balanced Language Approach)을 기반으로</p>
+          <p>(<p className="MapoPeacefull">Balanced Language Approach</p>)을 기반으로</p>
           <p>듣고, 말하고, 읽고, 쓰기를 분리하지 않고</p> 
           <p>이야기와 놀이 그리고 다양한 활동으로</p>
             <p>의사소통능력을 골고루 성장시키며 영어에 대한</p>
@@ -85,7 +85,7 @@ function ArticleFourth(){
   return(
     <>
     <section className="section-educationalCourse">
-        <h1>Educational course</h1>
+        <h1 className="MapoPeacefull">Educational course</h1>
         <div>
           <h2>영아 / 유아교육 과정</h2>
           <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>

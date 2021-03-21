@@ -9,6 +9,7 @@ nav.nav-head{
     right: 10vw;
 }
 nav.nav-head:hover button{
+    cursor:pointer;
     background-color: transparent;
 }
 nav.nav-head:hover{

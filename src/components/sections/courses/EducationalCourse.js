@@ -8,8 +8,8 @@ function EducationalCourse() {
     <>
       <LeftNav menu={navConfig.nav[1]}></LeftNav>
       <section className="section-educationalCourse">
-        <h1>Educational course</h1>
-        <div className="mapoFlowerIsland">
+        <h1 className="MapoPeacefull">Educational course</h1>
+        <div>
           <h2>영아 / 유아교육 과정</h2>
           <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>
           <p>영어를 처음 접하는 아이들을 위한 놀이수업</p>

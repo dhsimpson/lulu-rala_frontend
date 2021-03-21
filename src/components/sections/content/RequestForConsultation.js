@@ -21,6 +21,12 @@ function RequestForConsultation() {
 ※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(www.simpan.go.kr) 홈페이지를 참고하시기 바랍니다.</br></br><p class='lh6 bs4'><strong>제11조(개인정보 처리방침 변경)<em class="emphasis"></em></strong></p><br/></p><p class='sub_p'>① 이 개인정보처리방침은 2021년 4월 1부터 적용됩니다.</p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다. </p><p class='sub_p'></p><p class='sub_p'></p></p>
 </div>
     `;
+    document.getElementById("consultContent").value = `
+ex)
+교습 대상자의 연령 :
+희망 프로그램 : 방문수업
+희망요일 및 시간 : 월, 수요일 주 2회, 5시 ~ 5시 40분
+    `
   })
   return (
     <>
@@ -29,45 +35,17 @@ function RequestForConsultation() {
         <h1>상담 신청</h1>
         <img src="./section/requestForConsultation.jpg" />
         <form>
-          <h2>상담신청하기</h2>
-          <div>
-            <div className="input-title"><p>신청자명</p></div>
-            <input type="text" />
-          </div>
-          <div>
-            <div className="input-title"><p>교습대상자 성명</p></div>
-            <input type="text" />
-          </div>
-          <div>
-            <div className="input-title"><p>연령(교습대상자)</p></div>
-            <input type="text" />
-          </div>
-
-          <div>
-            <div className="input-title"><p>연락처</p></div>
-            <input className="input-phone-number" type="text" />
-            <div className="input-dash"><p>-</p></div>
-            <input className="input-phone-number" type="text" />
-            <div className="input-dash"><p>-</p></div>
-            <input className="input-phone-number" type="text" />
-          </div>
-
-          <div className="address">
-            <div className="input-title"><p>주소</p></div>
-            <div className="input-address">
-              <div>
-                <input type="text" />
-                <input type="button" value="우편번호 찾기" />
-              </div>
-              <input type="text" />
-              <input type="text" />
-            </div>
-          </div>
-
-          <div>
-            <div className="input-title"><p>희망프로그램</p></div>
-            <input type="text" />
-          </div>
+          <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
+          <p>신청자명(기관)</p>
+          <input type="text"/>
+          <p>연락처</p>
+          <input type="text"/>
+          <p>회신 받을 메일 주소</p>
+          <input type="text"/>
+          <p>주소(시/구/동 까지)</p>
+          <input type="text"/>
+          <p>신청 내용</p>
+          <textarea id="consultContent"/>
 
           <div className="privacy-statement">
             <div id="privacyHtml"></div>
@@ -76,7 +54,7 @@ function RequestForConsultation() {
             <input type="checkbox" />
             <p>개인정보 수집 및 이용에 동의합니다</p>
           </div>
-          <input type="submit" value="제출하기" />
+          <input className="MapoPeacefull" type="submit" value="Send" />
         </form>
       </section>
     </>

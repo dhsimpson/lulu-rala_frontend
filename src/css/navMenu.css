@@ -5,10 +5,12 @@
 .navMenu > div {
     width: 15.5vw;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.0);
     transition: 1s;
 }
 .navMenu > div:hover{
     border-bottom: 1px solid red;
+    transition: 1s;
 }
 .navMenu > div > button {
     padding: 2.5vh 0;
@@ -33,6 +35,14 @@
     padding: 2.5vh 0;
     font-size: 1.5vw;
     white-space: nowrap;
+}
+.subMenu span {
+    transition: 1s;
+    border-bottom: 1px solid rgba(0,0,0,0.0);
+}
+.subMenu span:hover {
+    border-bottom: 1px solid black;
+    transition: 1s;
 }
 a {
     color: inherit;

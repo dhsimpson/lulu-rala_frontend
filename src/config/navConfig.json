@@ -13,7 +13,8 @@
                 },
                 {
                     "menuName": "Why Lulu Rala",
-                    "menuKey": "whyLuluRala"
+                    "menuKey": "whyLuluRala",
+                    "isEnglish": true
                 }
             ]
         },
@@ -23,7 +24,8 @@
             "subMenus": [
                 {
                     "menuName": "Lulu Rala  English",
-                    "menuKey": "luluRalaPlayingEnglish"
+                    "menuKey": "luluRalaPlayingEnglish",
+                    "isEnglish": true
                 },
                 {
                     "menuName": "교육 과정",

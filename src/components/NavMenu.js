@@ -17,8 +17,9 @@ function NavMenu(props) {
                         return (
                             <li>
                                 <Link
-                                    to={`/${spreadMenu.menuKey}`}
-                                    key={i}>{spreadMenu.menuName}</Link>
+                                className="menuItem"
+                                to={`/${spreadMenu.menuKey}`}
+                                key={i}><span>{spreadMenu.menuName}</span> </Link>
                             </li>
                         )
                     })

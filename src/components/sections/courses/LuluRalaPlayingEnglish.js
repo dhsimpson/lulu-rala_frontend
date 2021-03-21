@@ -8,9 +8,9 @@ function LuluRalaPlayingEnglish() {
     <>
     <LeftNav menu={navConfig.nav[1]}></LeftNav>
     <section className="section-luluRalaPlayingEnglish">
-        <h1>Lulu Rala English</h1>
+        <h1 className="MapoPeacefull">Lulu Rala English</h1>
         <img src="./section/luluRalaPlayingEnglish.jpg" />
-        <div className="mapoFlowerIsland">
+        <div>
           <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
           <p>아이부터 초등학생을 대상으로</p>
           <p>흥미로운 주제와 다양한 활동이 주가 되어</p>
@@ -18,7 +18,7 @@ function LuluRalaPlayingEnglish() {
           <p>영어학습 프로그램입니다.</p><br/>
           
           <p>균형적 언어접근법</p>
-          <p>(Balanced Language Approach)을 기반으로</p>
+          <p>(<p className="MapoPeacefull">Balanced Language Approach</p>)을 기반으로</p>
           <p>듣고, 말하고, 읽고, 쓰기를 분리하지 않고</p> 
           <p>이야기와 놀이 그리고 다양한 활동으로</p>
             <p>의사소통능력을 골고루 성장시키며 영어에 대한</p>
