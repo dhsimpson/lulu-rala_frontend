@@ -1,8 +1,21 @@
 import '../../css/section/main.css';
 import {useEffect} from 'react';
+
+import Footer from '../Footer';
+
+import "fullpage.js/vendors/scrolloverflow";
+import ReactFullpage from "@fullpage/react-fullpage";
+
 // c.f. 각 섹션들에 css를 다시 적용해야 함.
+
+const anchors = [
+  "Lulurala&nbsp;English", 
+  "Introduce&nbsp;Videos", 
+  "Why&nbsp;Lulurala", 
+  "Educational&nbsp;Course", 
+  "Consulting"];
 function Main() {
-  // document.body.style.backgroundImage = "url('./background-main.jpg')";
+  document.body.style.backgroundImage = "url('./background-main.jpg')";
   useEffect(()=>{
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
@@ -21,38 +34,49 @@ function Main() {
     `;
   })
   return (
-    <section className="section-main">
-      <div className="article-first">
-        {ArticleFirst()}
-      </div>
+    <>
+      <ReactFullpage
+        anchors={anchors}
+        navigation
+        navigationTooltips={anchors}
+        render={() => {
+          return (
+            <div>
+              <div className="section article-first">
+                {ArticleFirst()}
+              </div>
 
-      <div className="article-second">동영상 4~5개</div>
+              <div className="section article-second">동영상 4~5개</div>
 
-      <div className="article-third">
-        {ArticleThird()}
-      </div>
-      <div className="article-fourth">
-        {ArticleFourth()}
-      </div>
-      <div className="article-fifth">
-        {ArticleFifth()}  
-      </div>
-    </section>
-  );
+              <div className="section article-third">
+                {ArticleThird()}
+              </div>
+              <div className="section article-fourth">
+                {ArticleFourth()}
+              </div>
+              <div className="section article-fifth">
+                {ArticleFifth()}
+              </div>
+               <div className="section fp-auto-height"> <Footer /></div>
+            </div>
+          );
+        }}
+      />
+    </>)
 }
 
-function ArticleFirst(){
-  return(
-  <>
-  <img src="./section/main.png" alt="mainmain"/>
-        <div>
-          <p>&nbsp;&nbsp;찾아가는 영어</p>
-          <p>룰루랄라</p>
-          <div />
-          <p>&nbsp;&nbsp;놀이부터 배움까지</p>
-          <p>&nbsp;&nbsp;유아, 초등 노는 영어</p>
-        </div>
-  </>);
+function ArticleFirst() {
+  return (
+    <>
+      <img src="./section/main.png" alt="mainmain" />
+      <div className="class-main">
+        <p>&nbsp;찾아가는 영어</p>
+        <p>룰루랄라</p>
+        <div />
+        <p>&nbsp;놀이부터 배움까지</p>
+        <p>&nbsp;유아, 초등 노는 영어</p>
+      </div>
+    </>);
 }
 function ArticleThird(){
   return(
@@ -82,7 +106,7 @@ function ArticleThird(){
 function ArticleFourth(){
   return(
     <>
-        <h1 className="MapoPeacefull">Educational course</h1>
+        <h1>Educational course</h1>
         <div className="fourth-left">
           <h2>영아 / 유아교육 과정</h2>
           <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>
@@ -109,7 +133,7 @@ function ArticleFourth(){
 function ArticleFifth(){
   return(
     <>
-        <h1 className="fifth-h1">상담 신청</h1>
+        <h1>상담 신청</h1>
         <img className="fifth-left" src="./section/requestForConsultation.jpg" />
         <form className="fifth-right">
           <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>

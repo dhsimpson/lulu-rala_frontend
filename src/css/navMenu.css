@@ -18,8 +18,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 1.5vw;
-    font-weight: 700;
+    font-size: 16px;
     white-space: nowrap;
 }
 .subMenu {
@@ -34,7 +33,7 @@
     display: inline-block;
     width: 15.5vw;
     padding: 2.5vh 0;
-    font-size: 1.5vw;
+    font-size: 16px;
     white-space: nowrap;
 }
 .subMenu span {

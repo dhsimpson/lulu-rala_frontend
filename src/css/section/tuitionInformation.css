@@ -17,7 +17,7 @@
     position: absolute;
     top: 35vh;
     left: 50vw;
-    font-size: 3vw;
+    font-size: 30px;
 }
 .section-tuitionInformation > table {
     position: absolute;
@@ -33,7 +33,7 @@ th, tr, td {
     border: 0.3vh solid white;
 }
 .section-tuitionInformation > h2 {
-    font-size: 1.2vw;
+    font-size: 19.5px;
     line-height: 2vw;
     bottom: 10vh;
     right: 20vw;

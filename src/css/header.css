@@ -2,10 +2,10 @@
     position: relative;
 }
 header {
-    font-size: 3vw;
+    font-size: 18px;
     position: absolute;
-    top: 4vh;
-    left: 2vw;
+    top: 6vh;
+    left: 4vw;
     z-index: 3;
 }
 .loginIcon {

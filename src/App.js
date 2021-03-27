@@ -21,7 +21,7 @@ function App() {
     <>
       <Header />
       <Nav />
-      <RightNav />
+      {/* <RightNav /> */}
       <Switch>
         <Route exact path='/' component={Main}></Route>
         {componentList.map(data=>{

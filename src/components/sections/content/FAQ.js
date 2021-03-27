@@ -13,7 +13,7 @@ function FAQ() {
       {
         FAQList.map( (d, i)=>{
           return (
-            <li>
+            <li key={i}>
             {/* <hr key={i}/> */}
             {d.question}
             {d.answer}

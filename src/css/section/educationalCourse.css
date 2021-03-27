@@ -6,7 +6,7 @@
     position: absolute;
     top: 35vh;
     left: 40vw;
-    font-size: 3vw;
+    font-size: 30px;
 }
 .section-educationalCourse > div {
     position: absolute;
@@ -24,10 +24,9 @@
 }
 .section-educationalCourse > div > h2 {
     font-size: 1.5vw;
-    font-weight: 700;
-    line-height: 2vw;
+    line-height: 19.5px;
 }
 .section-educationalCourse > div > p {
     font-size: 1vw;
-    line-height: 2vw;
+    line-height: 13.5px;
 }

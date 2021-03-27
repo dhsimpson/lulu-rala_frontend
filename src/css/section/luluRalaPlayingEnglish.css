@@ -6,7 +6,7 @@
     position: absolute;
     top: 35vh;
     left: 45vw;
-    font-size: 3vw;
+    font-size: 30px;
 }
 .section-luluRalaPlayingEnglish > img {
     position: absolute;
@@ -23,6 +23,6 @@
     left: 60vw;
 }
 .section-luluRalaPlayingEnglish > div > p {
-    font-size: 1vw;
+    font-size: 13.5px;
     line-height: 2vw;
 }
