@@ -32,12 +32,20 @@ function Main() {
 ※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(www.simpan.go.kr) 홈페이지를 참고하시기 바랍니다.</br></br><p class='lh6 bs4'><strong>제11조(개인정보 처리방침 변경)<em class="emphasis"></em></strong></p><br/></p><p class='sub_p'>① 이 개인정보처리방침은 2021년 4월 1부터 적용됩니다.</p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다. </p><p class='sub_p'></p><p class='sub_p'></p></p>
 </div>
     `;
+    document.getElementById("consultContent").value = `
+ex)
+교습 대상자의 연령 :
+희망 프로그램 : 방문수업
+희망요일 및 시간 : 월, 수요일 주 2회, 5시 ~ 5시 40분
+        `;
   })
+
   return (
     <>
       <ReactFullpage
         anchors={anchors}
         navigation
+        normalScrollElements="#consultContent, #privacyHtml"
         navigationTooltips={anchors}
         render={() => {
           return (
