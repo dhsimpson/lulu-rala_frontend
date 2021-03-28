@@ -1,5 +1,5 @@
 import '../../css/section/main.css';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 import Footer from '../Footer';
 
@@ -7,41 +7,49 @@ import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 const anchors = [
-  "Lulurala&nbsp;English", 
-  "Introduce&nbsp;Videos", 
-  "Why&nbsp;Lulurala", 
-  "Educational&nbsp;Course", 
+  "Lulurala&nbsp;English",
+  "Introduce&nbsp;Videos",
+  "Why&nbsp;Lulurala",
+  "Educational&nbsp;Course",
   "Consulting"];
-  
+
 const focusIdList = [
-  "first-img-id","first-div-id",
-  "third-h1-id","third-img-id","third-div-id",
-  "fourth-h1-id","fourth-div-id","fourth-img-id",
-  "fifth-h1-id","fifth-img-id","fifth-form-id"
+  "first-img-id", "first-div-id",
+  "third-h1-id", "third-img-id", "third-div-id",
+  "fourth-h1-id", "fourth-div-id", "fourth-img-id",
+  "fifth-h1-id", "fifth-img-id", "fifth-form-id"
 ];
 
 const isInViewport = (element) => {
   const rect = element.getBoundingClientRect();
   return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+// const initTransition = () => {
+//   focusIdList.forEach(elementId => {
+
+//   })
+// }
 const controlTransition = () => {
+  // console.log("스크롤");
   focusIdList.forEach(elementId => {
-    if(isInViewport(document.getElementById(elementId))){
+    if (isInViewport(document.getElementById(elementId))) {
       document.getElementById(elementId).classList.remove("focused");
+      // console.log(`${elementId} True`)
     }
-    else{
+    else {
       document.getElementById(elementId).classList.add("focused");
+      // console.log(`${elementId} False`)
     }
   })
 }
 function Main() {
   document.body.style.backgroundImage = "url('./background-main.jpg')";
-  useEffect(()=>{
+  useEffect(() => {
     controlTransition();
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
@@ -91,7 +99,7 @@ ex)
               <div className="section article-fifth">
                 {ArticleFifth()}
               </div>
-               <div className="section fp-auto-height"> <Footer /></div>
+              <div className="section fp-auto-height"> <Footer /></div>
             </div>
           );
         }}
@@ -101,7 +109,7 @@ ex)
 function ArticleFirst() {
   return (
     <>
-      <img id="first-img-id" src="./section/main.png" alt="mainmain"/>
+      <img id="first-img-id" className="" src="./section/main.png" alt="mainmain" />
       <div id="first-div-id" className="class-main">
         <p>&nbsp;찾아가는 영어</p>
         <p>룰루랄라</p>
@@ -111,86 +119,86 @@ function ArticleFirst() {
       </div>
     </>);
 }
-function ArticleThird(){
-  return(
+function ArticleThird() {
+  return (
     <>
-        <h1 id="third-h1-id" className="MapoPeacefull">Lulu Rala English</h1>
-        <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" />
-        <div id="third-div-id" className="third-right">
-          <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
-          <p>아이부터 초등학생을 대상으로</p>
-          <p>흥미로운 주제와 다양한 활동이 주가 되어</p>
-          <p>아이들이 영어를 쉽고 재미있게 배울 수 있는</p>
-          <p>영어학습 프로그램입니다.</p><br/>
-          
-          <p>균형적 언어접근법</p>
-          <p>(<span className="MapoPeacefull">Balanced Language Approach</span>)을 기반으로</p>
-          <p>듣고, 말하고, 읽고, 쓰기를 분리하지 않고</p> 
-          <p>이야기와 놀이 그리고 다양한 활동으로</p>
-            <p>의사소통능력을 골고루 성장시키며 영어에 대한</p>
-            <p>자신감,</p>
-          <p>영어에 대한 호기심과 욕구를 충족시키고</p>
-          <p>성취감을 느끼도록 하며 영어를 즐겁게 습득할 수</p>
-            <p>있도록 합니다.</p>
-        </div>
-    </>
-  );
-}
-function ArticleFourth(){
-  return(
-    <>
-        <h1 id="fourth-h1-id">Educational course</h1>
-        <div id="fourth-div-id" className="fourth-left">
-          <h2>영아 / 유아교육 과정</h2>
-          <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>
-          <p>영어를 처음 접하는 아이들을 위한 놀이수업</p>
-          <p>흥미유발과 호기심자극을 통해 재미있고</p>
-          <p>다양한 영어놀이 경험을 위한 학습</p>
-          <br />
-          <h2>유아 / 초등교육 과정</h2>
-          <p>듣고, 말하고, 읽고 쓰는 기초적인 과정을 거쳐</p>
-          <p>주니어토플과 디베이트를 목적으로 자신의</p>
-          <p>생각을 영어로 표현하고 영어에 대한</p>
-          <p>종합적인 지식발달을 위한 학습</p>
-          <br />
-          <h2>기관</h2>
-          <p>대집단 수업, 그룹과정으로</p>
-          <p>유치원, 어린이집, 체육센터, 도서관,</p>
-          <p>방과후과정, 문화센터에서</p>
-          <p>진행하는 영어 활동</p>
-        </div>
-        <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" />
-    </>
-  );
-}
-function ArticleFifth(){
-  return(
-    <>
-        <h1 id="fifth-h1-id">상담 신청</h1>
-        <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" />
-        <form id="fifth-form-id" className="fifth-right">
-          <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
-          <p>신청자명(기관)</p>
-          <input type="text"/>
-          <p>연락처</p>
-          <input type="text"/>
-          <p>회신 받을 메일 주소</p>
-          <input type="text"/>
-          <p>주소(시/구/동 까지)</p>
-          <input type="text"/>
-          <p>신청 내용</p>
-          <textarea id="consultContent"/>
+      <h1 id="third-h1-id" className="MapoPeacefull">Lulu Rala English</h1>
+      <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" />
+      <div id="third-div-id" className="third-right">
+        <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
+        <p>아이부터 초등학생을 대상으로</p>
+        <p>흥미로운 주제와 다양한 활동이 주가 되어</p>
+        <p>아이들이 영어를 쉽고 재미있게 배울 수 있는</p>
+        <p>영어학습 프로그램입니다.</p><br />
 
-          <div className="privacy-statement">
-            <div id="privacyHtml"></div>
-          </div>
-          <div className="privacy-statemen-checkobx">
-            <input type="checkbox" />
-            <p>개인정보 수집 및 이용에 동의합니다</p>
-          </div>
-          <input className="MapoPeacefull" type="submit" value="Send" />
-        </form>
-        </>
+        <p>균형적 언어접근법</p>
+        <p>(<span className="MapoPeacefull">Balanced Language Approach</span>)을 기반으로</p>
+        <p>듣고, 말하고, 읽고, 쓰기를 분리하지 않고</p>
+        <p>이야기와 놀이 그리고 다양한 활동으로</p>
+        <p>의사소통능력을 골고루 성장시키며 영어에 대한</p>
+        <p>자신감,</p>
+        <p>영어에 대한 호기심과 욕구를 충족시키고</p>
+        <p>성취감을 느끼도록 하며 영어를 즐겁게 습득할 수</p>
+        <p>있도록 합니다.</p>
+      </div>
+    </>
+  );
+}
+function ArticleFourth() {
+  return (
+    <>
+      <h1 id="fourth-h1-id" className="">Educational course</h1>
+      <div id="fourth-div-id" className="fourth-left">
+        <h2>영아 / 유아교육 과정</h2>
+        <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>
+        <p>영어를 처음 접하는 아이들을 위한 놀이수업</p>
+        <p>흥미유발과 호기심자극을 통해 재미있고</p>
+        <p>다양한 영어놀이 경험을 위한 학습</p>
+        <br />
+        <h2>유아 / 초등교육 과정</h2>
+        <p>듣고, 말하고, 읽고 쓰는 기초적인 과정을 거쳐</p>
+        <p>주니어토플과 디베이트를 목적으로 자신의</p>
+        <p>생각을 영어로 표현하고 영어에 대한</p>
+        <p>종합적인 지식발달을 위한 학습</p>
+        <br />
+        <h2>기관</h2>
+        <p>대집단 수업, 그룹과정으로</p>
+        <p>유치원, 어린이집, 체육센터, 도서관,</p>
+        <p>방과후과정, 문화센터에서</p>
+        <p>진행하는 영어 활동</p>
+      </div>
+      <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" />
+    </>
+  );
+}
+function ArticleFifth() {
+  return (
+    <>
+      <h1 id="fifth-h1-id" className="">상담 신청</h1>
+      <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" />
+      <form id="fifth-form-id" className="fifth-right">
+        <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
+        <p>신청자명(기관)</p>
+        <input type="text" />
+        <p>연락처</p>
+        <input type="text" />
+        <p>회신 받을 메일 주소</p>
+        <input type="text" />
+        <p>주소(시/구/동 까지)</p>
+        <input type="text" />
+        <p>신청 내용</p>
+        <textarea id="consultContent" />
+
+        <div className="privacy-statement">
+          <div id="privacyHtml"></div>
+        </div>
+        <div className="privacy-statemen-checkobx">
+          <input type="checkbox" />
+          <p>개인정보 수집 및 이용에 동의합니다</p>
+        </div>
+        <input className="MapoPeacefull" type="submit" value="Send" />
+      </form>
+    </>
   );
 }
 

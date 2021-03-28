@@ -26,26 +26,53 @@ h1 {
 }
 .article-third h1 {
     position: absolute;
-    left: 0vw;
+    top: 0;
+    left: 42vw;
+    opacity: 0;
+    transition: 1s;
 }
 .article-third h1.focused {
     position: absolute;
+    top: 25vh;
     left: 42vw;
+    opacity: 1;
 }
 .third-left {
+    position: absolute;
+    top: 37vh;
+    left: 0;
+    width: 30vw;
+    height: 50vh;
+    opacity: 0;
+    transition: 1s;
+}
+.third-left.focused {
     position: absolute;
     top: 37vh;
     left: 17vw;
     width: 30vw;
     height: 50vh;
+    opacity: 1
 }
+
 .third-right {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 37vh;
-    left: 55vw;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
 }
+.third-right.focused {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 37vh;
+    right: 20vw;
+    opacity: 1;
+}
+
 .third-right > p {
     font-size: 13.5px;
     line-height: 1.5vw;
@@ -53,15 +80,36 @@ h1 {
 
 .article-fourth h1 {
     position: absolute;
+    top: 0;
     left: 40vw;
+    opacity: 0;
+    transition: 1s;
 }
+.article-fourth h1.focused {
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+    opacity: 1;
+}
+
 .fourth-left {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 37vh;
-    left: 25vw;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
 }
+.fourth-left.focused {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 37vh;
+    left: 25vw;
+    opacity: 1
+}
+
 .fourth-left > h2 {
     font-size: 19.5px;
     line-height: 2vw;
@@ -70,35 +118,81 @@ h1 {
     font-size: 13.5px;
     line-height: 1.5vw;
 }
+
 .fourth-right {
     position: absolute;
     top: 37vh;
-    left: 55vw;
+    right: 0;
     width: 25vw;
     height: 50vh;
+    opacity: 0;
+    transition: 1s;
+} 
+.fourth-right.focused {
+    position: absolute;
+    top: 37vh;
+    right: 20vw;
+    width: 25vw;
+    height: 50vh;
+    opacity: 1;
 } 
 
 .article-fifth h1 {
     position: absolute;
+    top: 0;
     left: 45vw;
+    opacity: 0;
+    transition: 1s;
 }
+.article-fifth h1.focused {
+    position: absolute;
+    left: 45vw;
+    top: 25vh;
+    opacity: 1;
+}
+
 .fifth-left {
+    position: absolute;
+    top: 37vh;
+    left: 0;
+    width: 30vw;
+    height: 55vh;
+    opacity: 0;
+    transition: 1s;
+}
+.fifth-left.focused {
     position: absolute;
     top: 37vh;
     left: 19vw;
     width: 30vw;
     height: 55vh;
+    opacity: 1;
 }
+
 .fifth-right {
     position: absolute;
     background-color: white;
     padding: 0.3vh 2vw 4vh 2vw;
     box-sizing: border-box;
     top: 37vh;
-    left: 54vw;
+    right: 0;
     width: 35vw;
     height: 55vh;
+    opacity: 0;
+    transition: 1s;
 }
+.fifth-right.focused {
+    position: absolute;
+    background-color: white;
+    padding: 0.3vh 2vw 4vh 2vw;
+    box-sizing: border-box;
+    top: 37vh;
+    right: 13vw;
+    width: 35vw;
+    height: 55vh;
+    opacity: 1;
+}
+
 .fifth-right > h2 {
     font-size: 19.5px;
     line-height: 6vh;
