@@ -26,6 +26,10 @@ h1 {
 }
 .article-third h1 {
     position: absolute;
+    left: 0vw;
+}
+.article-third h1.focused {
+    position: absolute;
     left: 42vw;
 }
 .third-left {

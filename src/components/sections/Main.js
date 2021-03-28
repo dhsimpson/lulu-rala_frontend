@@ -6,17 +6,43 @@ import Footer from '../Footer';
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-// c.f. 각 섹션들에 css를 다시 적용해야 함.
-
 const anchors = [
   "Lulurala&nbsp;English", 
   "Introduce&nbsp;Videos", 
   "Why&nbsp;Lulurala", 
   "Educational&nbsp;Course", 
   "Consulting"];
+  
+const focusIdList = [
+  "first-img-id","first-div-id",
+  "third-h1-id","third-img-id","third-div-id",
+  "fourth-h1-id","fourth-div-id","fourth-img-id",
+  "fifth-h1-id","fifth-img-id","fifth-form-id"
+];
+
+const isInViewport = (element) => {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+const controlTransition = () => {
+  focusIdList.forEach(elementId => {
+    if(isInViewport(document.getElementById(elementId))){
+      document.getElementById(elementId).classList.remove("focused");
+    }
+    else{
+      document.getElementById(elementId).classList.add("focused");
+    }
+  })
+}
 function Main() {
   document.body.style.backgroundImage = "url('./background-main.jpg')";
   useEffect(()=>{
+    controlTransition();
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
 <h2>개인정보처리방침</h2>
@@ -72,12 +98,11 @@ ex)
       />
     </>)
 }
-
 function ArticleFirst() {
   return (
     <>
-      <img src="./section/main.png" alt="mainmain" />
-      <div className="class-main">
+      <img id="first-img-id" src="./section/main.png" alt="mainmain"/>
+      <div id="first-div-id" className="class-main">
         <p>&nbsp;찾아가는 영어</p>
         <p>룰루랄라</p>
         <div />
@@ -89,9 +114,9 @@ function ArticleFirst() {
 function ArticleThird(){
   return(
     <>
-        <h1 className="MapoPeacefull">Lulu Rala English</h1>
-        <img className="third-left" src="./section/luluRalaPlayingEnglish.jpg" />
-        <div className="third-right">
+        <h1 id="third-h1-id" className="MapoPeacefull">Lulu Rala English</h1>
+        <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" />
+        <div id="third-div-id" className="third-right">
           <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
           <p>아이부터 초등학생을 대상으로</p>
           <p>흥미로운 주제와 다양한 활동이 주가 되어</p>
@@ -114,8 +139,8 @@ function ArticleThird(){
 function ArticleFourth(){
   return(
     <>
-        <h1>Educational course</h1>
-        <div className="fourth-left">
+        <h1 id="fourth-h1-id">Educational course</h1>
+        <div id="fourth-div-id" className="fourth-left">
           <h2>영아 / 유아교육 과정</h2>
           <p>그림책과 다양한 교구, 노래와 챈트 율동, 게임 등으로</p>
           <p>영어를 처음 접하는 아이들을 위한 놀이수업</p>
@@ -134,16 +159,16 @@ function ArticleFourth(){
           <p>방과후과정, 문화센터에서</p>
           <p>진행하는 영어 활동</p>
         </div>
-        <img className="fourth-right" src="./section/educationalCourse.jpg" />
+        <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" />
     </>
   );
 }
 function ArticleFifth(){
   return(
     <>
-        <h1>상담 신청</h1>
-        <img className="fifth-left" src="./section/requestForConsultation.jpg" />
-        <form className="fifth-right">
+        <h1 id="fifth-h1-id">상담 신청</h1>
+        <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" />
+        <form id="fifth-form-id" className="fifth-right">
           <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
           <p>신청자명(기관)</p>
           <input type="text"/>
