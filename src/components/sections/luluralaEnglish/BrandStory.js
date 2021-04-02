@@ -9,7 +9,7 @@ function BrandStory() {
     <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-brandStory">
       <h1 className="MapoPeacefull">Brand Story</h1>
-      <img src="./section/brandStory.jpg" />
+      <img src="./section/brandStory.jpg"  alt="아이들이엔씨"/>
       <div>
         <h2>“어린이 영어교육 전문가”</h2>
         <br />

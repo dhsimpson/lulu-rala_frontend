@@ -14,7 +14,7 @@ const anchors = [
   "Consulting"];
 
 const focusIdList = [
-  "first-img-id", "first-div-id",
+ /* "first-img-id"*/, "first-div-id",
   "third-h1-id", "third-img-id", "third-div-id",
   "fourth-h1-id", "fourth-div-id", "fourth-img-id",
   "fifth-h1-id", "fifth-img-id", "fifth-form-id"
@@ -77,10 +77,10 @@ ex)
   return (
     <>
       <ReactFullpage
-        anchors={anchors}
-        navigation
+        // anchors={anchors}
+        navigation={true}
         normalScrollElements="#consultContent, #privacyHtml"
-        navigationTooltips={anchors}
+        // navigationTooltips={anchors}
         render={() => {
           return (
             <div>
@@ -109,7 +109,7 @@ ex)
 function ArticleFirst() {
   return (
     <>
-      <img id="first-img-id" className="" src="./section/main.png" alt="mainmain" />
+      {/* <img id="first-img-id" className="" src="./section/main.png" alt="아이들이엔씨" /> */}
       <div id="first-div-id" className="class-main">
         <p>&nbsp;찾아가는 영어</p>
         <p>룰루랄라</p>
@@ -123,7 +123,7 @@ function ArticleThird() {
   return (
     <>
       <h1 id="third-h1-id" className="MapoPeacefull">Lulu Rala English</h1>
-      <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" />
+      <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" alt="아이들이엔씨"/>
       <div id="third-div-id" className="third-right">
         <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
         <p>아이부터 초등학생을 대상으로</p>
@@ -167,7 +167,7 @@ function ArticleFourth() {
         <p>방과후과정, 문화센터에서</p>
         <p>진행하는 영어 활동</p>
       </div>
-      <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" />
+      <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" alt="아이들이엔씨"/>
     </>
   );
 }
@@ -175,7 +175,7 @@ function ArticleFifth() {
   return (
     <>
       <h1 id="fifth-h1-id" className="">상담 신청</h1>
-      <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" />
+      <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" alt="아이들이엔씨"/>
       <form id="fifth-form-id" className="fifth-right">
         <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
         <p>신청자명(기관)</p>

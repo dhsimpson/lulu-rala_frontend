@@ -171,10 +171,9 @@ h1 {
 
 .fifth-right {
     position: absolute;
-    background-color: white;
     padding: 0.3vh 2vw 4vh 2vw;
     box-sizing: border-box;
-    top: 37vh;
+    top: 35vh;
     right: 0;
     width: 35vw;
     height: 55vh;
@@ -183,10 +182,9 @@ h1 {
 }
 .fifth-right.focused {
     position: absolute;
-    background-color: white;
     padding: 0.3vh 2vw 4vh 2vw;
     box-sizing: border-box;
-    top: 37vh;
+    top: 35vh;
     right: 13vw;
     width: 35vw;
     height: 55vh;
@@ -209,6 +207,7 @@ h1 {
 }
 .fifth-right input[type="text"] {
     width: 95%;
+    height: 2.5vh;
     margin-bottom: 1vh;
     border: 1px solid rgba(0, 0, 0, 1);
 }
@@ -236,4 +235,8 @@ h1 {
     margin-bottom: 1vh;
     position: absolute;
     right: 8%;
+}
+
+#fp-nav li:last-child {
+    display: none;
 }

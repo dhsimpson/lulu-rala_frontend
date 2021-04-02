@@ -5,9 +5,9 @@ function Footer() {
             <div className="div-footer-left">
                 <img src="./footer/idlenc.png"/>
                 <div>
-                    <img src="./footer/blog.png"/>
-                    <img src="./footer/cafe.png"/>
-                    <img src="./footer/youtube.png"/>
+                    <img src="./footer/blog.png" alt="아이들이엔씨"/>
+                    <img src="./footer/cafe.png" alt="아이들이엔씨"/>
+                    <img src="./footer/youtube.png" alt="아이들이엔씨"/>
                 </div>
             </div>
             <div className="div-footer-right">

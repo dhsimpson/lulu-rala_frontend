@@ -28,7 +28,7 @@ function EducationalCourse() {
           <p>방과후과정, 문화센터에서</p>
           <p>진행하는 영어 활동</p>
         </div>
-        <img src="./section/educationalCourse.jpg" />
+        <img src="./section/educationalCourse.jpg" alt="아이들이엔씨" />
       </section>
     </>
   );

@@ -9,7 +9,7 @@ function WhyLuluRala() {
     <LeftNav menu={navConfig.nav[0]}></LeftNav>
     <section className="section-whyLuluRala">
       <h1 className="MapoPeacefull">WhyLuluRala</h1>
-      <img src="./section/whyLuluRala.jpg" />
+      <img src="./section/whyLuluRala.jpg"  alt="아이들이엔씨"/>
       <div>
         <p>유아 영어 교육 전문가인 룰루랄라 선생님은  유아/영</p>
         <p>어교육 전공, Tesol 수료, 교사교육 등의 전문가 양</p>

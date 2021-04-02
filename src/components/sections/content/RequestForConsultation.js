@@ -33,7 +33,7 @@ ex)
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
       <section className="section-requestForConsultation">
         <h1>상담 신청</h1>
-        <img src="./section/requestForConsultation.jpg" />
+        <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨"/>
         <form>
           <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
           <p>신청자명(기관)</p>

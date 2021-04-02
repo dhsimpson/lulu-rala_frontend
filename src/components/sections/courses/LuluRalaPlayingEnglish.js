@@ -9,7 +9,7 @@ function LuluRalaPlayingEnglish() {
     <LeftNav menu={navConfig.nav[1]}></LeftNav>
     <section className="section-luluRalaPlayingEnglish">
         <h1 className="MapoPeacefull">Lulu Rala English</h1>
-        <img src="./section/luluRalaPlayingEnglish.jpg" />
+        <img src="./section/luluRalaPlayingEnglish.jpg"  alt="아이들이엔씨"/>
         <div>
           <p>룰루랄라 노는영어는  영어를 처음 시작하는</p>
           <p>아이부터 초등학생을 대상으로</p>

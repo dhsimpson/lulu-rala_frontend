@@ -14,7 +14,7 @@ function PhilosophyOfEducation() {
         <p>자신감을 갖고 자유롭게 표현 할 수 있도록 교육합니다. </p>
         <p>모든 아이들에게 영어도 즐거울 수 있다는 것을 알려주고 싶습니다.</p>
       </div>
-      <img src="./section/PhilosophyOfEducation.jpg" />
+      <img src="./section/PhilosophyOfEducation.jpg"  alt="아이들이엔씨"/>
       <div className="div-philosophyOfEducation-horizontal">
         <div>
           <h2>검증된 최고의 선생님</h2>
