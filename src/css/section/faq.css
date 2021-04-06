@@ -1,37 +1,83 @@
-.section-faq {
-    height: 120vh;
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
+@media(min-width: 800px){
+    .section-faq {
+        height: 120vh;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+    .section-faq > ul {
+        position: absolute;
+        top: 35vh;
+        left: 25vw;
+        height: 80vh;
+        width: 55vw;
+        overflow: auto;
+    }
+    .section-faq > ul > li {
+        cursor: pointer;
+        border-top: 1px solid rgba(125, 125, 125,0.2);
+        transition: 1s;
+    }
+    .section-faq > ul::-webkit-scrollbar { 
+        display: none; 
+    }
+    .section-faq > ul > li > h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+        transition: 0.3s;
+    }
+    .section-faq > ul > li > h2:hover {
+        background-color: rgba(125, 125, 125,0.2);
+    }
+    .section-faq > ul > li > p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-left: 1vw;
+        display: none;
+    }
 }
-.section-faq > ul {
-    position: absolute;
-    top: 35vh;
-    left: 25vw;
-    height: 80vh;
-    width: 55vw;
-    overflow: auto;
+
+@media(max-width: 800px){
+    .section-faq {
+        height: 120vh;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-faq > ul {
+        position: absolute;
+        top: 35vh;
+        height: 80vh;
+        width: 90vw;
+        overflow: auto;
+    }
+    .section-faq > ul > li {
+        cursor: pointer;
+        border-top: 1px solid rgba(125, 125, 125,0.2);
+        transition: 1s;
+        padding: 12px 12px 12px 48px;
+    }
+    .section-faq > ul::-webkit-scrollbar { 
+        display: none; 
+    }
+    .section-faq > ul > li > h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.6;
+        transition: 0.3s;
+    }
+    .section-faq > ul > li > h2:hover {
+        background-color: rgba(125, 125, 125,0.2);
+    }
+    .section-faq > ul > li > p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-left: 1vw;
+        display: none;
+    }
 }
-.section-faq > ul > li {
-    border-top: 1px solid rgba(125, 125, 125,0.2);
-    transition: 1s;
-}
-.section-faq > ul::-webkit-scrollbar { 
-    display: none; 
-}
-.section-faq > ul > li > h2 {
-    font-size: 1.2vw;
-    line-height: 5vw;
-    transition: 0.3s;
-}
-.section-faq > ul > li > h2:hover {
-    background-color: rgba(125, 125, 125,0.2);
-}
-.section-faq > ul > li > p {
-    font-size: 1.2vw;
-    line-height: 2.5vw;
-    margin-left: 1vw;
-    display: none;
-}
+

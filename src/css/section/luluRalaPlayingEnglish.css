@@ -1,28 +1,65 @@
-.section-luluRalaPlayingEnglish {
-    height: 110vh;
-    position: relative;
+@media(min-width: 800px){
+    .section-luluRalaPlayingEnglish {
+        height: 110vh;
+        position: relative;
+    }
+    .section-luluRalaPlayingEnglish > h1 {
+        position: absolute;
+        top: 35vh;
+        left: 45vw;
+        font-size: 30px;
+    }
+    .section-luluRalaPlayingEnglish > img {
+        position: absolute;
+        top: 47vh;
+        left: 25vw;
+        width: 30vw;
+        height: 50vh;
+    }
+    .section-luluRalaPlayingEnglish > div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 47vh;
+        left: 60vw;
+    }
+    .section-luluRalaPlayingEnglish > div > p {
+        font-size: 13.5px;
+        line-height: 2vw;
+    }
 }
-.section-luluRalaPlayingEnglish > h1 {
-    position: absolute;
-    top: 35vh;
-    left: 45vw;
-    font-size: 30px;
+@media(max-width: 800px){
+    .section-luluRalaPlayingEnglish {
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .section-luluRalaPlayingEnglish img {
+        margin: 35vh auto 0;
+        width: 90vw;
+    }
+    .section-luluRalaPlayingEnglish > h1 {
+        font-size: 35px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-luluRalaPlayingEnglish h2 {
+        font-size: 16px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-luluRalaPlayingEnglish p {
+        font-size: 14px;
+        padding-left: 2vw;
+        font-weight: 300;
+        line-height: 1.6;
+    }
 }
-.section-luluRalaPlayingEnglish > img {
-    position: absolute;
-    top: 47vh;
-    left: 25vw;
-    width: 30vw;
-    height: 50vh;
-}
-.section-luluRalaPlayingEnglish > div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 47vh;
-    left: 60vw;
-}
-.section-luluRalaPlayingEnglish > div > p {
-    font-size: 13.5px;
-    line-height: 2vw;
-}
+

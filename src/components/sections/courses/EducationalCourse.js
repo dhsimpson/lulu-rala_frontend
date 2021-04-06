@@ -8,6 +8,7 @@ function EducationalCourse() {
     <>
       <LeftNav menu={navConfig.nav[1]}></LeftNav>
       <section className="section-educationalCourse">
+        <img src="./section/educationalCourse.jpg" alt="아이들이엔씨" />
         <h1 className="MapoPeacefull">Educational course</h1>
         <div>
           <h2>영아 / 유아교육 과정</h2>
@@ -28,7 +29,6 @@ function EducationalCourse() {
           <p>방과후과정, 문화센터에서</p>
           <p>진행하는 영어 활동</p>
         </div>
-        <img src="./section/educationalCourse.jpg" alt="아이들이엔씨" />
       </section>
     </>
   );

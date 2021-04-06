@@ -1,28 +1,66 @@
-.section-whyLuluRala {
-    height: 110vh;
-    position: relative;
+@media(min-width: 800px){
+    .section-whyLuluRala {
+        height: 110vh;
+        position: relative;
+    }
+    .section-whyLuluRala > h1 {
+        position: absolute;
+        top: 35vh;
+        left: 50vw;
+        font-size: 30px;
+    }
+    .section-whyLuluRala > img {
+        position: absolute;
+        top: 47vh;
+        left: 25vw;
+        width: 30vw;
+        height: 50vh;
+    }
+    .section-whyLuluRala > div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 47vh;
+        left: 60vw;
+    }
+    .section-whyLuluRala > div > p {
+        font-size: 13.5px;
+        line-height: 2vw;
+    }
 }
-.section-whyLuluRala > h1 {
-    position: absolute;
-    top: 35vh;
-    left: 50vw;
-    font-size: 30px;
-}
-.section-whyLuluRala > img {
-    position: absolute;
-    top: 47vh;
-    left: 25vw;
-    width: 30vw;
-    height: 50vh;
-}
-.section-whyLuluRala > div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 47vh;
-    left: 60vw;
-}
-.section-whyLuluRala > div > p {
-    font-size: 13.5px;
-    line-height: 2vw;
+
+@media(max-width: 800px){
+    .section-whyLuluRala {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .section-whyLuluRala img {
+        margin: 35vh auto 0;
+        width: 90vw;
+        height: 60vw;
+    }
+    .section-whyLuluRala > h1 {
+        font-size: 35px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-whyLuluRala h2 {
+        font-size: 16px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-whyLuluRala p {
+        font-size: 14px;
+        padding-left: 2vw;
+        font-weight: 300;
+        line-height: 1.6;
+    }
 }

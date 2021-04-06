@@ -32,8 +32,8 @@ ex)
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
       <section className="section-requestForConsultation">
-        <h1>상담 신청</h1>
         <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨"/>
+        <h1>상담 신청</h1>
         <form>
           <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
           <p>신청자명(기관)</p>
@@ -50,7 +50,7 @@ ex)
           <div className="privacy-statement">
             <div id="privacyHtml"></div>
           </div>
-          <div className="privacy-statemen-checkobx">
+          <div className="privacy-statement-checkbox">
             <input type="checkbox" />
             <p>개인정보 수집 및 이용에 동의합니다</p>
           </div>

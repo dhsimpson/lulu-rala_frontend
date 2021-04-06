@@ -1,32 +1,72 @@
-.section-educationalCourse {
-    height: 110vh;
-    position: relative;
+@media(min-width: 800px){
+    .section-educationalCourse {
+        height: 110vh;
+        position: relative;
+    }
+    .section-educationalCourse > h1 {
+        position: absolute;
+        top: 35vh;
+        left: 40vw;
+        font-size: 30px;
+    }
+    .section-educationalCourse > div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 47vh;
+        left: 30vw;
+    }
+    .section-educationalCourse > img {
+        position: absolute;
+        top: 47vh;
+        left: 55vw;
+        width: 25vw;
+        height: 50vh;
+    }
+    .section-educationalCourse > div > h2 {
+        font-size: 1.5vw;
+        line-height: 19.5px;
+    }
+    .section-educationalCourse > div > p {
+        font-size: 1vw;
+        line-height: 13.5px;
+    }
 }
-.section-educationalCourse > h1 {
-    position: absolute;
-    top: 35vh;
-    left: 40vw;
-    font-size: 30px;
+
+@media(max-width: 800px){
+    .section-educationalCourse {
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .section-educationalCourse img {
+        margin: 35vh auto 0;
+        width: 90vw;
+        height: 60vw;
+    }
+    .section-educationalCourse > h1 {
+        font-size: 35px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-educationalCourse h2 {
+        font-size: 16px;
+        padding-left: 2vw;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+    }
+    .section-educationalCourse p {
+        font-size: 14px;
+        padding-left: 2vw;
+        font-weight: 300;
+        line-height: 1.6;
+    }
 }
-.section-educationalCourse > div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 47vh;
-    left: 30vw;
-}
-.section-educationalCourse > img {
-    position: absolute;
-    top: 47vh;
-    left: 55vw;
-    width: 25vw;
-    height: 50vh;
-}
-.section-educationalCourse > div > h2 {
-    font-size: 1.5vw;
-    line-height: 19.5px;
-}
-.section-educationalCourse > div > p {
-    font-size: 1vw;
-    line-height: 13.5px;
-}
+

@@ -8,8 +8,8 @@ function LuluRalaProgramGuide() {
     <>
     <LeftNav menu={navConfig.nav[1]}></LeftNav>
     <section className="section-luluRalaProgramGuide">
-      <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>
       <img src="./section/luluRalaProgramGuide.jpg"  alt="아이들이엔씨"/>
+      <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>
       <div className="section-left">
         <h2>대상</h2>
         <p>영유아(24개월 이상) ~ 초등학생  (기관은 별도 상담)</p>
