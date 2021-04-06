@@ -1,27 +1,30 @@
-.div-left-nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 2.5vw;
-    top: 35vh;
-    width: 15vw;
-    z-index: 1;
-}
-.div-left-nav > h2 {
-    border-bottom: 0.3vh solid rgba(65, 105, 225, 0.7);
-    font-size: 2vw;
-    padding-bottom: 2vh;
-    margin-bottom: 5vh;
-}
-.div-left-nav > a {
-    border-bottom: 0.2vh solid rgba(65, 105, 225, 0.5);
-    font-size: 1.2vw;
-    padding-bottom: 1vh;
-    margin-bottom: 2vh;
-    transition: 0.3s;
-}
-.div-left-nav > a:hover {
-    color: rgba(255, 165, 0,2);
-    font-weight: 600;
-    transition: 0.3s;
+@media(min-width: 800px){
+
+    .div-left-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 2.5vw;
+        top: 35vh;
+        width: 15vw;
+        z-index: 1;
+    }
+    .div-left-nav > h2 {
+        border-bottom: 0.3vh solid rgba(65, 105, 225, 0.7);
+        font-size: 2vw;
+        padding-bottom: 2vh;
+        margin-bottom: 5vh;
+    }
+    .div-left-nav > a {
+        border-bottom: 0.2vh solid rgba(65, 105, 225, 0.5);
+        font-size: 1.2vw;
+        padding-bottom: 1vh;
+        margin-bottom: 2vh;
+        transition: 0.3s;
+    }
+    .div-left-nav > a:hover {
+        color: rgba(255, 165, 0,2);
+        font-weight: 600;
+        transition: 0.3s;
+    }
 }
