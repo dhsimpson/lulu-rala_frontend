@@ -13,12 +13,16 @@ const anchors = [
   "Educational&nbsp;Course",
   "Consulting"];
 
-const focusIdList = [
- /* "first-img-id"*/, "first-div-id",
-  "third-h1-id", "third-img-id", "third-div-id",
-  "fourth-h1-id", "fourth-div-id", "fourth-img-id",
-  "fifth-h1-id", "fifth-img-id", "fifth-form-id"
-];
+
+const focusIdList = 
+[
+  [],
+  [],
+  ["third-h1-id", "third-img-id", "third-div-id",],
+  ["fourth-h1-id", "fourth-div-id", "fourth-img-id",],
+  ["fifth-h1-id", "fifth-img-id", "fifth-form-id"],
+  []
+ ];
 
 const isInViewport = (element) => {
   const rect = element.getBoundingClientRect();
@@ -29,28 +33,19 @@ const isInViewport = (element) => {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-// const initTransition = () => {
-//   focusIdList.forEach(elementId => {
 
-//   })
-// }
-const controlTransition = () => {
-  // console.log("스크롤");
-  focusIdList.forEach(elementId => {
-    if (isInViewport(document.getElementById(elementId))) {
-      document.getElementById(elementId).classList.remove("focused");
-      // console.log(`${elementId} True`)
-    }
-    else {
-      document.getElementById(elementId).classList.add("focused");
-      // console.log(`${elementId} False`)
-    }
-  })
-}
 function Main() {
-  // document.body.style.backgroundImage = "url('./background-main.jpg')";
+  const addFocus = (idx) => {
+    focusIdList[idx].forEach(elementId => {
+      document.getElementById(elementId).classList.add("focused");
+    })
+  }
+  const removeFocus = (idx) => {
+    focusIdList[idx].forEach(elementId => {
+      document.getElementById(elementId).classList.remove("focused");
+    })
+  }
   useEffect(() => {
-    controlTransition();
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
 <h2>개인정보처리방침</h2>
@@ -81,6 +76,13 @@ ex)
           // anchors={anchors}
           navigation={true}
           normalScrollElements="#consultContent, #privacyHtml"
+          onLeave={(origin, destination, direction)=> {
+            if(destination.index === 4 && origin.index === 5 || destination.index === 5 && origin.index === 4) {
+              return;
+            }
+            addFocus(destination.index);
+            removeFocus(origin.index);
+          }}
           // navigationTooltips={anchors}
           render={() => {
             return (
