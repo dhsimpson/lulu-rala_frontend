@@ -258,6 +258,7 @@
     }
     
     .fifth-right > textarea{
+        font-family: MapoPeacefull;
         width: 96%;
         height: 8.5vh;
         border: 1px solid rgba(0, 0, 0, 1);
@@ -428,6 +429,7 @@
         border: 1px solid rgba(0, 0, 0, 1);
     }
     .fifth-right > textarea{
+        font-family: MapoPeacefull;
         width: 90%;
         height: 8.5vh;
         margin-left: 2vw;

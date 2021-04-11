@@ -18,7 +18,7 @@
     }
     .section-requestForConsultation > form {
         position: absolute;
-        background-color: white;
+        /* background-color: white; */
         padding: 0.3vh 2vw 4vh 2vw;
         box-sizing: border-box;
         top: 47vh;
@@ -36,6 +36,7 @@
         margin: 0.5vh 0;
     }
     .section-requestForConsultation > form input[type="text"] {
+        height: 2vh;
         width: 95%;
         margin-bottom: 1vh;
     }
@@ -51,6 +52,9 @@
         margin: 1vh 0;
         width: 97%;
         border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    textarea{
+        font-family: MapoPeacefull;
     }
     #privacyHtml {
         font-size: 13.5px;
@@ -84,7 +88,7 @@
         font-size: 35px;
     }
     .section-requestForConsultation > form {
-        background-color: white;
+        /* background-color: white; */
         padding: 0.3vh 2vw 4vh 2vw;
         box-sizing: border-box;
         margin: 2vh auto 2vh;
@@ -101,6 +105,7 @@
         margin: 0.5vh 0;
     }
     .section-requestForConsultation > form input[type="text"] {
+        height: 2.5vh;
         width: 95%;
         margin-bottom: 1vh;
     }
@@ -116,6 +121,9 @@
         margin: 1vh 0;
         width: 97%;
         border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    textarea{
+        font-family: MapoPeacefull;
     }
     #privacyHtml {
         font-size: 13.5px;

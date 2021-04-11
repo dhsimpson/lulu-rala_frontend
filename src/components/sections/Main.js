@@ -1,5 +1,5 @@
 import '../../css/section/main.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import Footer from '../Footer';
 
@@ -29,11 +29,17 @@ function Main() {
     })
   }
   const goHead = (e) => {
-    console.log(ReactFullpage);
-    console.log(window.fullpage_api);
     window.fullpage_api.silentMoveTo(e,0);
   }
+
+  const [width, setWidth] = useState(0);
+
   useEffect(() => {
+    function handleResize(){
+      const newWidth = window.innerWidth;
+      setWidth(newWidth);
+    }
+    window.addEventListener('resize', handleResize);
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
 <h2>개인정보처리방침</h2>
@@ -55,11 +61,12 @@ ex)
 희망 프로그램 : 방문수업
 희망요일 및 시간 : 월, 수요일 주 2회, 5시 ~ 5시 40분
         `;
-  })
+        return () => window.removeEventListener('resize', handleResize);
+  },[]);
 
   return (
     <>
-      {window.innerWidth >= 800
+      {width >= 800
         ? <ReactFullpage
           // anchors={anchors}
           navigation={true}

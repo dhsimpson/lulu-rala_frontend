@@ -1,50 +1,141 @@
-.navMenu {
-    position: relative;
-    padding: auto 1.5vw;
-    z-index: 3;
+@media(min-width: 800px) {
+    .navMenu {
+        position: relative;
+        padding: auto 1.5vw;
+        z-index: 3;
+    }
+    .navMenu > div {
+        width: 14vw;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+        transition: 1s;
+    }
+    .navMenu > div:hover{
+        border-bottom: 2px solid red;
+        transition: 0.5s;
+    }
+    .navMenu > div > button {
+        padding: 2.5vh 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .subMenu {
+        position: absolute;
+        border: none;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateY(-2em);
+    }
+    .subMenu a {
+        display: inline-block;
+        width: 15.5vw;
+        padding: 2.5vh 0;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .subMenu span {
+        border-bottom: 1px solid rgba(0,0,0,0.0);
+        transition: 0.5s;
+    }
+    .subMenu span:hover {
+        border-bottom: 1px solid black;
+        transition: 0.5s;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
-.navMenu > div {
-    width: 14vw;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.0);
-    transition: 1s;
-}
-.navMenu > div:hover{
-    border-bottom: 2px solid red;
-    transition: 0.5s;
-}
-.navMenu > div > button {
-    padding: 2.5vh 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    white-space: nowrap;
-}
-.subMenu {
-    visibility: hidden;
-    position: absolute;
-    border: none;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translateY(-2em);
-}
-.subMenu a {
-    display: inline-block;
-    width: 15.5vw;
-    padding: 2.5vh 0;
-    font-size: 16px;
-    white-space: nowrap;
-}
-.subMenu span {
-    border-bottom: 1px solid rgba(0,0,0,0.0);
-    transition: 0.5s;
-}
-.subMenu span:hover {
-    border-bottom: 1px solid black;
-    transition: 0.5s;
-}
-a {
-    color: inherit;
-    text-decoration: none;
+
+@media(max-width: 800px) {
+    .navMenu {
+        position: relative;
+        padding: auto 1.5vw;
+        z-index: 3;
+    }
+    .navMenu > div {
+        width: 14vw;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+        transition: 1s;
+    }
+    .navMenu > div > button {
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .subMenu {
+        display: none;
+        position: relative;
+        border: none;
+        background-color: rgba(200, 200, 200, 1);
+        width: 100vw;
+        transition: 0.5s;
+        transform: translateY(0%);
+        animation-duration: 0.2s;
+        animation-timing-function: ease;
+        animation-name: slideNavMenu;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes slideNavMenu {
+        0%{
+            top: 50px;
+            height: 0px;
+        }
+        25%{
+            height: 25px;
+        }
+        50%{
+            height: 50px;
+        }
+        100%{
+            height: auto;
+        }
+    
+    }
+    .subMenu li {
+        position: relative;
+    }
+    .subMenu a {
+        display: block;
+        width: 15.5vw;
+        padding: 20px;
+        padding-left: 30px;
+        font-size: 16px;
+        white-space: nowrap;
+        position: relative;
+    }
+    .subMenu span {
+        border-bottom: 1px solid rgba(0,0,0,0.0);
+        transition: 0.5s;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    div.div-toggle-navMenu {
+        cursor: pointer;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    div.div-toggle-navMenu.toggled {
+        transform: rotate(135deg);
+        transition: 0.5s;
+    }
 }

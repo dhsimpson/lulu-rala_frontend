@@ -1,32 +1,108 @@
-nav {
-    display: flex;
-    position: absolute;
-    top: 4vh;
-    z-index: 2;
-    width: unset;
-}
-nav.nav-head{
-    right: 17vw;
-}
-nav.nav-head:hover button{
-    cursor:pointer;
-    background-color: transparent;
-}
-nav.nav-head:hover .subMenu{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0%);
+@media(min-width: 800px){
+    nav {
+        display: flex;
+        position: absolute;
+        top: 4vh;
+        z-index: 2;
+        width: unset;
+    }
+    nav.nav-head{
+        right: 17vw;
+    }
+    nav.nav-head:hover button{
+        cursor:pointer;
+        background-color: transparent;
+    }
+    nav.nav-head:hover .subMenu{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+    .nav-background {
+        transition: 1s;
+    }
+    nav.nav-head:hover .nav-background {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100vw;
+        height: 35vh;
+        left: 0;
+        top: 0;
+        transition: 1s;
+    }
 }
 
-.nav-background {
-    transition: 1s;
-}
-nav.nav-head:hover .nav-background {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 100vw;
-    height: 35vh;
-    left: 0;
-    top: 0;
-    transition: 1s;
+@media(max-width: 800px){
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(240, 240, 240, 1);
+        top: 60px;
+        z-index: 2;
+        width: unset;
+    }
+    nav.nav-head{
+        width: 100vw;
+        animation-duration: 0.1s;
+        animation-timing-function: ease;
+        animation-name: slideNav;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    @keyframes slideNav {
+        0%{
+            top: 50px;
+            height: 0px;
+        }
+        25%{
+            height: 25px;
+        }
+        50%{
+            height: 50px;
+        }
+        100%{
+            height: auto;
+        }
+    
+    }
+    nav.nav-head:hover button{
+        cursor:pointer;
+    }
+    
+    .nav-background {
+        transition: 1s;
+    }
+    nav.nav-head:hover .nav-background {
+        position: fixed;
+        width: 100vw;
+        height: 35vh;
+        left: 0;
+        top: 0;
+        transition: 1s;
+    }
+
+    #id-toggle-nav {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 17px;
+        right: 10px;
+        z-index: 3;
+    }
+    .div-toggle-nav-bar {
+        cursor: pointer;
+        width: 20px;
+        height: 4px;
+        background-color: black;
+        margin: 1.5px auto;
+    }
+    #id-toggle-nav:hover > .div-toggle-nav-bar{
+        background-color: gray;
+    }
+    .clicked{
+    }
 }

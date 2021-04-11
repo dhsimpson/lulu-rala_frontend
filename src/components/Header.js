@@ -39,7 +39,6 @@ function Header() {
         return currentHrefList[currentHrefList.length - 1].length > 0;
     }
     const goHead = (e) => {
-        console.log("hell")
         window.fullpage_api.silentMoveTo(e,0);
       }
     return (
