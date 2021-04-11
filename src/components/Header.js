@@ -28,10 +28,24 @@ function Header() {
             setShowPopUp(false);
         }
     }
+    const checkAndRoute = (e) => {
+        if(!checkHref()){
+            goHead(e);
+            return;
+        }
+    }
+    const checkHref = () => {
+        const currentHrefList = window.location.href.split("\/");
+        return currentHrefList[currentHrefList.length - 1].length > 0;
+    }
+    const goHead = (e) => {
+        console.log("hell")
+        window.fullpage_api.silentMoveTo(e,0);
+      }
     return (
         <div className="div-header">
             <header>
-                <Link to="/">아이들이엔씨</Link>
+                <Link to="/" onClick={()=>checkAndRoute()}>아이들이엔씨</Link>
             </header>
             <img
                 onClick={() => toggleLogInPopUp()}

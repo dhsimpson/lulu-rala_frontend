@@ -6,14 +6,6 @@ import Footer from '../Footer';
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-const anchors = [
-  "Lulurala&nbsp;English",
-  "Introduce&nbsp;Videos",
-  "Why&nbsp;Lulurala",
-  "Educational&nbsp;Course",
-  "Consulting"];
-
-
 const focusIdList = 
 [
   [],
@@ -24,15 +16,6 @@ const focusIdList =
   []
  ];
 
-const isInViewport = (element) => {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
 
 function Main() {
   const addFocus = (idx) => {
@@ -44,6 +27,11 @@ function Main() {
     focusIdList[idx].forEach(elementId => {
       document.getElementById(elementId).classList.remove("focused");
     })
+  }
+  const goHead = (e) => {
+    console.log(ReactFullpage);
+    console.log(window.fullpage_api);
+    window.fullpage_api.silentMoveTo(e,0);
   }
   useEffect(() => {
     document.getElementById("privacyHtml").innerHTML = `
@@ -77,7 +65,7 @@ ex)
           navigation={true}
           normalScrollElements="#consultContent, #privacyHtml"
           onLeave={(origin, destination, direction)=> {
-            if(destination.index === 4 && origin.index === 5 || destination.index === 5 && origin.index === 4) {
+            if( (destination.index === 4 && origin.index === 5) || (destination.index === 5 && origin.index === 4) ) {
               return;
             }
             addFocus(destination.index);
@@ -91,7 +79,9 @@ ex)
                   {ArticleFirst()}
                 </div>
 
-                <div className="section article-second">동영상 4~5개</div>
+                <div className="section article-second">동영상 4~5개
+                <button onClick={()=>{goHead()}}>맨위로</button>
+                </div>
 
                 <div className="section article-third">
                   {ArticleThird()}

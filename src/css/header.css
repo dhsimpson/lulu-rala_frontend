@@ -10,9 +10,9 @@ header {
 }
 .loginIcon {
     position: absolute;
-    top: 6vh;
+    top: 5.8vh;
     right: 5vw;
-    width: 2vw;
+    width: 1.6vw;
     z-index: 3;
     cursor: pointer;
 }
