@@ -35,6 +35,8 @@ function Main() {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
+    const newWidth = window.innerWidth;
+    setWidth(newWidth);
     function handleResize(){
       const newWidth = window.innerWidth;
       setWidth(newWidth);

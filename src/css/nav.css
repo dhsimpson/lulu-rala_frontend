@@ -50,6 +50,7 @@
         animation-name: slideNav;
         animation-direction: alternate;
         animation-fill-mode: forwards;
+        z-index: 3;
     }
     @keyframes slideNav {
         0%{
@@ -86,7 +87,7 @@
     #id-toggle-nav {
         width: 30px;
         height: 30px;
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         top: 17px;
@@ -103,6 +104,11 @@
     #id-toggle-nav:hover > .div-toggle-nav-bar{
         background-color: gray;
     }
-    .clicked{
+    #nav-background {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
     }
 }

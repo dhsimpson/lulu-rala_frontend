@@ -106,15 +106,19 @@
     }
     .subMenu a {
         display: block;
-        width: 15.5vw;
-        padding: 20px;
-        padding-left: 30px;
+        width: 100vw;
+        height: 50px;
+        /* padding-left: 30px;
+        padding-right: auto; */
         font-size: 16px;
         white-space: nowrap;
         position: relative;
     }
     .subMenu span {
-        border-bottom: 1px solid rgba(0,0,0,0.0);
+        position: absolute;
+        left: 20px;
+        padding-left: 20px;
+        margin: 20px 0;
         transition: 0.5s;
     }
     a {
