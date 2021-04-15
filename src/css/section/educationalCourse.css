@@ -1,12 +1,13 @@
 @media(min-width: 800px){
     .section-educationalCourse {
-        height: 110vh;
+        height: 130vh;
         position: relative;
+        letter-spacing: 4px;
     }
     .section-educationalCourse > h1 {
         position: absolute;
         top: 35vh;
-        left: 40vw;
+        left: 700px;
         font-size: 30px;
     }
     .section-educationalCourse > div {
@@ -14,22 +15,24 @@
         display: flex;
         flex-direction: column;
         top: 47vh;
-        left: 30vw;
+        left: 400px;
     }
     .section-educationalCourse > img {
         position: absolute;
         top: 47vh;
-        left: 55vw;
-        width: 25vw;
-        height: 50vh;
+        left: 900px;
+        width: 500px;
+        height: 500px;
     }
     .section-educationalCourse > div > h2 {
-        font-size: 1.5vw;
-        line-height: 19.5px;
+        font-size: 21px;
+        line-height: 2;
+        margin-bottom: 10px;
     }
     .section-educationalCourse > div > p {
-        font-size: 1vw;
-        line-height: 13.5px;
+        font-size: 13.5px;
+        line-height: 1.6;
+        margin-bottom: 20px;
     }
 }
 

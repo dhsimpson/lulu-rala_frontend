@@ -29,6 +29,8 @@ function NavMenu(props) {
         }
     }
     const closeNav = () => {
+        const newWidth = window.innerWidth;
+        if(newWidth > 800){return;}
         const nav = document.getElementsByTagName("nav")[0];
         if(!nav){return;}
         nav.style.display = "none";

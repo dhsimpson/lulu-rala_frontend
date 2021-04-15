@@ -1,6 +1,6 @@
 @media(min-width: 800px){
     .section-brandStory {
-        height: 110vh;
+        height: 130vh;
         position: relative;
     }
     .section-brandStory > h1 {
@@ -8,28 +8,32 @@
         top: 35vh;
         left: 50vw;
         font-size: 30px;
+        letter-spacing: 4px;
     }
     .section-brandStory > img {
         position: absolute;
         top: 47vh;
-        left: 25vw;
-        width: 30vw;
-        height: 50vh;
+        left: 370px;
+        width: 450px;
+        height: 360px;
     }
     .section-brandStory > div {
         position: absolute;
         display: flex;
         flex-direction: column;
         top: 47vh;
-        left: 60vw;
+        left: 850px;
     }
     .section-brandStory > div > h2 {
         font-size: 19.5px;
         line-height: 2vw;
+        margin: 0 auto;
+        letter-spacing: 4px;
     }
     .section-brandStory > div > p {
         font-size: 13.5px;
-        line-height: 2vw;
+        line-height: 1.8;
+        letter-spacing: 4px;
     }
 }
 

@@ -6,28 +6,31 @@
     .section-philosophyOfEducation > img {
         position: absolute;
         top: 35vh;
-        left: 30vw;
-        width: 27vw;
-        height: 25vw;
+        left: 350px;
+        width: 600px;
+        height: 440px;
     }
     .section-philosophyOfEducation > div {
         position: absolute;
         top: 35vh;
-        left: 60vw;
-        width: 25vw;
+        left: 970px;
+        width: 390px;
+        letter-spacing: 2px;
     }
     .section-philosophyOfEducation > div :first-child {
-        margin-bottom: 3vh;
+        margin-bottom: 20px;
+        line-height: 2;
     }
     .section-philosophyOfEducation > div > h2 {
-        font-size: 16px;
+        font-size: 21px;
         font-weight: 700;
-        line-height: 1.6;
+        line-height: 1.4;
+        margin-bottom: 5px;
     }
     .section-philosophyOfEducation > div > p {
         font-size: 13.5px;
-        line-height: 1.6;
-        margin-bottom: 1vh;
+        line-height: 1.4;
+        margin-bottom: 10px;
     }
 }
 

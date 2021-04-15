@@ -2,11 +2,12 @@
     .section-luluRalaProgramGuide {
         height: 120vh;
         position: relative;
+        letter-spacing: 4px;
     }
     .section-luluRalaProgramGuide > h1 {
         position: absolute;
         top: 35vh;
-        left: 40vw;
+        margin: 0 auto;
         font-size: 30px;
     }
     .section-luluRalaProgramGuide > img {

@@ -13,7 +13,7 @@ function Nav() {
         setWidth(newWidth);
         function handleResize() {
             const newWidth = window.innerWidth;
-            if(newWidth >= 800){
+            if(newWidth > 800){
                 const nav = document.getElementsByTagName("nav")[0];
                 nav.style.display = "flex";
                 const subMenus= document.getElementsByClassName("subMenu");
@@ -21,6 +21,8 @@ function Nav() {
                     el.style.display = "block";
                 })
             }else{
+                const nav = document.getElementsByTagName("nav")[0];
+                nav.style.display = "none";
                 const subMenus= document.getElementsByClassName("subMenu");
                 Array.from(subMenus).forEach(el => {
                     el.style.display = "none";
