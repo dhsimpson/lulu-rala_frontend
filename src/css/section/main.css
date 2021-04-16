@@ -23,7 +23,7 @@
     
     .article-first div > div {height: 36px;}
     
-    h1 {
+    .article-first h1 {
         position: absolute;
         top: 25vh;
         left: 37vw;

@@ -1,36 +1,116 @@
-@media(min-width: 800px){
+@media(min-width: 1600px){
     .section-brandStory {
         height: 130vh;
         position: relative;
     }
-    .section-brandStory > h1 {
+    .div-brandStory {
         position: absolute;
         top: 35vh;
-        left: 50vw;
+        left: 300px;
+        width: 76.5vw;
+        padding: 0;
+        margin: 0 1vw;
+        height: 500px;
+    }
+    .div-brandStory > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 233px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-brandStory {
+        position: absolute;
+        display: flex;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1250px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-brandStory > img {
+        width: 500px;
+        height: 350px;
+        margin-right: 25px;
+    }
+    .div-inner-brandStory > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 670px;
+    }
+    .div-inner-brandStory > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        margin: 0 auto;
+        letter-spacing: 6px;
+    }
+    .div-inner-brandStory > div > p {
+        font-size: 13.5px;
+        line-height: 1.8;
+        letter-spacing: 6px;
+    }
+}
+@media(min-width: 800px) and (max-width: 1600px){
+    .section-brandStory {
+        height: 130vh;
+        position: relative;
+    }
+    .div-brandStory {
+        position: absolute;
+        top: 35vh;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-brandStory > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 211px;
         font-size: 30px;
         letter-spacing: 4px;
     }
-    .section-brandStory > img {
-        position: absolute;
-        top: 47vh;
-        left: 370px;
-        width: 450px;
-        height: 360px;
-    }
-    .section-brandStory > div {
+    .div-inner-brandStory {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        top: 47vh;
-        left: 850px;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1090px;
+        font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-brandStory > div > h2 {
+    .div-inner-brandStory > img {
+        width: 450px;
+        height: 360px;
+        margin-right: 25px;
+    }
+    .div-inner-brandStory > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 1000px;
+    }
+    .div-inner-brandStory > div > h2 {
         font-size: 19.5px;
-        line-height: 2vw;
+        line-height: 1.6;
         margin: 0 auto;
         letter-spacing: 4px;
     }
-    .section-brandStory > div > p {
+    .div-inner-brandStory > div > p {
         font-size: 13.5px;
         line-height: 1.8;
         letter-spacing: 4px;
