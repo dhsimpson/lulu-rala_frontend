@@ -152,3 +152,9 @@
         line-height: 1.6;
     }
 }
+@media(max-height: 600px){
+    .section-brandStory {
+        height: 700px;
+        position: relative;
+    }
+}

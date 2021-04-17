@@ -1,32 +1,117 @@
-@media(min-width: 800px){
+@media(min-width: 1600px){
     .section-whyLuluRala {
         height: 130vh;
         position: relative;
-        letter-spacing: 4px;
     }
-    .section-whyLuluRala > h1 {
+    .div-whyLuluRala {
         position: absolute;
         top: 35vh;
-        left: 50vw;
-        font-size: 30px;
-    }
-    .section-whyLuluRala > img {
-        position: absolute;
-        top: 47vh;
-        left: 400px;
-        width: 450px;
+        left: 300px;
+        width: 76.5vw;
+        padding: 0;
+        margin: 0 1vw;
         height: 500px;
     }
-    .section-whyLuluRala > div {
+    .div-whyLuluRala > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 233px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-whyLuluRala {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        top: 47vh;
-        left: 900px;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 886px;
+        font-size: 30px;
+        letter-spacing: 6px;
     }
-    .section-whyLuluRala > div > p {
+    .div-inner-whyLuluRala > img {
+        height: 450px;
+        margin-right: 25px;
+    }
+    .div-inner-whyLuluRala > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 500px;
+    }
+    .div-inner-whyLuluRala > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        margin: 0 auto;
+        letter-spacing: 6px;
+    }
+    .div-inner-whyLuluRala > div > p {
         font-size: 13.5px;
-        line-height: 2;
+        line-height: 1.8;
+        letter-spacing: 6px;
+    }
+}
+@media(min-width: 800px) and (max-width: 1600px){
+    .section-whyLuluRala {
+        height: 130vh;
+        position: relative;
+    }
+    .div-whyLuluRala {
+        position: absolute;
+        top: 35vh;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-whyLuluRala > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 223px;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .div-inner-whyLuluRala {
+        position: absolute;
+        display: flex;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 886px;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .div-inner-whyLuluRala > img {
+        height: 435px;
+        margin-right: 25px;
+    }
+    .div-inner-whyLuluRala > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 435px;
+    }
+    .div-inner-whyLuluRala > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        margin: 0 auto;
+        letter-spacing: 4px;
+    }
+    .div-inner-whyLuluRala > div > p {
+        font-size: 13.5px;
+        line-height: 1.8;
+        letter-spacing: 4px;
     }
 }
 
@@ -63,5 +148,12 @@
         padding-left: 2vw;
         font-weight: 300;
         line-height: 1.6;
+    }
+}
+
+@media(max-height: 600px){
+    .section-whyLuluRala {
+        height: 700px;
+        position: relative;
     }
 }

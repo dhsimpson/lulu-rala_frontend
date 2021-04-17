@@ -1,39 +1,125 @@
-@media(min-width: 800px){
+@media(min-width: 1600px){
     .section-luluRalaProgramGuide {
-        height: 120vh;
+        height: 150vh;
+        position: relative;
+        letter-spacing: 6px;
+    }
+    .div-luluRalaProgramGuide {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 35vh;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-inner-luluRalaProgramGuide {
+        position: relative;
+        width: 1000px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .div-inner-luluRalaProgramGuide > h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: inline-block;
+        width: 487px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-luluRalaProgramGuide > img {
+        margin: 100px 0 50px 0;
+        width: 1000px;
+        height: 400px;
+    }
+    .div-inner-luluRalaProgramGuide > div {
+        display: flex;
+        width: 1000px;
+    }
+    .div-inner-luluRalaProgramGuide > div > .section-left {
+        display: inline-block;
+    }
+    .div-inner-luluRalaProgramGuide > div > .section-right {
+        display: inline-block;
+        margin-left: 100px;
+    }
+    .div-inner-luluRalaProgramGuide > div > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        letter-spacing: 6px;
+        margin-bottom: 25px;
+    }
+    .div-inner-luluRalaProgramGuide > div > div > p {
+        font-size: 13.5px;
+        line-height: 1.8;
+        letter-spacing: 6px;
+    }
+}
+@media(min-width: 800px) and (max-width: 1600px){
+    .section-luluRalaProgramGuide {
+        height: 150vh;
         position: relative;
         letter-spacing: 4px;
     }
-    .section-luluRalaProgramGuide > h1 {
+    .div-luluRalaProgramGuide {
         position: absolute;
+        display: flex;
+        flex-direction: column;
         top: 35vh;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-inner-luluRalaProgramGuide {
+        position: relative;
+        width: 1000px;
+        left: 0;
+        right: 0;
         margin: 0 auto;
+    }
+    .div-inner-luluRalaProgramGuide > h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: inline-block;
+        width: 441px;
         font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-luluRalaProgramGuide > img {
-        position: absolute;
-        top: 47vh;
-        left: 27vw;
-        width: 55vw;
-        height: 40vh;
+    .div-inner-luluRalaProgramGuide > img {
+        margin: 100px 0 50px 0;
+        width: 1000px;
+        height: 400px;
     }
-    .section-luluRalaProgramGuide > div {
-        position: absolute;
-        top: 87vh;
+    .div-inner-luluRalaProgramGuide > div {
+        display: flex;
+        width: 1000px;
     }
-    .section-left {
-        left: 27vw;
+    .div-inner-luluRalaProgramGuide > div > .section-left {
+        display: inline-block;
     }
-    .section-right {
-        left: 60vw;
+    .div-inner-luluRalaProgramGuide > div > .section-right {
+        display: inline-block;
+        margin-left: 100px;
     }
-    .section-luluRalaProgramGuide > div > h2 {
+    .div-inner-luluRalaProgramGuide > div > div > h2 {
         font-size: 19.5px;
-        line-height: 5vw;
+        line-height: 1.6;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
     }
-    .section-luluRalaProgramGuide > div > p {
+    .div-inner-luluRalaProgramGuide > div > div > p {
         font-size: 13.5px;
-        line-height: 1.7vw;
+        line-height: 1.8;
+        letter-spacing: 4px;
     }
 }
 
@@ -73,3 +159,9 @@
     }
 }
 
+@media(max-height: 600px){
+    .section-luluRalaProgramGuide {
+        height:     1000px;
+        position: relative;
+    }
+}

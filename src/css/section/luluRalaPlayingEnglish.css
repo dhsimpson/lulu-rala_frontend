@@ -1,34 +1,118 @@
-@media(min-width: 800px){
+@media(min-width: 1600px){
+    .section-luluRalaPlayingEnglish {
+        height: 130vh;
+        position: relative;
+    }
+    .div-luluRalaPlayingEnglish {
+        position: absolute;
+        top: 35vh;
+        left: 300px;
+        width: 76.5vw;
+        padding: 0;
+        margin: 0 1vw;
+        height: 500px;
+    }
+    .div-luluRalaPlayingEnglish > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 346px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-luluRalaPlayingEnglish {
+        position: absolute;
+        display: flex;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1197px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-luluRalaPlayingEnglish > img {
+        height: 450px;
+        margin-right: 25px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 800px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        margin: 0 auto;
+        letter-spacing: 6px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div > p {
+        font-size: 13.5px;
+        line-height: 1.8;
+        letter-spacing: 6px;
+    }
+}
+@media(min-width: 800px) and (max-width: 1600px){
     .section-luluRalaPlayingEnglish {
         height: 130vh;
         position: relative;
         letter-spacing: 4px;
     }
-    .section-luluRalaPlayingEnglish > h1 {
-        width: 400px;
+    .div-luluRalaPlayingEnglish {
         position: absolute;
         top: 35vh;
-        left: 700px;
-        font-size: 30px;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
     }
-    .section-luluRalaPlayingEnglish > img {
+    .div-luluRalaPlayingEnglish > h1 {
         position: absolute;
-        top: 47vh;
-        left: 400px;
-        width: 450px;
-        height: 450px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 223px;
+        font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-luluRalaPlayingEnglish > div {
+    .div-inner-luluRalaPlayingEnglish {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        top: 47vh;
-        left: 900px;
-        width: 600px;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1197px;
+        font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-luluRalaPlayingEnglish > div > p {
+    .div-inner-luluRalaPlayingEnglish > img {
+        height: 435px;
+        margin-right: 25px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 405px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div > h2 {
+        font-size: 19.5px;
+        line-height: 1.6;
+        margin: 0 auto;
+        letter-spacing: 4px;
+    }
+    .div-inner-luluRalaPlayingEnglish > div > p {
         font-size: 13.5px;
-        line-height: 2;
+        line-height: 1.8;
+        letter-spacing: 4px;
     }
 }
 @media(max-width: 800px){
@@ -66,3 +150,9 @@
     }
 }
 
+@media(max-height: 600px){
+    .section-luluRalaPlayingEnglish {
+        height: 700px;
+        position: relative;
+    }
+}

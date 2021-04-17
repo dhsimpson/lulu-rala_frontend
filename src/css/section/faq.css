@@ -1,4 +1,4 @@
-@media(min-width: 800px){
+@media(min-width: 1600px){
     .section-faq {
         height: 120vh;
         position: relative;
@@ -7,32 +7,109 @@
         align-items: center;
         overflow: auto;
     }
-    .section-faq > ul {
+    .div-faq {
+        position: absolute;
+        left: 300px;
+        width: 78vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-inner-faq {
+        position: absolute;
+        display: flex;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1200px;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .div-inner-faq > ul {
         position: absolute;
         top: 35vh;
-        left: 25vw;
         height: 80vh;
-        width: 55vw;
+        width: 1000px;
         overflow: auto;
     }
-    .section-faq > ul > li {
+    .div-inner-faq > ul > li {
         cursor: pointer;
         border-top: 1px solid rgba(125, 125, 125,0.2);
+        padding: 16px 16px 16px 24px;
         transition: 1s;
     }
-    .section-faq > ul::-webkit-scrollbar { 
+    .div-inner-faq > ul::-webkit-scrollbar { 
         display: none; 
     }
-    .section-faq > ul > li > h2 {
+    .div-inner-faq > ul > li > h2 {
         font-size: 16px;
         font-weight: 600;
         line-height: 1.6;
         transition: 0.3s;
     }
-    .section-faq > ul > li > h2:hover {
+    .div-inner-faq > ul > li > h2:hover {
         background-color: rgba(125, 125, 125,0.2);
     }
-    .section-faq > ul > li > p {
+    .div-inner-faq > ul > li > p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-left: 1vw;
+        display: none;
+    }
+}
+@media(min-width: 800px) and (max-width: 1600px){
+    .section-faq {
+        height: 120vh;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+    .div-faq {
+        position: absolute;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-inner-faq {
+        position: absolute;
+        display: flex;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1000px;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .div-inner-faq > ul {
+        position: absolute;
+        top: 35vh;
+        height: 80vh;
+        width: 1000px;
+        overflow: auto;
+    }
+    .div-inner-faq > ul > li {
+        cursor: pointer;
+        border-top: 1px solid rgba(125, 125, 125,0.2);
+        padding: 16px 16px 16px 24px;
+        transition: 1s;
+    }
+    .div-inner-faq > ul::-webkit-scrollbar { 
+        display: none; 
+    }
+    .div-inner-faq > ul > li > h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+        transition: 0.3s;
+    }
+    .div-inner-faq > ul > li > h2:hover {
+        background-color: rgba(125, 125, 125,0.2);
+    }
+    .div-inner-faq > ul > li > p {
         font-size: 16px;
         line-height: 1.6;
         margin-left: 1vw;
@@ -78,6 +155,13 @@
         line-height: 1.6;
         margin-left: 1vw;
         display: none;
+    }
+}
+
+@media(max-height: 600px){
+    .section-faq {
+        height: 600px;
+        position: relative;
     }
 }
 
