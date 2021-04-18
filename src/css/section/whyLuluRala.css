@@ -116,26 +116,26 @@
 }
 
 @media(max-width: 800px){
-    .section-whyLuluRala {
+    .div-inner-whyLuluRala {
         height: 150vh;
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    .section-whyLuluRala img {
+    .div-inner-whyLuluRala img {
         margin: 35vh auto 0;
         width: 90vw;
         height: 60vw;
     }
-    .section-whyLuluRala > h1 {
+    .div-inner-whyLuluRala > h1 {
         font-size: 35px;
         padding-left: 2vw;
         font-weight: 500;
         line-height: 1.2;
-        margin-top: 2vh;
+        margin-top: 5vh;
         margin-bottom: 5px;
     }
-    .section-whyLuluRala h2 {
+    .div-inner-whyLuluRala h2 {
         font-size: 16px;
         padding-left: 2vw;
         font-weight: 500;
@@ -143,7 +143,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-whyLuluRala p {
+    .div-inner-whyLuluRala p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;

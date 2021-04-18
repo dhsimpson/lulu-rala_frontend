@@ -5,7 +5,7 @@ import '../css/navMenu.css';
 function NavMenu(props) {
     const toggleNavMenu = (el) => {
         el.stopPropagation();  
-        if(el.target.childNodes.length){      
+        if( el.target.childNodes.length && !Array.from(el.target.classList).includes("button-toggle") ){
             const toggler = el.target.childNodes[el.target.childNodes.length - 1];
             if(!toggler.classList){return;}
             const togglerClassList = Array.from(toggler.classList);
@@ -17,7 +17,21 @@ function NavMenu(props) {
                 toggler.classList.add("toggled");
                 el.target.childNodes[0].childNodes[1].style.display = "block";
             }
-        }else{    
+        }
+        else if(Array.from(el.target.classList).includes("button-toggle")) {   
+            const toggler = el.target.parentNode.nextSibling;  
+            if(!toggler.classList){return;}
+            const togglerClassList = Array.from(toggler.classList);
+            if(!el.target.nextSibling.style){return;}
+            if(togglerClassList.includes("toggled")){
+                toggler.classList.remove("toggled");
+                el.target.nextSibling.style.display = "none";
+            }else{
+                toggler.classList.add("toggled");
+                el.target.nextSibling.style.display = "block";
+            }
+        }
+        else{
             const togglerClassList = Array.from(el.target.classList);
             if(togglerClassList.includes("toggled")){
                 el.target.classList.remove("toggled");
@@ -56,7 +70,7 @@ function NavMenu(props) {
                 <button><Link to={`/${props.menuData.menuKey}`}> {props.menuData.menuName}</Link> </button>
             </div>)
             : (<div>
-                <button>{props.menuData.menuName}</button>
+                <button className="button-toggle">{props.menuData.menuName}</button>
                 <ul className = "subMenu">
                 {
                     props.menuData.subMenus.map((spreadMenu, i) => {

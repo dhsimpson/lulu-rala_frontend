@@ -32,11 +32,11 @@ ex)
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
       <section className="section-requestForConsultation">
-        {window.innerWidth <= 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
         <div className="div-requestForConsultation">
           {window.innerWidth > 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
           <div className="div-inner-requestForConsultation">
             <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨" />
+            {window.innerWidth <= 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
             <form>
               <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
               <p>신청자명(기관)</p>

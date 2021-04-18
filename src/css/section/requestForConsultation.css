@@ -56,24 +56,24 @@
     .div-inner-requestForConsultation >form > div {
         display: flex;
         width: 90%;
-        margin: 0.5vh 0;
+        margin: 5px 0;
     }
     .div-inner-requestForConsultation > form input[type="text"] {
         height: 2vh;
         width: 95%;
-        margin-bottom: 1vh;
+        margin-bottom: 10px;
     }
     
     .div-inner-requestForConsultation > form > textarea{
         width: 96%;
-        height: 10vh;
+        height: 50px;
         margin-top: 5px;
     }
     .div-inner-requestForConsultation > form > div.privacy-statement {
         background-color: white;
         height: 100px;
         position: relative;
-        margin: 1vh 0;
+        margin: 10px 0;
         width: 97%;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
@@ -103,7 +103,6 @@
         height: 185vh;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         position: relative;
     }
     .div-inner-requestForConsultation > img {
@@ -112,7 +111,7 @@
     }
     .div-inner-requestForConsultation > h1 {
         margin-top: 5vh;
-        padding-left: 2vw;
+        padding-left: 3vh;
         font-size: 35px;
     }
     .div-inner-requestForConsultation > form {
@@ -167,5 +166,13 @@
 @media(max-width: 500px){
     .div-inner-requestForConsultation {
         height: 155vh;
+    }
+}
+
+
+@media(max-height: 650px){
+    .section-requestForConsultation {
+        height: 1000px;
+        position: relative;
     }
 }

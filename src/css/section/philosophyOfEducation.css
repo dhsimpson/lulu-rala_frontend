@@ -100,17 +100,17 @@
 }
 
 @media(max-width: 800px) {
-    .section-philosophyOfEducation {
+    .div-inner-philosophyOfEducation {
         height: 140vh;
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    .section-philosophyOfEducation > img {
+    .div-inner-philosophyOfEducation > img {
         margin: 35vh auto 0;
         width: 90vw;
     }
-    .section-philosophyOfEducation h2 {
+    .div-inner-philosophyOfEducation h2 {
         font-size: 16px;
         font-weight: 700;
         padding-left: 2vw;
@@ -118,7 +118,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-philosophyOfEducation p {
+    .div-inner-philosophyOfEducation p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;

@@ -10,8 +10,9 @@ function LuluRalaProgramGuide() {
       <section className="section-luluRalaProgramGuide">
         <div className="div-luluRalaProgramGuide">
           <div className="div-inner-luluRalaProgramGuide">
-            <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>
+            {window.innerWidth > 800 && <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>}
             <img src="./section/luluRalaProgramGuide.jpg" alt="아이들이엔씨" />
+            {window.innerWidth <= 800 && <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>}
             <div>
               <div className="section-left">
                 <h2>대상</h2>

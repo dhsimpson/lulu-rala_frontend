@@ -116,17 +116,17 @@
     }
 }
 @media(max-width: 800px){
-    .section-luluRalaPlayingEnglish {
+    .div-inner-luluRalaPlayingEnglish {
         height: 130vh;
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    .section-luluRalaPlayingEnglish img {
+    .div-inner-luluRalaPlayingEnglish img {
         margin: 35vh auto 0;
         width: 90vw;
     }
-    .section-luluRalaPlayingEnglish > h1 {
+    .div-inner-luluRalaPlayingEnglish > h1 {
         font-size: 35px;
         padding-left: 2vw;
         font-weight: 500;
@@ -134,7 +134,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-luluRalaPlayingEnglish h2 {
+    .div-inner-luluRalaPlayingEnglish h2 {
         font-size: 16px;
         padding-left: 2vw;
         font-weight: 500;
@@ -142,7 +142,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-luluRalaPlayingEnglish p {
+    .div-inner-luluRalaPlayingEnglish p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;

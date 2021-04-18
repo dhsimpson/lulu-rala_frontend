@@ -124,18 +124,18 @@
 }
 
 @media(max-width: 800px){
-    .section-luluRalaProgramGuide  {
+    .div-inner-luluRalaProgramGuide  {
         height: 150vh;
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    .section-luluRalaProgramGuide img {
+    .div-inner-luluRalaProgramGuide img {
         margin: 35vh auto 0;
         width: 90vw;
         height: 60vw;
     }
-    .section-luluRalaProgramGuide > h1 {
+    .div-inner-luluRalaProgramGuide > h1 {
         font-size: 35px;
         padding-left: 2vw;
         font-weight: 500;
@@ -143,7 +143,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-luluRalaProgramGuide h2 {
+    .div-inner-luluRalaProgramGuide h2 {
         font-size: 16px;
         padding-left: 2vw;
         font-weight: 500;
@@ -151,7 +151,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-luluRalaProgramGuide p {
+    .div-inner-luluRalaProgramGuide p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;

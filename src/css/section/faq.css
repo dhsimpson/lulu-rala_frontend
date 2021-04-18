@@ -118,39 +118,39 @@
 }
 
 @media(max-width: 800px){
-    .section-faq {
+    .div-inner-faq {
         height: 120vh;
         position: relative;
         display:flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-faq > ul {
+    .div-inner-faq > ul {
         position: absolute;
         top: 35vh;
         height: 80vh;
         width: 90vw;
         overflow: auto;
     }
-    .section-faq > ul > li {
+    .div-inner-faq > ul > li {
         cursor: pointer;
         border-top: 1px solid rgba(125, 125, 125,0.2);
         transition: 1s;
         padding: 12px 12px 12px 48px;
     }
-    .section-faq > ul::-webkit-scrollbar { 
+    .div-inner-faq > ul::-webkit-scrollbar { 
         display: none; 
     }
-    .section-faq > ul > li > h2 {
+    .div-inner-faq > ul > li > h2 {
         font-size: 14px;
         font-weight: 600;
         line-height: 1.6;
         transition: 0.3s;
     }
-    .section-faq > ul > li > h2:hover {
+    .div-inner-faq > ul > li > h2:hover {
         background-color: rgba(125, 125, 125,0.2);
     }
-    .section-faq > ul > li > p {
+    .div-inner-faq > ul > li > p {
         font-size: 14px;
         line-height: 1.6;
         margin-left: 1vw;

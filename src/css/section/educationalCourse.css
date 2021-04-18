@@ -19,7 +19,7 @@
         right: 0;
         margin: 0 auto;
         display: block;
-        width: 346px;
+        width: 382px;
         font-size: 30px;
         letter-spacing: 6px;
     }
@@ -77,7 +77,7 @@
         right: 0;
         margin: 0 auto;
         display: block;
-        width: 223px;
+        width: 346px;
         font-size: 30px;
         letter-spacing: 4px;
     }
@@ -115,19 +115,19 @@
 }
 
 @media(max-width: 800px){
-    .section-educationalCourse {
+    .div-inner-educationalCourse {
         height: 170vh;
         display: flex;
         flex-direction: column;
         position: relative;
     }
     
-    .section-educationalCourse img {
+    .div-inner-educationalCourse img {
         margin: 35vh auto 0;
         width: 90vw;
         height: 60vw;
     }
-    .section-educationalCourse > h1 {
+    .div-inner-educationalCourse > h1 {
         font-size: 35px;
         padding-left: 2vw;
         font-weight: 500;
@@ -135,7 +135,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-educationalCourse h2 {
+    .div-inner-educationalCourse h2 {
         font-size: 16px;
         padding-left: 2vw;
         font-weight: 500;
@@ -143,7 +143,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-educationalCourse p {
+    .div-inner-educationalCourse p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;

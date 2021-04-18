@@ -118,18 +118,18 @@
 }
 
 @media(max-width: 800px){
-    .section-brandStory {
+    .div-inner-brandStory {
         display: flex;
         flex-direction: column;
         padding: 0;
         height: 170vh;
         position: relative;
     }
-    .section-brandStory img {
+    .div-inner-brandStory img {
         margin: 35vh auto 0;
         width: 90vw;
     }
-    .section-brandStory > h1 {
+    .div-inner-brandStory > h1 {
         font-size: 35px;
         padding-left: 2vw;
         font-weight: 500;
@@ -137,7 +137,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-brandStory h2 {
+    .div-inner-brandStory h2 {
         font-size: 16px;
         padding-left: 2vw;
         font-weight: 500;
@@ -145,7 +145,7 @@
         margin-top: 2vh;
         margin-bottom: 5px;
     }
-    .section-brandStory p {
+    .div-inner-brandStory p {
         font-size: 14px;
         padding-left: 2vw;
         font-weight: 300;
