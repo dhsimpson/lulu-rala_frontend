@@ -1,44 +1,52 @@
 @media(min-width: 800px){
     .section-tuitionInformation {
-        height: 110vh;
+        height: 135vh;
         position: relative;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
     }
-    .section-tuitionInformation > div {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 30vh;
-        left: 53vw;
-    }
-    .section-tuitionInformation > h1 {
-        position: absolute;
+    
+    .div-tuitionInformation {
         top: 35vh;
-        left: 50vw;
-        font-size: 30px;
-    }
-    .section-tuitionInformation > table {
         position: absolute;
-        top: 45vh;
-        left: 29vw;
-        width: 50vw;
-        border: 0.5vh solid white;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-inner-tuitionInformation {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1000px;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .div-inner-tuitionInformation > h1 {
+        position: absolute;
+        font-size: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: inline-block;
+        width: 100px;
+    }
+    .div-inner-tuitionInformation > table {
+        width: 1000px;
+        border: 4px solid white;
         text-align: center;
-        font-size: 1vw;
-        line-height: 4vh;
+        font-size: 16px;
+        line-height: 3;
+        margin-top: 50px;
     }
     th, tr, td {
-        border: 0.3vh solid white;
+        border: 2px solid white;
     }
-    .section-tuitionInformation > h2 {
-        font-size: 19.5px;
-        line-height: 2vw;
-        bottom: 10vh;
-        right: 20vw;
+    .div-inner-tuitionInformation > h2 {
         position: absolute;
+        font-size: 19.5px;
+        line-height: 3;
+        right: 0;
     }
 }
 

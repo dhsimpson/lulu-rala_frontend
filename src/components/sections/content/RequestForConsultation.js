@@ -1,11 +1,11 @@
 import '../../../css/section/requestForConsultation.css';
 import LeftNav from '../../LeftNav';
 import navConfig from '../../../config/navConfig.json';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 function RequestForConsultation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
-  useEffect(()=>{
+  useEffect(() => {
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
 <h2>개인정보처리방침</h2>
@@ -32,30 +32,34 @@ ex)
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
       <section className="section-requestForConsultation">
-        <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨"/>
-        <h1>상담 신청</h1>
-        <form>
-          <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
-          <p>신청자명(기관)</p>
-          <input type="text"/>
-          <p>연락처</p>
-          <input type="text"/>
-          <p>회신 받을 메일 주소</p>
-          <input type="text"/>
-          <p>주소(시/구/동 까지)</p>
-          <input type="text"/>
-          <p>신청 내용</p>
-          <textarea id="consultContent"/>
-
-          <div className="privacy-statement">
-            <div id="privacyHtml"></div>
+        {window.innerWidth <= 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
+        <div className="div-requestForConsultation">
+          {window.innerWidth > 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
+          <div className="div-inner-requestForConsultation">
+            <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨" />
+            <form>
+              <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
+              <p>신청자명(기관)</p>
+              <input type="text" />
+              <p>연락처</p>
+              <input type="text" />
+              <p>회신 받을 메일 주소</p>
+              <input type="text" />
+              <p>주소(시/구/동 까지)</p>
+              <input type="text" />
+              <p>신청 내용</p>
+              <textarea id="consultContent" />
+              <div className="privacy-statement">
+                <div id="privacyHtml"></div>
+              </div>
+              <div className="privacy-statement-checkbox">
+                <input type="checkbox" />
+                <p className="p-checkbox">개인정보 수집 및 이용에 동의합니다</p>
+              </div>
+              <input className="MapoPeacefull" type="submit" value="Send" />
+            </form>
           </div>
-          <div className="privacy-statement-checkbox">
-            <input type="checkbox" />
-            <p>개인정보 수집 및 이용에 동의합니다</p>
-          </div>
-          <input className="MapoPeacefull" type="submit" value="Send" />
-        </form>
+        </div>
       </section>
     </>
   );

@@ -1,53 +1,77 @@
 @media(min-width: 800px){
     .section-requestForConsultation {
-        height: 110vh;
+        height: 130vh;
         position: relative;
     }
-    .section-requestForConsultation > h1 {
+    .div-requestForConsultation {
         position: absolute;
         top: 35vh;
-        left: 50vw;
+        left: 300px;
+        width: 76.4vw;
+        padding: 0;
+        margin: 0 3vw;
+        height: 500px;
+    }
+    .div-requestForConsultation > h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 211px;
         font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-requestForConsultation > img {
+    .div-inner-requestForConsultation {
         position: absolute;
-        top: 47vh;
-        left: 25vw;
-        width: 30vw;
-        height: 55vh;
+        display: flex;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1090px;
+        font-size: 30px;
+        letter-spacing: 4px;
     }
-    .section-requestForConsultation > form {
-        position: absolute;
-        /* background-color: white; */
+    .div-inner-requestForConsultation > img {
+        width: 550px;
+        height: 550px;
+        margin-right: 25px;
+    }
+    .div-inner-requestForConsultation > form {
+        position: relative;
         padding: 0.3vh 2vw 4vh 2vw;
         box-sizing: border-box;
-        top: 47vh;
-        left: 58vw;
         width: 35vw;
         height: 55vh;
     }
-    .section-requestForConsultation > form > h2 {
+    .div-inner-requestForConsultation > form > h2 {
         font-size: 19.5px;
-        line-height: 6vh;
+        margin-bottom: 20px;
     }
-    .section-requestForConsultation >form > div {
+    .div-inner-requestForConsultation >form > p {
+        font-size: 16px;
+    }
+    .div-inner-requestForConsultation >form > div {
         display: flex;
         width: 90%;
         margin: 0.5vh 0;
     }
-    .section-requestForConsultation > form input[type="text"] {
+    .div-inner-requestForConsultation > form input[type="text"] {
         height: 2vh;
         width: 95%;
         margin-bottom: 1vh;
     }
     
-    .section-requestForConsultation > form > textarea{
+    .div-inner-requestForConsultation > form > textarea{
         width: 96%;
         height: 10vh;
+        margin-top: 5px;
     }
-    .section-requestForConsultation > form > div.privacy-statement {
+    .div-inner-requestForConsultation > form > div.privacy-statement {
         background-color: white;
-        height: 9vh;
+        height: 100px;
         position: relative;
         margin: 1vh 0;
         width: 97%;
@@ -60,34 +84,38 @@
         font-size: 13.5px;
         overflow: auto;
     }
-    .section-requestForConsultation > form input[type="submit"] {
-        width: 20%;
+    .div-inner-requestForConsultation > form input[type="submit"] {
         background-color: white;
-        margin-bottom: 1vh;
         position: absolute;
-        right: 8%;
+        right: 3vw;
+        width: 100px;
+        display: inline-block;
+    }
+    .p-checkbox {
+        font-size: 13.5px;
+        margin-top: 4px;
     }
 }
 
 
 @media(max-width: 800px){
-    .section-requestForConsultation {
+    .div-inner-requestForConsultation {
         height: 185vh;
         display: flex;
         flex-direction: column;
         /* align-items: center; */
         position: relative;
     }
-    .section-requestForConsultation > img {
+    .div-inner-requestForConsultation > img {
         margin: 35vh auto 0;
         width: 90vw;
     }
-    .section-requestForConsultation > h1 {
+    .div-inner-requestForConsultation > h1 {
         margin-top: 5vh;
         padding-left: 2vw;
         font-size: 35px;
     }
-    .section-requestForConsultation > form {
+    .div-inner-requestForConsultation > form {
         /* background-color: white; */
         padding: 0.3vh 2vw 4vh 2vw;
         box-sizing: border-box;
@@ -95,26 +123,26 @@
         width: 90vw;
         height: 55vh;
     }
-    .section-requestForConsultation > form > h2 {
+    .div-inner-requestForConsultation > form > h2 {
         font-size: 19.5px;
         line-height: 6vh;
     }
-    .section-requestForConsultation >form > div {
+    .div-inner-requestForConsultation >form > div {
         display: flex;
         width: 90%;
         margin: 0.5vh 0;
     }
-    .section-requestForConsultation > form input[type="text"] {
+    .div-inner-requestForConsultation > form input[type="text"] {
         height: 2.5vh;
         width: 95%;
         margin-bottom: 1vh;
     }
     
-    .section-requestForConsultation > form > textarea{
+    .div-inner-requestForConsultation > form > textarea{
         width: 96%;
         height: 10vh;
     }
-    .section-requestForConsultation > form > div.privacy-statement {
+    .div-inner-requestForConsultation > form > div.privacy-statement {
         background-color: white;
         height: 9vh;
         position: relative;
@@ -129,7 +157,7 @@
         font-size: 13.5px;
         overflow: auto;
     }
-    .section-requestForConsultation > form input[type="submit"] {
+    .div-inner-requestForConsultation > form input[type="submit"] {
         width: 20%;
         background-color: white;
     }
@@ -137,7 +165,7 @@
 
 
 @media(max-width: 500px){
-    .section-requestForConsultation {
+    .div-inner-requestForConsultation {
         height: 155vh;
     }
 }
