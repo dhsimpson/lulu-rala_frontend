@@ -39,6 +39,7 @@
     .subMenu span {
         border-bottom: 1px solid rgba(0,0,0,0.0);
         transition: 0.5s;
+        margin-right: 20px;
     }
     .subMenu span:hover {
         border-bottom: 1px solid black;

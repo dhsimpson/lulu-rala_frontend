@@ -16,6 +16,7 @@ const focusIdList =
   []
  ];
 
+ let divMainId = "div-video-main";
 
 function Main() {
   const addFocus = (idx) => {
@@ -28,13 +29,12 @@ function Main() {
       document.getElementById(elementId).classList.remove("focused");
     })
   }
-  const goHead = (e) => {
-    window.fullpage_api.silentMoveTo(e,0);
-  }
 
   const [width, setWidth] = useState(0);
 
+
   useEffect(() => {
+    
     const newWidth = window.innerWidth;
     setWidth(newWidth);
     function handleResize(){
@@ -88,8 +88,8 @@ ex)
                   {ArticleFirst()}
                 </div>
 
-                <div className="section article-second">동영상 4~5개
-                <button onClick={()=>{goHead()}}>맨위로</button>
+                <div className="section article-second">
+                  {ArticleSecond()}
                 </div>
 
                 <div className="section article-third">
@@ -111,7 +111,9 @@ ex)
               {ArticleFirst()}
             </div>
 
-            <div className="section article-second">동영상 4~5개</div>
+            <div className="section article-second">
+              {ArticleSecond()}
+            </div>
 
             <div className="section article-third">
               {ArticleThird()}
@@ -142,6 +144,80 @@ function ArticleFirst() {
         <p>&nbsp;유아, 초등 노는 영어</p>
       </div>
     </>);
+}
+// c.f. config 폴더에 옮기기
+const videoDivConfig = {
+  "div-video-main" : {
+    "width": "600px",
+    "height": "400px",
+    "right": "600px",
+    "top": "230px",
+    "backgroundColor": "blue",
+  },
+  "div-video-right-first" : {
+    "width": "300px",
+    "height": "200px",
+    "right": "0",
+    "top": "0",
+    "backgroundColor": "skyblue",
+  },
+  "div-video-right-second" : {
+    "width": "300px",
+    "height": "200px",
+    "right": "0",
+    "top": "220px",
+    "backgroundColor": "red",
+  },
+  "div-video-right-third" : {
+    "width": "300px",
+    "height": "200px",
+    "right": "0",
+    "top": "440px",
+    "backgroundColor": "green",
+  },
+  "div-video-right-fourth" : {
+    "width": "300px",
+    "height": "200px",
+    "right": "0",
+    "top": "660px",
+    "backgroundColor": "yellow",
+  }
+}
+
+const changeVideo = (el) => {
+  const mainVideoElement = document.getElementById(divMainId);
+  const elementToChange = document.getElementById(el.target.id);
+  if(el.target.id !== divMainId){
+    // 두 녀석의 위치 바꾸기
+    const tempStyle = videoDivConfig[divMainId];
+    videoDivConfig[divMainId] = videoDivConfig[el.target.id];
+    videoDivConfig[el.target.id] = tempStyle;
+
+    mainVideoElement.style.width = videoDivConfig[divMainId].width;
+    mainVideoElement.style.height = videoDivConfig[divMainId].height;
+    mainVideoElement.style.right = videoDivConfig[divMainId].right;
+    mainVideoElement.style.top = videoDivConfig[divMainId].top;
+    mainVideoElement.style.backgroundColor = videoDivConfig[divMainId].backgroundColor;
+    
+    elementToChange.style.width = videoDivConfig[el.target.id].width;
+    elementToChange.style.height = videoDivConfig[el.target.id].height;
+    elementToChange.style.right = videoDivConfig[el.target.id].right;
+    elementToChange.style.top = videoDivConfig[el.target.id].top;
+    elementToChange.style.backgroundColor = videoDivConfig[el.target.id].backgroundColor;
+    
+    divMainId = el.target.id;
+  }
+}
+function ArticleSecond() {
+  return (
+    <div id="div-videos-wrapper">
+      <div id="div-video-main" onClick={changeVideo}></div>
+      <div id="div-video-right-first" onClick={changeVideo}></div>
+      <div id="div-video-right-second" onClick={changeVideo}></div>
+      <div id="div-video-right-third" onClick={changeVideo}></div>
+      <div id="div-video-right-fourth" onClick={changeVideo}></div>
+    </div>
+  );
 }
 function ArticleThird() {
   return (

@@ -34,6 +34,59 @@
         background-image: url("./background-main-sub.jpg");
         background-size: 100%;
     }
+    .article-second #div-videos-wrapper {
+        position: relative;
+        width: 1200px;
+        height: 800px;
+        margin: 100px auto auto auto;
+        /* background-color: black; */
+    }
+    /* c.f. 나중에 이름을 바꿔줘야 함. 비디오 이름으로 */
+    .article-second #div-video-main{
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        right: 600px;
+        top: 230px;
+        background-color: blue;
+        transition: 1s;
+    }
+    .article-second #div-video-right-first{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        right: 0;
+        top: 0;
+        transition: 1s;
+    }
+    .article-second #div-video-right-second{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        right: 0;
+        top: 220px;
+        background-color: red;
+        transition: 1s;
+    }
+    .article-second #div-video-right-third{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        right: 0;
+        top: 440px;
+        background-color: green;
+        transition: 1s;
+    }
+    .article-second #div-video-right-fourth{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        right: 0;
+        top: 660px;
+        background-color: yellow;
+        transition: 1s;
+    }
 
     
     .article-third {
