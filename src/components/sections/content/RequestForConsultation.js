@@ -3,8 +3,30 @@ import LeftNav from '../../LeftNav';
 import navConfig from '../../../config/navConfig.json';
 import { useEffect } from 'react';
 
+import {postEmail} from '../../../functions/email';
+
 function RequestForConsultation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
+  console.log(postEmail)
+  const postEmailToServer = async() => {
+    const isChecked = document.getElementById("privacy-checkbox").checked;
+    console.log(isChecked);
+    if(!document.getElementById("privacy-checkbox").checked){
+      alert("개인정보 수집 동의에 체크 해 주세요.");
+      return;
+    }
+    const applicant = document.getElementById("input-applicant").value;
+    const phone = document.getElementById("input-phone").value;
+    const email = document.getElementById("input-email").value;
+    const address = document.getElementById("input-address").value;
+    let content = document.getElementById("input-content").value.replaceAll("\n", "<br/>");
+    if(applicant.length <= 0 ||phone.length <= 0 ||email.length <= 0 ||email.length <= 0 ||address.length <= 0 ||content.length <= 0){
+      alert("모든 빈칸을 채워주세요.");
+      return;
+    }
+    await postEmail(applicant,phone,email,address,content);
+  }
+
   useEffect(() => {
     document.getElementById("privacyHtml").innerHTML = `
 <div style="width: 100%; height: 100%">
@@ -21,7 +43,7 @@ function RequestForConsultation() {
 ※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(www.simpan.go.kr) 홈페이지를 참고하시기 바랍니다.</br></br><p class='lh6 bs4'><strong>제11조(개인정보 처리방침 변경)<em class="emphasis"></em></strong></p><br/></p><p class='sub_p'>① 이 개인정보처리방침은 2021년 4월 1부터 적용됩니다.</p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다. </p><p class='sub_p'></p><p class='sub_p'></p></p>
 </div>
     `;
-    document.getElementById("consultContent").value = `
+    document.getElementById("input-content").value = `
 ex)
 교습 대상자의 연령 :
 희망 프로그램 : 방문수업
@@ -40,23 +62,23 @@ ex)
             <form>
               <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
               <p>신청자명(기관)</p>
-              <input type="text" />
+              <input type="text" id="input-applicant"/>
               <p>연락처</p>
-              <input type="text" />
+              <input type="text"  id="input-phone"/>
               <p>회신 받을 메일 주소</p>
-              <input type="text" />
+              <input type="text"  id="input-email"/>
               <p>주소(시/구/동 까지)</p>
-              <input type="text" />
+              <input type="text"  id="input-address"/>
               <p>신청 내용</p>
-              <textarea id="consultContent" />
+              <textarea  id="input-content"/>
               <div className="privacy-statement">
                 <div id="privacyHtml"></div>
               </div>
               <div className="privacy-statement-checkbox">
-                <input type="checkbox" />
+                <input type="checkbox" id="privacy-checkbox"/>
                 <p className="p-checkbox">개인정보 수집 및 이용에 동의합니다</p>
               </div>
-              <input className="MapoPeacefull" type="submit" value="Send" />
+              <input className="MapoPeacefull" type="button" value="Send" onClick={postEmailToServer}/>
             </form>
           </div>
         </div>
