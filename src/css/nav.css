@@ -61,9 +61,8 @@
         transition: 0.5s;
     }
     nav.nav-head.toggled{
-        height: 235px;
+        height: 865px;
         transition: 0.5s;
-        /* overflow:visible; */
     }
     nav.nav-head:hover button{
         cursor:pointer;

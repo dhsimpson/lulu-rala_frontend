@@ -230,17 +230,18 @@ const changeVideo = (el) => {
   }
 }
 function ArticleSecond() {
-  const toggleSpread = (el) => {
-    const classList = Array.from(el.target.classList);
+  const toggleSpread = () => {
+    const divVideoSpreadToggler = document.getElementById("div-video-spread-toggler");
+    const classList = Array.from(divVideoSpreadToggler.classList);
     const videosWrapper = document.getElementById("videos-wrapper");
     const articleSecond = document.getElementById("article-second");
     if(classList.includes("toggled")){
-      el.target.classList.remove("toggled");
+      divVideoSpreadToggler.classList.remove("toggled");
       videosWrapper.classList.remove("toggled");
       articleSecond.classList.remove("toggled");
     }
     else{
-      el.target.classList.add("toggled");
+      divVideoSpreadToggler.classList.add("toggled");
       videosWrapper.classList.add("toggled");
       articleSecond.classList.add("toggled");
     }
@@ -254,8 +255,9 @@ function ArticleSecond() {
       <div id="div-video-right-fourth" onClick={changeVideo}></div>
 
       <div id="div-video-mw-first" ></div>
-      <div className="div-video-spread-nav">
-        <div className="div-video-spread-toggler" onClick={toggleSpread}/>
+      <div className="div-video-spread-nav" onClick={toggleSpread}>
+        <p>동영상 더 보기</p>
+        <div id="div-video-spread-toggler" className="div-video-spread-toggler"/>
       </div>
       <div id="videos-wrapper" className="videos-wrapper">
         <div id="div-video-mw-second" ></div>

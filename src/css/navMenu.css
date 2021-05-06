@@ -73,36 +73,19 @@
         white-space: nowrap;
     }
     .subMenu {
-        display: none;
+        display: block;
         position: relative;
         border: none;
         background-color: rgba(200, 200, 200, 1);
         width: 100vw;
+        height: 0;
+        overflow: hidden;
         transition: 0.5s;
-        transform: translateY(0%);
-        animation-duration: 0.2s;
-        animation-timing-function: ease;
-        animation-name: slideNavMenu;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
+    }
+    .subMenu.toggled{
+        height: 160px;
     }
     
-    @keyframes slideNavMenu {
-        0%{
-            top: 50px;
-            height: 0px;
-        }
-        25%{
-            height: 25px;
-        }
-        50%{
-            height: 50px;
-        }
-        100%{
-            height: auto;
-        }
-    
-    }
     .subMenu li {
         position: relative;
     }

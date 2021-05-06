@@ -44,10 +44,12 @@ function Nav() {
         }
     }
     const toggleBackground = () => {
+        const navHead = document.getElementById("nav-head");
+        navHead.classList.remove("toggled");
         const navBackground = document.getElementById("nav-background");
         const subMenus= document.getElementsByClassName("subMenu");
         Array.from(subMenus).forEach(el => {
-            el.style.display = "none";
+            el.classList.remove("toggled");
         })
         const toggleNavMenus = document.getElementsByClassName("div-toggle-navMenu");
         Array.from(toggleNavMenus).forEach(el => {
