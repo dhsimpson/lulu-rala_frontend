@@ -7,7 +7,7 @@ function BrandStory() {
   return (
     <>
       <LeftNav menu={navConfig.nav[0]}></LeftNav>
-      <section className="section-brandStory">
+      <section className="section-brandStory nbg">
         <div className="div-brandStory">
           {window.innerWidth > 800 && <h1 className="MapoPeacefull">Brand Story</h1>}
           <div className="div-inner-brandStory">

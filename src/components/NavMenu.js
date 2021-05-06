@@ -9,6 +9,7 @@ function NavMenu(props) {
             const toggler = el.target.childNodes[el.target.childNodes.length - 1];
             if(!toggler.classList){return;}
             const togglerClassList = Array.from(toggler.classList);
+            if(!el.target.childNodes[0].childNodes[1]){return;}
             if(!el.target.childNodes[0].childNodes[1].style){return;}
             if(togglerClassList.includes("toggled")){
                 toggler.classList.remove("toggled");
@@ -57,14 +58,13 @@ function NavMenu(props) {
             el.classList.remove("toggled");
         })
     }
-    // const body = document.body;
-    // body.addEventListener("click", ()=>{
-    //     closeNav();
-    //     console.log("click!")
-    // });
+    const stopProp = (el) => {
+        el.stopPropagation();
+    }
     return (<div 
         className= "navMenu"
-        onClick={toggleNavMenu}>
+        onClick={toggleNavMenu}
+        >
         {!props.menuData.subMenus
             ? (<div>
                 <button><Link to={`/${props.menuData.menuKey}`}> {props.menuData.menuName}</Link> </button>
@@ -79,6 +79,7 @@ function NavMenu(props) {
                                 <Link
                                 className="menuItem"
                                 onClick={closeNav}
+                                onMouseOver={stopProp}
                                 to={`/${spreadMenu.menuKey}`}
                                 key={i}><span>{spreadMenu.menuName}</span> </Link>
                             </li>

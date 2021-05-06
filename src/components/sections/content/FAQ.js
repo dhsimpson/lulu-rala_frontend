@@ -8,7 +8,7 @@ function FAQ() {
   return (
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
-      <section className="section-faq">
+      <section className="section-faq nbg">
         <div className="div-faq">
           <div className="div-inner-faq">
             <ul>

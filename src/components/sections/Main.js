@@ -6,17 +6,19 @@ import Footer from '../Footer';
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-const focusIdList = 
-[
-  [],
-  [],
-  ["third-h1-id", "third-img-id", "third-div-id",],
-  ["fourth-h1-id", "fourth-div-id", "fourth-img-id",],
-  ["fifth-h1-id", "fifth-img-id", "fifth-form-id"],
-  []
- ];
+import {postEmail} from '../../functions/email';
 
- let divMainId = "div-video-main";
+const focusIdList =
+  [
+    [],
+    [],
+    ["third-h1-id", "third-img-id", "third-div-id",],
+    ["fourth-h1-id", "fourth-div-id", "fourth-img-id",],
+    ["fifth-h1-id", "fifth-img-id", "fifth-form-id"],
+    []
+  ];
+
+let divMainId = "div-video-main";
 
 function Main() {
   const addFocus = (idx) => {
@@ -32,12 +34,31 @@ function Main() {
 
   const [width, setWidth] = useState(0);
 
+  const postEmailToServer = async () => {
+    const isChecked = document.getElementById("privacy-checkbox-main").checked;
+    console.log(isChecked);
+    if (!document.getElementById("privacy-checkbox-main").checked) {
+      alert("개인정보 수집 동의에 체크 해 주세요.");
+      return;
+    }
+    const applicant = document.getElementById("input-applicant-main").value;
+    const phone = document.getElementById("input-phone-main").value;
+    const email = document.getElementById("input-email-main").value;
+    const address = document.getElementById("input-address-main").value;
+    let content = document.getElementById("input-content-main").value.replaceAll("\n", "<br/>");
+    if (applicant.length <= 0 || phone.length <= 0 || email.length <= 0 || email.length <= 0 || address.length <= 0 || content.length <= 0) {
+      alert("모든 빈칸을 채워주세요.");
+      return;
+    }
+    await postEmail(applicant, phone, email, address, content);
+  }
+
 
   useEffect(() => {
-    
+
     const newWidth = window.innerWidth;
     setWidth(newWidth);
-    function handleResize(){
+    function handleResize() {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
     }
@@ -57,14 +78,14 @@ function Main() {
 ※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(www.simpan.go.kr) 홈페이지를 참고하시기 바랍니다.</br></br><p class='lh6 bs4'><strong>제11조(개인정보 처리방침 변경)<em class="emphasis"></em></strong></p><br/></p><p class='sub_p'>① 이 개인정보처리방침은 2021년 4월 1부터 적용됩니다.</p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다. </p><p class='sub_p'></p><p class='sub_p'></p></p>
 </div>
     `;
-    document.getElementById("consultContent").value = `
+    document.getElementById("input-content-main").value = `
 ex)
 교습 대상자의 연령 :
 희망 프로그램 : 방문수업
 희망요일 및 시간 : 월, 수요일 주 2회, 5시 ~ 5시 40분
         `;
-        return () => window.removeEventListener('resize', handleResize);
-  },[]);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
@@ -73,8 +94,8 @@ ex)
           // anchors={anchors}
           navigation={true}
           normalScrollElements="#consultContent, #privacyHtml"
-          onLeave={(origin, destination, direction)=> {
-            if( (destination.index === 4 && origin.index === 5) || (destination.index === 5 && origin.index === 4) ) {
+          onLeave={(origin, destination, direction) => {
+            if ((destination.index === 4 && origin.index === 5) || (destination.index === 5 && origin.index === 4)) {
               return;
             }
             addFocus(destination.index);
@@ -85,7 +106,7 @@ ex)
             return (
               <div>
                 <div className="section article-first">
-                  {ArticleFirst()}
+                  {ArticleFirst(width)}
                 </div>
 
                 <div className="section article-second">
@@ -99,7 +120,7 @@ ex)
                   {ArticleFourth()}
                 </div>
                 <div className="section article-fifth">
-                  {ArticleFifth()}
+                  {ArticleFifth(postEmailToServer)}
                 </div>
                 <div className="section fp-auto-height"> <Footer /></div>
               </div>
@@ -107,35 +128,35 @@ ex)
           }}
         />
         : <div>
-            <div className="section article-first">
-              {ArticleFirst()}
-            </div>
-
-            <div className="section article-second">
-              {ArticleSecond()}
-            </div>
-
-            <div className="section article-third">
-              {ArticleThird()}
-            </div>
-            <div className="section article-fourth">
-              {ArticleFourth()}
-            </div>
-            <div className="section article-fifth">
-              {ArticleFifth()}
-            </div>
-            <div className="section fp-auto-height"></div>
+          <div className="section article-first">
+            {ArticleFirst(width)}
           </div>
+
+          <div id="article-second" className="section article-second">
+            {ArticleSecond()}
+          </div>
+
+          <div className="section article-third">
+            {ArticleThird()}
+          </div>
+          <div className="section article-fourth">
+            {ArticleFourth()}
+          </div>
+          <div className="section article-fifth">
+            {ArticleFifth(postEmailToServer)}
+          </div>
+          <div className="section fp-auto-height"></div>
+        </div>
 
       }
 
 
     </>)
 }
-function ArticleFirst() {
+function ArticleFirst(width) {
   return (
     <>
-      {/* <img id="first-img-id" className="" src="./section/main.png" alt="아이들이엔씨" /> */}
+    {width < 800 && <img className="img-article-first" src="./section/main.png"/>}
       <div id="first-div-id" className="class-main">
         <p>&nbsp;찾아가는 영어</p>
         <p>룰루랄라</p>
@@ -147,39 +168,39 @@ function ArticleFirst() {
 }
 // c.f. config 폴더에 옮기기
 const videoDivConfig = {
-  "div-video-main" : {
-    "width": "600px",
-    "height": "400px",
-    "right": "600px",
-    "top": "230px",
+  "div-video-main": {
+    "width": "40%",
+    "height": "40%",
+    "right": "50%",
+    "top": "32%",
     "backgroundColor": "blue",
   },
-  "div-video-right-first" : {
-    "width": "300px",
-    "height": "200px",
-    "right": "0",
-    "top": "0",
+  "div-video-right-first": {
+    "width": "20%",
+    "height": "20%",
+    "right": "10%",
+    "top": "10%",
     "backgroundColor": "skyblue",
   },
-  "div-video-right-second" : {
-    "width": "300px",
-    "height": "200px",
-    "right": "0",
-    "top": "220px",
+  "div-video-right-second": {
+    "width": "20%",
+    "height": "20%",
+    "right": "10%",
+    "top": "32%",
     "backgroundColor": "red",
   },
-  "div-video-right-third" : {
-    "width": "300px",
-    "height": "200px",
-    "right": "0",
-    "top": "440px",
+  "div-video-right-third": {
+    "width": "20%",
+    "height": "20%",
+    "right": "10%",
+    "top": "54%",
     "backgroundColor": "green",
   },
-  "div-video-right-fourth" : {
-    "width": "300px",
-    "height": "200px",
-    "right": "0",
-    "top": "660px",
+  "div-video-right-fourth": {
+    "width": "20%",
+    "height": "20%",
+    "right": "10%",
+    "top": "76%",
     "backgroundColor": "yellow",
   }
 }
@@ -187,7 +208,7 @@ const videoDivConfig = {
 const changeVideo = (el) => {
   const mainVideoElement = document.getElementById(divMainId);
   const elementToChange = document.getElementById(el.target.id);
-  if(el.target.id !== divMainId){
+  if (el.target.id !== divMainId) {
     // 두 녀석의 위치 바꾸기
     const tempStyle = videoDivConfig[divMainId];
     videoDivConfig[divMainId] = videoDivConfig[el.target.id];
@@ -198,17 +219,32 @@ const changeVideo = (el) => {
     mainVideoElement.style.right = videoDivConfig[divMainId].right;
     mainVideoElement.style.top = videoDivConfig[divMainId].top;
     mainVideoElement.style.backgroundColor = videoDivConfig[divMainId].backgroundColor;
-    
+
     elementToChange.style.width = videoDivConfig[el.target.id].width;
     elementToChange.style.height = videoDivConfig[el.target.id].height;
     elementToChange.style.right = videoDivConfig[el.target.id].right;
     elementToChange.style.top = videoDivConfig[el.target.id].top;
     elementToChange.style.backgroundColor = videoDivConfig[el.target.id].backgroundColor;
-    
+
     divMainId = el.target.id;
   }
 }
 function ArticleSecond() {
+  const toggleSpread = (el) => {
+    const classList = Array.from(el.target.classList);
+    const videosWrapper = document.getElementById("videos-wrapper");
+    const articleSecond = document.getElementById("article-second");
+    if(classList.includes("toggled")){
+      el.target.classList.remove("toggled");
+      videosWrapper.classList.remove("toggled");
+      articleSecond.classList.remove("toggled");
+    }
+    else{
+      el.target.classList.add("toggled");
+      videosWrapper.classList.add("toggled");
+      articleSecond.classList.add("toggled");
+    }
+  }
   return (
     <div id="div-videos-wrapper">
       <div id="div-video-main" onClick={changeVideo}></div>
@@ -216,13 +252,24 @@ function ArticleSecond() {
       <div id="div-video-right-second" onClick={changeVideo}></div>
       <div id="div-video-right-third" onClick={changeVideo}></div>
       <div id="div-video-right-fourth" onClick={changeVideo}></div>
+
+      <div id="div-video-mw-first" ></div>
+      <div className="div-video-spread-nav">
+        <div className="div-video-spread-toggler" onClick={toggleSpread}/>
+      </div>
+      <div id="videos-wrapper" className="videos-wrapper">
+        <div id="div-video-mw-second" ></div>
+        <div id="div-video-mw-third" ></div>
+        <div id="div-video-mw-fourth" ></div>
+        <div id="div-video-mw-fifth" ></div>
+      </div>
     </div>
   );
 }
 function ArticleThird() {
   return (
     <>
-    <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" alt="아이들이엔씨" />
+      <img id="third-img-id" className="third-left" src="./section/luluRalaPlayingEnglish.jpg" alt="아이들이엔씨" />
       <h1 id="third-h1-id" className="MapoPeacefull">Lulu Rala English</h1>
       <div id="third-div-id" className="third-right">
         <p>룰루랄라 노는영어는  영어를 처음 시작하는 아이부터 초등학생을 대상으로 흥미로운 주제와 다양한 활동이 주가 되어 아이들이 영어를 쉽고 재미있게 배울 수 있는 영어학습 프로그램입니다.</p><br />
@@ -235,7 +282,7 @@ function ArticleThird() {
 function ArticleFourth() {
   return (
     <>
-    <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" alt="아이들이엔씨" />
+      <img id="fourth-img-id" className="fourth-right" src="./section/educationalCourse.jpg" alt="아이들이엔씨" />
       <h1 id="fourth-h1-id" className="">Educational course</h1>
       <div id="fourth-div-id" className="fourth-left">
         <h2>영아 / 유아교육 과정</h2>
@@ -248,35 +295,35 @@ function ArticleFourth() {
         <h2>기관</h2>
         <p>대집단 수업, 그룹과정으로 유치원, 어린이집, 체육센터, 도서관, 방과후과정, 문화센터에서 진행하는 영어 활동</p>
       </div>
-      </>
+    </>
   );
 }
-function ArticleFifth() {
+function ArticleFifth(postEmailToServer) {
   return (
     <>
-    <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" alt="아이들이엔씨" />
+      <img id="fifth-img-id" className="fifth-left" src="./section/requestForConsultation.jpg" alt="아이들이엔씨" />
       <h1 id="fifth-h1-id" className="">상담 신청</h1>
       <form id="fifth-form-id" className="fifth-right">
         <h2 className="MapoPeacefull">IDL EDUCATION &amp; CULTURE</h2>
         <p>신청자명(기관)</p>
-        <input type="text" />
+        <input type="text" id="input-applicant-main" />
         <p>연락처</p>
-        <input type="text" />
+        <input type="text" id="input-phone-main" />
         <p>회신 받을 메일 주소</p>
-        <input type="text" />
+        <input type="text" id="input-email-main" />
         <p>주소(시/구/동 까지)</p>
-        <input type="text" />
+        <input type="text" id="input-address-main" />
         <p>신청 내용</p>
-        <textarea id="consultContent" />
+        <textarea id="input-content-main" />
 
         <div className="privacy-statement">
           <div id="privacyHtml"></div>
         </div>
         <div className="privacy-statement-checkbox">
-          <input type="checkbox" />
+                <input type="checkbox" id="privacy-checkbox-main"/>
           <p>개인정보 수집 및 이용에 동의합니다</p>
         </div>
-        <input className="MapoPeacefull" type="submit" value="Send" />
+        <input className="MapoPeacefull" type="button" value="Send" onClick={postEmailToServer}/>
       </form>
     </>
   );

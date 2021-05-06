@@ -7,7 +7,6 @@ import {postEmail} from '../../../functions/email';
 
 function RequestForConsultation() {
   document.body.style.backgroundImage = "url('./background.jpg')";
-  console.log(postEmail)
   const postEmailToServer = async() => {
     const isChecked = document.getElementById("privacy-checkbox").checked;
     console.log(isChecked);
@@ -53,9 +52,9 @@ ex)
   return (
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
-      <section className="section-requestForConsultation">
+      <section className="section-requestForConsultation nbg">
         <div className="div-requestForConsultation">
-          {window.innerWidth > 800 && <h1 className="MapoPeacefull">상담 신청</h1>}
+          {window.innerWidth > 800 && <h1>상담 신청</h1>}
           <div className="div-inner-requestForConsultation">
             <img src="./section/requestForConsultation.jpg" alt="아이들이엔씨" />
             {window.innerWidth <= 800 && <h1 className="MapoPeacefull">상담 신청</h1>}

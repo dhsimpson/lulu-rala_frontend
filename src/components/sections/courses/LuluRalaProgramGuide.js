@@ -7,7 +7,7 @@ function LuluRalaProgramGuide() {
   return (
     <>
       <LeftNav menu={navConfig.nav[1]}></LeftNav>
-      <section className="section-luluRalaProgramGuide">
+      <section className="section-luluRalaProgramGuide nbg">
         <div className="div-luluRalaProgramGuide">
           <div className="div-inner-luluRalaProgramGuide">
             {window.innerWidth > 800 && <h1 className="MapoPeacefull">Lulu Rala Program guide</h1>}

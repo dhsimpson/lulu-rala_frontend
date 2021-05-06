@@ -16,6 +16,7 @@ const postEmail = async (applicant, phone, email, address, content) => {
         }
         await axios.post(emailUrl, body)
             .then(async (result) => {
+                alert("상담 메일을 보냈습니다.")
             })
             .catch(error => {
                 console.log(error);

@@ -6,7 +6,7 @@ function PhilosophyOfEducation() {
   return (
     <>
       <LeftNav menu={navConfig.nav[0]}></LeftNav>
-      <section className="section-philosophyOfEducation">
+      <section className="section-philosophyOfEducation nbg">
         <div className="div-philosophyOfEducation">
           <div className="div-inner-philosophyOfEducation">
             <img src="./section/PhilosophyOfEducation.jpg" alt="아이들이엔씨" />

@@ -9,6 +9,15 @@
     nav.nav-head{
         right: 17vw;
     }
+    nav.nav-head .navMenu {
+        height: 50px;
+        overflow: hidden;
+        transition: 1s;
+    }
+    nav.nav-head:hover .navMenu {
+        height: 300px;
+        transition: 1s;
+    }
     nav.nav-head:hover button{
         cursor:pointer;
         background-color: transparent;
@@ -20,7 +29,9 @@
     }
     
     .nav-background {
+        height: 0;
         transition: 1s;
+        overflow: hidden;
     }
     nav.nav-head:hover .nav-background {
         position: fixed;
@@ -35,38 +46,24 @@
 
 @media(max-width: 800px){
     nav {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        background-color: rgba(240, 240, 240, 1);
+        position: fixed;
         top: 60px;
         z-index: 2;
         width: unset;
     }
     nav.nav-head{
         width: 100vw;
-        animation-duration: 0.1s;
-        animation-timing-function: ease;
-        animation-name: slideNav;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
         z-index: 3;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
     }
-    @keyframes slideNav {
-        0%{
-            top: 50px;
-            height: 0px;
-        }
-        25%{
-            height: 25px;
-        }
-        50%{
-            height: 50px;
-        }
-        100%{
-            height: auto;
-        }
-    
+    nav.nav-head.toggled{
+        height: 235px;
+        transition: 0.5s;
+        /* overflow:visible; */
     }
     nav.nav-head:hover button{
         cursor:pointer;

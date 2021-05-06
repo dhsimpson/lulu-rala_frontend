@@ -7,7 +7,7 @@ function TuitionInformation() {
   return (
     <>
       <LeftNav menu={navConfig.nav[2]}></LeftNav>
-      <section className="section-tuitionInformation">
+      <section className="section-tuitionInformation nbg">
         <div className="div-tuitionInformation">
           <div className="div-inner-tuitionInformation">
             <h1>수강료</h1>

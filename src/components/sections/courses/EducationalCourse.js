@@ -7,7 +7,7 @@ function EducationalCourse() {
   return (
     <>
       <LeftNav menu={navConfig.nav[1]}></LeftNav>
-      <section className="section-educationalCourse">
+      <section className="section-educationalCourse nbg">
         <div className="div-educationalCourse">
           {window.innerWidth > 800 && <h1 className="MapoPeacefull">Educational course</h1>}
           <div className="div-inner-educationalCourse">

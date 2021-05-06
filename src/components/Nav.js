@@ -21,8 +21,6 @@ function Nav() {
                     el.style.display = "block";
                 })
             }else{
-                const nav = document.getElementsByTagName("nav")[0];
-                nav.style.display = "none";
                 const subMenus= document.getElementsByClassName("subMenu");
                 Array.from(subMenus).forEach(el => {
                     el.style.display = "none";
@@ -35,29 +33,18 @@ function Nav() {
     }, []);
 
     const toggleNav = () => {
-        const nav = document.getElementsByTagName("nav")[0];
+        const navHead = document.getElementById("nav-head");
         const navBackground = document.getElementById("nav-background");
-        if (nav.style.display === "flex") {
-            nav.style.display = "none";
-            const subMenus= document.getElementsByClassName("subMenu");
-            Array.from(subMenus).forEach(el => {
-                el.style.display = "none";
-            })
-            const toggleNavMenus = document.getElementsByClassName("div-toggle-navMenu");
-            Array.from(toggleNavMenus).forEach(el => {
-                el.classList.remove("toggled");
-            })
+        if(Array.from(navHead.classList).includes("toggled")){
+            navHead.classList.remove("toggled");
             navBackground.style.display = "none";
-        }
-        else {
-            nav.style.display = "flex";
+        }else{
+            navHead.classList.add("toggled");
             navBackground.style.display = "block";
         }
     }
     const toggleBackground = () => {
         const navBackground = document.getElementById("nav-background");
-        const nav = document.getElementsByTagName("nav")[0];
-        nav.style.display = "none";
         const subMenus= document.getElementsByClassName("subMenu");
         Array.from(subMenus).forEach(el => {
             el.style.display = "none";
@@ -70,7 +57,7 @@ function Nav() {
     }
     return (
         <>
-            <nav className="nav-head">
+            <nav id="nav-head" className="nav-head">
                 {navConfig.nav.map((subMenu, i) => {
                     return (
                         <NavMenu
@@ -80,6 +67,8 @@ function Nav() {
                 })}
                 <div className="nav-background" />
             </nav>
+            
+            {/* 오른쪽 네비게이션 토글 버튼 */}
             <div id="id-toggle-nav" onClick={() => { toggleNav() }}>
                 <div className="div-toggle-nav-bar"></div>
                 <div className="div-toggle-nav-bar"></div>
