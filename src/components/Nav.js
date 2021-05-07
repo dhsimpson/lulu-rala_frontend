@@ -23,7 +23,9 @@ function Nav() {
             }else{
                 const subMenus= document.getElementsByClassName("subMenu");
                 Array.from(subMenus).forEach(el => {
-                    el.style.display = "none";
+                    el.classList.remove("toggled");
+                    el.parentElement.nextSibling.classList.remove("toggled");
+                    // el.style.display = "none";
                 })
             }
             setWidth(newWidth);

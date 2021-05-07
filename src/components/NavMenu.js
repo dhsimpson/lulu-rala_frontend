@@ -38,10 +38,10 @@ function NavMenu(props) {
             const togglerClassList = Array.from(el.target.classList);
             if (togglerClassList.includes("toggled")) {
                 el.target.classList.remove("toggled");
-                el.target.previousSibling.childNodes[1].style.display = "none";
+                // el.target.previousSibling.childNodes[1].style.display = "none";
             } else {
                 el.target.classList.add("toggled");
-                el.target.previousSibling.childNodes[1].style.display = "block";
+                // el.target.previousSibling.childNodes[1].style.display = "block";
             }
         }
     }
@@ -50,10 +50,10 @@ function NavMenu(props) {
         if (newWidth > 800) { return; }
         const nav = document.getElementsByTagName("nav")[0];
         if (!nav) { return; }
-        nav.style.display = "none";
+        nav.classList.remove("toggled");
         const subMenus = document.getElementsByClassName("subMenu");
         Array.from(subMenus).forEach(el => {
-            el.style.display = "none";
+            el.classList.remove("toggled");
         })
         const toggleNavMenus = document.getElementsByClassName("div-toggle-navMenu");
         Array.from(toggleNavMenus).forEach(el => {
